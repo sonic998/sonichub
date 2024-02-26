@@ -22,10 +22,12 @@ autoprestige()
 end
 end)
 
+equipdrink()
+
 autofarm:Toggle("Auto Equip Drink", function(v)
 getgenv().equipdrink = v
 while getgenv().equipdrink do wait(0.1)
-equipdrink()
+AutoEquipDrink()
 end
 end)
 
