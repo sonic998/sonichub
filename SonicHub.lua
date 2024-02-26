@@ -140,11 +140,11 @@ _G.yes = "Game Not Supported"
 for i,v in next, games do
 	if game.PlaceId == v then
     	_G.yes = "Game Supported"
-	wait(3)
+        status.Text = _G.yes
+        wait(1)
+        status.Text = "Executing Script"
+	wait(0.5)
 	SonicLoaderUI:Destroy()
 	loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Scripts/" .. i))()
 	end
 end
-status.Text = _G.yes
-wait(1)
-status.Text = "Executing Script"
