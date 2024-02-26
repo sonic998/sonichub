@@ -14,15 +14,6 @@ teleport:Button("Teleport to spawn", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2, -24, -12)
 end)
 
-teleport:Toggle("Auto tp to last world", function(v)
-    getgenv().tp = v
-    while true do
-    if not getgenv().tp then return end
-    wait(0.1)
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9, -22, -3839)
-    end
-end)
-
 autofarm:Toggle("Auto Lift", function(v)
 getgenv().autolift = v
 while getgenv().autolift do wait(0.1)
@@ -62,14 +53,10 @@ misc:Button("Rejoin", function()
   rejoin()
 end)
 
-misc:Toggle("Inf Yield", function(v)
-if v then
+misc:Button("Inf Yield", function()
 infyield()
-end
 end)
 
-misc:Toggle("Anti Afk", function(v)
-if v then
+misc:Button("Anti Afk", function()
 antiafk()
-end
 end)
