@@ -17,14 +17,14 @@ teleport:Button("Cloud Two")
 
 autofarm:Toggle("Auto Drink", function(v)
 getgenv().autodrink = v
-while getgenv().autodrink do wait(0.1)
+while getgenv().autodrink do wait(2.34)
 autodrink()
 end
 end)
 
 autofarm:Toggle("Auto Prestige", function(v)
 getgenv().autoprestige = v
-while getgenv().autoprestige do wait(0.1)
+while getgenv().autoprestige do wait(1)
 autoprestige()
 end
 end)
@@ -33,7 +33,7 @@ equipdrink()
 
 autofarm:Toggle("Auto Equip Drink", function(v)
 getgenv().equipdrink = v
-while getgenv().equipdrink do wait(0.1)
+while getgenv().equipdrink do wait(0.5)
 AutoEquipDrink()
 end
 end)
