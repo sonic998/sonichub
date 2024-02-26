@@ -21,12 +21,15 @@ else
 end
 
 local SonicLoaderUI = Instance.new("ScreenGui")
-local main = Instance.new("Frame")
+local main = Instance.new("ImageLabel")
 local title = Instance.new("TextLabel")
 
 SonicLoaderUI.Name = "SonicLoaderUI"
 SonicLoaderUI.ResetOnSpawn = false
 SonicLoaderUI.Parent = game:GetService("CoreGui")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sonic998/sonichub/main/sonic.jpg"))()
+local getimage = getcustomasset or getasset
 
 main.Name = "main"
 main.Parent = SonicLoaderUI
@@ -36,6 +39,7 @@ main.BorderSizePixel = 0
 main.Position = UDim2.new(0.304659486, 0, 0.294623643, 0)
 main.Size = UDim2.new(0, 473, 0, 288)
 main.Active = true
+main.Image = getimage("sonic.jpg")
 
 Instance.new("UICorner", main)
 
