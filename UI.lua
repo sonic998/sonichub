@@ -128,7 +128,7 @@ close.Image = "rbxassetid://3926305904"
 close.ImageRectOffset = Vector2.new(284, 4)
 close.ImageRectSize = Vector2.new(24, 24)
 close.MouseButton1Click:Connect(function()
-ShadowUI:Destroy()
+SonicUI:Destroy()
 end)
 
 TabFrame.Name = "TabFrame"
