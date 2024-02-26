@@ -198,14 +198,14 @@ function AutoEquipDrink()
 					end
 				end
 			end
-			if game.Players.LocalPlayer.Backpack:FindFirstChild("Thunder Fizz") then
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 2000000 then
 				local Players = game:GetService("Players")
 
 				local player = Players:FindFirstChildOfClass("Player")
 				if player and player.Character then
 					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
 					if humanoid then
-						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Thunder Fizz")
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Garlic Juice")
 						if tool then
 							humanoid:EquipTool(tool)
 						end
