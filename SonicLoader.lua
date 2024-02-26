@@ -28,9 +28,6 @@ SonicLoaderUI.Name = "SonicLoaderUI"
 SonicLoaderUI.ResetOnSpawn = false
 SonicLoaderUI.Parent = game:GetService("CoreGui")
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/sonic998/sonichub/main/sonic.jpg"))()
-local getimage = getcustomasset or getasset
-
 main.Name = "main"
 main.Parent = SonicLoaderUI
 main.BackgroundColor3 = Color3.fromRGB(108, 19, 164)
@@ -39,7 +36,7 @@ main.BorderSizePixel = 0
 main.Position = UDim2.new(0.304659486, 0, 0.294623643, 0)
 main.Size = UDim2.new(0, 473, 0, 288)
 main.Active = true
-main.Image = getimage("sonic.jpg")
+main.Image = "rbxassetid://16539045913"
 
 Instance.new("UICorner", main)
 
