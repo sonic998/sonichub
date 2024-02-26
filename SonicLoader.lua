@@ -37,6 +37,8 @@ main.Position = UDim2.new(0.304659486, 0, 0.294623643, 0)
 main.Size = UDim2.new(0, 473, 0, 288)
 main.Active = true
 
+Instance.new("UICorner", main)
+
 title.Name = "title"
 title.Parent = main
 title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
