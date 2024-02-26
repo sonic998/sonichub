@@ -65,4 +65,8 @@ end)
 misc:Button("Inf Yield", function()
 infyield()
 end)
+else
+local win = lib:CreateWindow("Access Denied")
+local page = win:Page("Info")
+page:Button("Access Denied")
 end
