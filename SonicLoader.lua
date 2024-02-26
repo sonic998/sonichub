@@ -1,3 +1,25 @@
+if get_hidden_gui or gethui then
+	local hiddenUI = get_hidden_gui or gethui
+	for i,v in pairs(hiddenUI():GetChildren()) do
+		if v:IsA("ScreenGui") and v.Name == "SonicLoaderUI" then
+			v:Destroy()
+		end
+	end
+elseif syn and syn.protect_gui then
+	for i,v in pairs(game.CoreGui:GetChildren()) do
+		if v:IsA("ScreenGui") and v.Name == "SonicLoaderUI" then
+			syn.unprotect_gui(v)
+			v:Destroy()
+		end
+	end
+else
+	for i,v in pairs(game.CoreGui:GetChildren()) do
+		if v:IsA("ScreenGui") and v.Name == "SonicLoaderUI" then
+			v:Destroy()
+		end
+	end
+end
+
 local SonicLoaderUI = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local title = Instance.new("TextLabel")
