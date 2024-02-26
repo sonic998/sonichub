@@ -8,6 +8,13 @@ local localplayer = win:Page("LocalPlayer")
 local teleport = win:Page("Teleport")
 local misc = win:Page("Misc")
 
+teleport:Button("Safe Zone")
+teleport:Button("Disco Island")
+teleport:Button("Second Island")
+teleport:Button("Sky Island")
+teleport:Button("Cloud One")
+teleport:Button("Cloud Two")
+
 autofarm:Toggle("Auto Drink", function(v)
 getgenv().autodrink = v
 while getgenv().autodrink do wait(0.1)
