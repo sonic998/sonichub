@@ -132,7 +132,8 @@ local games = {
 	["TitanSimulator.lua"] = 1122519450,
   ["LiftingLegends.lua"] = 5709572883,
   ["InnovationIncSpaceship.lua"] = 331811267,
-  ["DrinkHax.lua"] = 1747207098
+  ["DrinkHax.lua"] = 1747207098,
+  ["ZombieAttack.lua"] = 1240123653
 }
 
 _G.yes = "Game Not Supported"
