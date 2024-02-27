@@ -65,6 +65,13 @@ end)
 misc:Button("Inf Yield", function()
 infyield()
 end)
+misc:Button("Anti Kick", function()
+AntiKick()
+end)
+misc:Button("Anti Afk", function()
+AntiAfk()
+end)
+
 else
 local win = lib:CreateWindow("Access Denied")
 local page = win:Page("Info")
