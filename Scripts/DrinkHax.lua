@@ -2,6 +2,10 @@ local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"
 local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/1747207098/DrinkHax.lua"))()
 if game:HttpGet("https://portliest-spear.000webhostapp.com/sonicAuth.php?game=burpingsimulator&key="..game.Players.LocalPlayer.UserId) == "Whitelisted" then
 
+local win = lib:CreateWindow("Access Granted")
+local page = win:Page("Info")
+page:Button("Access Granted")
+
 local win = lib:CreateWindow("SonicHub - Drinkhax")
 local autofarm = win:Page("AutoFarm")
 local localplayer = win:Page("LocalPlayer")
