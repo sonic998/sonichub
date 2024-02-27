@@ -35,7 +35,7 @@ function SonicFrontiersSongs()
 
 function SonicHub()
 {
-	window.open("https://sonic998.github.io/sonichub");
+	window.open("https://sonic998.github.io/sonichub", "_self");
 }
 
 function copyscript()
@@ -45,5 +45,5 @@ function copyscript()
 
 function SonicHome()
 {
-window.open("https://sonic998.github.io");
+window.open("https://sonic998.github.io", "_self");
 }
