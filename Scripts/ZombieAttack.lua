@@ -8,8 +8,13 @@ local misc = win:Page("Misc")
 
 autofarm:Toggle("Autokill")
 
-localplayer:Button("WalkSpeed")
-localplayer:Button("Inf Jump")
+localplayer:Button("WalkSpeed", function()
+speed()
+end)
+
+localplayer:Button("Inf Jump", function()
+jump()
+end)
 
 misc:Button("Rejoin")
 misc:Button("Anti Afk")
