@@ -5,8 +5,4 @@ local encode = code:gsub(".", function(bb) return "\\" .. bb:byte() end) or code
 setclipboard("loadstring('"..encode.."')()")
 end
 
-function Obfuscater:Deobfuscate(code)
-    setclipboard(code)
-end
-
 return Obfuscater
