@@ -35,3 +35,5 @@ bb:CaptureController()
 bb:ClickButton2(Vector2.new())
 end)
 end
+
+function autokill()
