@@ -6,6 +6,8 @@ local win = lib:CreateWindow("Access Granted")
 local page = win:Page("Info")
 page:Button("Access Granted")
 
+wait(0.5)
+
 local win = lib:CreateWindow("SonicHub - Drinkhax")
 local autofarm = win:Page("AutoFarm")
 local localplayer = win:Page("LocalPlayer")
