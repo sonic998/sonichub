@@ -45,3 +45,10 @@ end
 function infyield()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end
+
+function AntiAfk()
+local bb=game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:Connect(function()
+bb:CaptureController()
+bb:ClickButton2(Vector2.new())
+end
