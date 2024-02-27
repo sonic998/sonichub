@@ -51,3 +51,27 @@ end
 function infyield()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end
+
+function AntiAfk()
+local bb=game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:Connect(function()
+bb:CaptureController()
+bb:ClickButton2(Vector2.new())
+end
+function AntiKick()
+local mt = getrawmetatable(game)
+        local old = mt.__namecall
+        local protect = newcclosure or protect_function
+ 
+        setreadonly(mt, false)
+        mt.__namecall = protect(function(self, ...)
+            local method = getnamecallmethod()
+            if method == "Kick" then
+                wait(9e9)
+                return
+            end
+            return old(self, ...)
+        end)
+        hookfunction(game.Players.LocalPlayer.Kick,protect(function() wait(9e9) end))
+end)
+end
