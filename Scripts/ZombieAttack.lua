@@ -19,7 +19,11 @@ end)
 misc:Button("Rejoin", function()
 rejoin()
 end)
+
 misc:Button("Inf Yield", function()
 infyield()
 end)
-misc:Button("Anti Afk")
+
+misc:Button("Anti Afk", function()
+AntiAfk()
+end)
