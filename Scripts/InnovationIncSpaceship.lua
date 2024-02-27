@@ -20,3 +20,7 @@ end)
 misc:Button("Inf Yield", function()
 infyield()
 end)
+
+misc:Button("Anti Afk", function()
+AntiAfk()
+end)
