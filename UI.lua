@@ -52,7 +52,7 @@ SonicUI.Parent = game:GetService("CoreGui")
 
 main.Name = "main"
 main.Parent = SonicUI
-main.BackgroundColor3 = Color3.fromRGB(108, 19, 164)
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
 main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 main.BorderSizePixel = 0
 main.Position = UDim2.new(0.304659486, 0, 0.294623643, 0)
@@ -61,8 +61,8 @@ main.Active = true
 
 Instance.new("UICorner", main).CornerRadius = UDim.new(0, 9)
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(165, 30, 255)), ColorSequenceKeypoint.new(0.22, Color3.fromRGB(85, 85, 255)), ColorSequenceKeypoint.new(0.46, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(0.73, Color3.fromRGB(85, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(171, 4, 255))}
-UIGradient.Parent = main
+--UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(165, 30, 255)), ColorSequenceKeypoint.new(0.22, Color3.fromRGB(85, 85, 255)), ColorSequenceKeypoint.new(0.46, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(0.73, Color3.fromRGB(85, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(171, 4, 255))}
+--UIGradient.Parent = main
   
   
 	local UserInputService = game:GetService("UserInputService")
