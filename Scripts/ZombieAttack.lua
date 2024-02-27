@@ -6,7 +6,9 @@ local autofarm = win:Page("AutoFarm")
 local localplayer = win:Page("LocalPlayer")
 local misc = win:Page("Misc")
 
-autofarm:Toggle("Autokill")
+autofarm:Toggle("Autokill", function(v)
+autokill(v)
+end)
 
 localplayer:Button("WalkSpeed", function()
 speed()
