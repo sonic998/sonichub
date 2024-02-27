@@ -87,3 +87,18 @@ wait()
 end
 end
 end
+
+function EquipGun()
+local plr = game.Players.LocalPlayer
+local backpack = plr.Backpack
+local char = plr.Character
+local hum = char.Humanoid
+for i,v in pairs(backpack:GetDescendants()) do
+if v.Name == "GunController" then
+print("SonicHub: Gun Found")
+print(v.Name)
+print(v.Parent.Name)
+hum:EquipTool(v)
+end
+end
+end
