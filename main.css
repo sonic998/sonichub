@@ -21,3 +21,25 @@ button {
     font-weight: bold;
     font-size: xx-large;
 }
+
+
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    color: cyan;
+}
