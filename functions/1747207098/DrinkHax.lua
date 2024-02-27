@@ -73,5 +73,4 @@ local mt = getrawmetatable(game)
             return old(self, ...)
         end)
         hookfunction(game.Players.LocalPlayer.Kick,protect(function() wait(9e9) end))
-end)
 end
