@@ -5,12 +5,12 @@ local old = mt.__newindex
 
     mt.__newindex = newcclosure(function(a, b, c)
     if tostring(a) == "Humanoid" and tostring(b) == "WalkSpeed" then
-        return old(a, b, 1000)
+        return old(a, b, 100)
     end
     return old(a,b,c)
     end)
   while wait() do
-     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 1000
+     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
   end
 end
 
