@@ -10,6 +10,10 @@ autofarm:Toggle("Autokill", function(v)
 autokill(v)
 end)
 
+autofarm:Toggle("Auto Equip Gun", function(v)
+EquipGun()
+end)
+
 localplayer:Button("WalkSpeed", function()
 speed()
 end)
