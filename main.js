@@ -42,3 +42,8 @@ function copyscript()
 {
 	 navigator.clipboard.writeText("loadstring(game:HttpGet('https://sonic998.github.io/sonichub/SonicHub.lua'))()")
 }
+
+function SonicHome()
+{
+window.open("https://sonic998.github.io");
+}
