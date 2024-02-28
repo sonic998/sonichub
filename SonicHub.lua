@@ -127,6 +127,7 @@ status.TextWrapped = true
 
 status.Text = "Checking game"
 wait(1)
+_G.yes = "Game Not Supported"
 
 local games = {
 	["TitanSimulator.lua"] = 1122519450,
@@ -136,8 +137,6 @@ local games = {
   ["DrinkHax.lua"] = 1747207098,
   ["ZombieAttack.lua"] = 1240123653
 }
-
-_G.yes = "Game Not Supported"
 
 for i,v in next, games do
 	if game.PlaceId == v then
