@@ -1,4 +1,5 @@
-local games = {	["TitanSimulator.lua"] = 1122519450,
+local games = {	
+  ["TitanSimulator.lua"] = 1122519450,
   ["LiftingLegends.lua"] = 5709572883,
   ["InnovationIncSpaceship.lua"] = 331811267,
   ["InnovationArcticBase.lua"] = 1033860623,
