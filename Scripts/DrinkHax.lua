@@ -1,5 +1,5 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
-local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/1747207098/DrinkHax.lua"))()
+loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/1747207098/DrinkHax.lua"))()
 if game:HttpGet("http://sonic.rf.gd/sonicAuth.php?game=burpingsimulator&key="..game.Players.LocalPlayer.UserId) == "Whitelisted" then
 
 local win = lib:CreateWindow("SonicHub - Drinkhax")
