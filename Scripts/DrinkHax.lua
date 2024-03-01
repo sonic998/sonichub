@@ -72,5 +72,5 @@ misc:Button("Anti Afk", function()
 AntiAfk()
 end)
 else
-print("Access Denied"))
+print("Access Denied")
 end
