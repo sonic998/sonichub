@@ -1,5 +1,4 @@
 loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/HackerLocation.lua"))()
-loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/PrestigeCounterUI.lua"))()
 function autodrink()
   game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Starter Drink")
   game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Second Drink")
