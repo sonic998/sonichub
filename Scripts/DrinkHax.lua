@@ -74,6 +74,9 @@ end)
 misc:Button("Anti Kick", function()
 AntiKick()
 end)
+
 misc:Button("Anti Afk", function()
 AntiAfk()
 end)
+
+loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/PrestigeCounterUI.lua"))()
