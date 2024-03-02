@@ -17,10 +17,8 @@ function autodrink()
 end
 
 function AutoCollectGems()
-for i,gem in pairs(workspace.Diamonds:GetChildren()) do
-firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, gem, 1)
-wait()
-firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, gem, 0)
+for i,v in pairs(workspace.Diamonds:GetChildren()) do
+v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
 end
 
