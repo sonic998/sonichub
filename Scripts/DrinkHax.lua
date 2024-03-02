@@ -80,4 +80,4 @@ AntiAfk()
 end)
 
 loadstring(game:HttpGet("https://pastebin.com/raw/XCXxhZht"))()
-loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/PrestigeCounterUI.lua"))()
+--loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/PrestigeCounterUI.lua"))()
