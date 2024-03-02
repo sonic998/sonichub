@@ -1,7 +1,6 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
 loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/1747207098/DrinkHax.lua"))()
-if game:HttpGet("http://sonic.rf.gd/sonicAuth.php?key="..game.Players.LocalPlayer.UserId) == "Whitelisted" then
-print("Authicated")
+
 local win = lib:CreateWindow("SonicHub - Drinkhax")
 local autofarm = win:Page("AutoFarm")
 local localplayer = win:Page("LocalPlayer")
@@ -71,6 +70,3 @@ end)
 misc:Button("Anti Afk", function()
 AntiAfk()
 end)
-else
-print("Access Denied")
-end
