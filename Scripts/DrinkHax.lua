@@ -49,6 +49,13 @@ AutoEquipDrink()
 end
 end)
 
+autofarm:Toggle("Auto Collect Gems", function(v)
+getgenv().collectgems = v
+while getgenv().collectgems do wait(0.5)
+AutoCollectGems()
+end
+end)
+
 localplayer:Button("WalkSpeed", function()
 speed()
 end)
