@@ -15,6 +15,14 @@ function autodrink()
   game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Garlic Juice")
 end
 
+function AutoCollectGems()
+for i,gem in pairs(workspace.Diamonds:GetChildren()) do
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, gem, 1)
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, gem, 0)
+end
+end
+
 function autoprestige()
   game.ReplicatedStorage.RemoteEvents.PrestigeEvent:FireServer()
 end
