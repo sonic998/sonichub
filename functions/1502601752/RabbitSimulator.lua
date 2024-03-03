@@ -15,7 +15,7 @@ local old = mt.__newindex
 end
 
 function autoeat()
-for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren())
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
 if v.Name == "Carrot" then
 v.E:FireServer()
 end
@@ -23,7 +23,7 @@ end
 end
 
 function autoequip()
-for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren())
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
 if v.Name == "Carrot" and v:WaitForChild("Humanoid") then
 v:WaitForChild("Humanoid"):EquipTools(v)
 end
