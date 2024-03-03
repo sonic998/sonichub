@@ -6,7 +6,7 @@ local autofarm = win:Page("AutoFarm")
 local localplayer = win:Page("LocalPlayer")
 local teleport = win:Page("Teleport")
 local misc = win:Page("Misc")
-local credits = win:Page
+local credits = win:Page("Credits")
 
 teleport:Button("Safe Zone", function()
 game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-53, 48, -37)}):Play()
