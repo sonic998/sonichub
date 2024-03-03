@@ -15,7 +15,7 @@ end
 function autoeat()
 for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
 if v.Name == "Banana" then
-v:Activate()
+v:WaitForChild("Replicator"):FireServer("eat")
 end
 end
 end
