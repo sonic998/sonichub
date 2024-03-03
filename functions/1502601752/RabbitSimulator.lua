@@ -21,6 +21,14 @@ v.E:FireServer()
 end
 end
 
+function asutoequip()
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren())
+if v.Name == "Carrot" then
+game.Players.LocalPlayer.Character.Humanoid:EquipTools(v)
+end
+end
+end
+
 function autorebirth()
 game.ReplicatedStorage.RebirthMe:FireServer()
 end
