@@ -24,17 +24,16 @@ end
 
 function autoequip()
 local Players = game:GetService("Players")
-				local player = Players:FindFirstChildOfClass("Player")
-				if player and player.Character then
-					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-					if humanoid then
-						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Carrot")
-						if tool then
-							humanoid:EquipTool(tool)
-						end
-					end
-				end
-			end
+local player = Players:FindFirstChildOfClass("Player")
+if player and player.Character then
+local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+if humanoid then
+local tool = Players.LocalPlayer.Backpack:FindFirstChild("Carrot")
+if tool then
+humanoid:EquipTool(tool)
+end
+end
+end
 end
 
 function autorebirth()
