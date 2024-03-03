@@ -21,6 +21,10 @@ v.E:FireServer()
 end
 end
 
+function autorebirth()
+game.ReplicatedStorage.RebirthMe:FireServer()
+end
+
 function jump()
   game:GetService("UserInputService").jumpRequest:Connect(function()
      game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass"Humanoid":ChangeState("Jumping")
