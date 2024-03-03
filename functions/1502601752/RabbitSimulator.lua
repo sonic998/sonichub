@@ -15,7 +15,10 @@ local old = mt.__newindex
 end
 
 function autoeat()
-game.Players.LocalPlayer.Character.Carrot.E:FireServer()
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren())
+if v.Name == "Carrot" then
+v.E:FireServer()
+end
 end
 
 function jump()
