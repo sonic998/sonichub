@@ -14,6 +14,10 @@ local old = mt.__newindex
   end
 end
 
+function autoeat()
+game.Players.LocalPlayer.Character.Carrot.E:FireServer()
+end
+
 function jump()
   game:GetService("UserInputService").jumpRequest:Connect(function()
      game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass"Humanoid":ChangeState("Jumping")
