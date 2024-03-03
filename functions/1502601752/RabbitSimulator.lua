@@ -21,7 +21,7 @@ v.E:FireServer()
 end
 end
 
-function asutoequip()
+function autoequip()
 for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren())
 if v.Name == "Carrot" and v:WaitForChild("Humanoid") then
 v:WaitForChild("Humanoid"):EquipTools(v)
