@@ -20,6 +20,7 @@ if v.Name == "Carrot" then
 v.E:FireServer()
 end
 end
+end
 
 function autoequip()
 for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren())
