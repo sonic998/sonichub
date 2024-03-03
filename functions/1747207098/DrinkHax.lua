@@ -40,9 +40,9 @@ local old = mt.__newindex
     end
     return old(a,b,c)
     end)
-  while wait() do
-     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 1000
-  end
+  game:GetService("RunService"").Steped:Connect(function()
+     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 1000 
+  end)
 end
 
 function jump()
