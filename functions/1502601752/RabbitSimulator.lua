@@ -24,8 +24,8 @@ end
 
 function autoequip()
 for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-if v.Name == "Carrot" and v:WaitForChild("Humanoid") then
-v:WaitForChild("Humanoid"):EquipTools(v)
+if v.Name == "Carrot" then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid"):EquipTools(v)
 end
 end
 end
