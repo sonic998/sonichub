@@ -23,13 +23,18 @@ end
 end
 
 function autoequip()
-for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-if v.Name == "Carrot" then
-if v.Parent.Name == "Humanoid" then
-v.Parent:WaitForChild("Humanoid"):EquipTools(v)
-end
-end
-end
+local Players = game:GetService("Players")
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Carrot")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
 end
 
 function autorebirth()
