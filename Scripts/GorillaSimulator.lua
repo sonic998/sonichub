@@ -13,6 +13,13 @@ autoeat()
 end
 end)
 
+autofarm:Toggle("Auto Equip Banana", function(v)
+getgenv().autoequip = v
+while getgenv().autoequip do wait(0.1)
+autoequip()
+end
+end)
+
 localplayer:Button("WalkSpeed", function()
 walkspeed()
 end)
