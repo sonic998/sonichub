@@ -6,9 +6,8 @@ local autofarm = win:Page("AutoFarm")
 local localplayer = win:Page("LocalPlayer")
 local misc = win:Page("Misc")
 
-autofarm:Toggle("Auto Eat", function(v)
-getgenv().autoeat = v
-while getgenv().autoeat do wait(0.1)
+autofarm:Button("Auto Eat", function(v)
+while wait(0.1) do
 autoeat()
 end
 end)
