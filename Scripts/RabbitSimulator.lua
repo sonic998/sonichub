@@ -13,6 +13,20 @@ autoeat()
 end
 end)
 
+autofarm:Toggle("Auto Equip", function(v)
+getgenv().autoequip = v
+while getgenv().autoequip do wait(0.1)
+autoequip()
+end
+end)
+
+autofarm:Toggle("Auto Rebirth", function(v)
+getgenv().autorebirth = v
+while getgenv().autorebirth do wait(0.1)
+autorebirth()
+end
+end)
+
 localplayer:Button("WalkSpeed", function()
   speed()
 end)
