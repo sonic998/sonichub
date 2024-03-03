@@ -6,6 +6,7 @@ local autofarm = win:Page("AutoFarm")
 local localplayer = win:Page("LocalPlayer")
 local teleport = win:Page("Teleport")
 local misc = win:Page("Misc")
+local credits = win:Page
 
 teleport:Button("Safe Zone", function()
 game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-53, 48, -37)}):Play()
@@ -78,6 +79,10 @@ end)
 misc:Button("Anti Afk", function()
 AntiAfk()
 end)
+
+credits:Button("Made by granny")
+credits:Button("Discord Server")
+credits:Button("https://discord.gg/ys9Vsbp977")
 
 loadstring(game:HttpGet("https://pastebin.com/raw/XCXxhZht"))()
 loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/PrestigeCounterUI.lua"))()
