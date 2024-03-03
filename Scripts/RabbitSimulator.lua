@@ -6,13 +6,13 @@ local autofarm = win:Page("AutoFarm")
 local localplayer = win:Page("LocalPlayer")
 local misc = win:Page("Misc")
 
-autofarm:Button("Auto Eat", function(v)
+autofarm:Button("Auto Eat Carrot", function(v)
 while wait(0.1) do
 autoeat()
 end
 end)
 
-autofarm:Toggle("Auto Equip", function(v)
+autofarm:Toggle("Auto Equip Carrot", function(v)
 getgenv().autoequip = v
 while getgenv().autoequip do wait(0.1)
 autoequip()
