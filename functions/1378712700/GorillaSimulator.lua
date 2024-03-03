@@ -20,6 +20,20 @@ end
 end
 end
 
+function autoequip()
+local Players = game:GetService("Players")
+local player = Players:FindFirstChildOfClass("Player")
+if player and player.Character then
+local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+if humanoid then
+local tool = Players.LocalPlayer.Backpack:FindFirstChild("Banana")
+if tool then
+humanoid:EquipTool(tool)
+end
+end
+end
+end
+
 function jump()
 game:GetService("UserInputService").jumpRequest:Connect(function()
      game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass"Humanoid":ChangeState("Jumping")
