@@ -23,8 +23,8 @@ end
 
 function asutoequip()
 for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren())
-if v.Name == "Carrot" then
-game.Players.LocalPlayer.Character.Humanoid:EquipTools(v)
+if v.Name == "Carrot" and v:WaitForChild("Humanoid") then
+v:WaitForChild("Humanoid"):EquipTools(v)
 end
 end
 end
