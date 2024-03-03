@@ -4,7 +4,12 @@ local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/f
 local win = lib:CreateWindow("SonicHub - Gorilla Simulator 2")
 local autofarm = win:Page("AutoFarm")
 local localplayer = win:Page("LocalPlayer")
+local teleport = win:Page("Teleport")
 local misc = win:Page("Misc")
+
+teleport:Button("leaderboards", function()
+game:GetService("TweenSerice"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(92, -2, -197)}):Play()
+end)
 
 autofarm:Toggle("Auto Eat Banana", function(v)
 getgenv().autoeat = v
