@@ -1,5 +1,5 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
-local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.Players.LocalPlayer.UserId.."/InnovationArcticBase.lua"))()
+local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.PlaceId.."/InnovationArcticBase.lua"))()
 
 local win = lib:CreateWindow("SonicHub - Innovation Arctic Base")
 local localplayer = win:Page("LocalPlayer")
