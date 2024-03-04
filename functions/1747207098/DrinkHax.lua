@@ -59,6 +59,12 @@ function infyield()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end
 
+for i,v in pairs(workspace.Clouds:GetChildren()) do
+if v.Name == "Cloud" then
+v.CanCollide = true
+end
+end
+
 function AntiAfk()
 local bb=game:GetService("VirtualUser")
 game:GetService("Players").LocalPlayer.Idled:Connect(function()
