@@ -1,5 +1,5 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
-local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/1122519450/titansimulator.lua"))()
+local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.Players.LocalPlayer.UserId.."/titansimulator.lua"))()
 
 local win = lib:CreateWindow("SonicHub - Titan Simulator")
 local autofarm = win:Page("AutoFarm")
