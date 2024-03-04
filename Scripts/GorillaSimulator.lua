@@ -1,5 +1,5 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
-local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/1378712700/GorillaSimulator.lua"))()
+local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.Players.LocalPlayer.UserId.."/GorillaSimulator.lua"))()
 
 local win = lib:CreateWindow("SonicHub - Gorilla Simulator 2")
 local autofarm = win:Page("AutoFarm")
