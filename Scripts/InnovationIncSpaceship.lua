@@ -1,5 +1,6 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
-local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.Players.LocalPlayer.UserId.."/innovationincspaceship.lua"))()
+local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.PlaceId.."/innovationincspaceship.lua"))()
+
 local win = lib:CreateWindow("SonicHub - Innovation Inc Spaceship")
 local localplayer = win:Page("LocalPlayer")
 local teleport = win:Page("Teleport")
