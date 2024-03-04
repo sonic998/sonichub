@@ -1,5 +1,5 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
-local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/5709572883/LiftingLegends.lua"))()
+local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.Players.LocalPlayer.UserId.."/LiftLegendsSimulator.lua"))()
 
 local win = lib:CreateWindow("SonicHub - Lift Legends Simulator")
 local autofarm = win:Page("AutoFarm")
