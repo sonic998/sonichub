@@ -1,5 +1,5 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
-local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/1502601752/RabbitSimulator.lua"))()
+local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.Players.LocalPlayer.UserId.."/RabbitSimulator.lua"))()
 
 local win = lib:CreateWindow("SonicHub - Rabbit Simulator 2")
 local autofarm = win:Page("AutoFarm")
