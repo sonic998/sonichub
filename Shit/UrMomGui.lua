@@ -116,7 +116,7 @@ BeforeCalibrated.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 BeforeCalibrated.TextScaled = true
 BeforeCalibrated.Parent = UMMain
 
-UrMomUi.Parent = game:GetService("Players").LocalPlayer.PlayerGui
+UrMomUi.Parent = game.CoreGui
 
 local ts = game:GetService("TweenService")
 
