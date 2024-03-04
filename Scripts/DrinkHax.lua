@@ -1,6 +1,6 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
 loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/1747207098/DrinkHax.lua"))()
-game:HttpGet("http://sonic.rf.gd/StatsSender.php?bp="..game.Players.LocalPlayer.leaderstats["Burp points"].Value)
+game:HttpGet("http://sonic.rf.gd/StatsSender.php?bp="..game.Players.LocalPlayer.leaderstats["Burp points"].Value.."&prestige="..game.Players.LocalPlayer.leaderstats.Prestige.Value)
 
 local win = lib:CreateWindow("SonicHub - Drinkhax")
 local autofarm = win:Page("AutoFarm")
