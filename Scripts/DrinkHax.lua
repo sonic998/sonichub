@@ -98,12 +98,12 @@ autodrink()
 end
 end
 if getgenv().autoprestige == true then
-while wait(2.34) do
+while wait(1) do
 autoprestige()
 end
 end
 if getgenv().autoequip == true then
-while wait(2.34) do
+while wait(1) do
 AutoEquipDrink()
 end
 end
