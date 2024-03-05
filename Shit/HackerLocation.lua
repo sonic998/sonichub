@@ -59,8 +59,8 @@ Wall2.BottomSurface = Enum.SurfaceType.Smooth
 Wall2.TopSurface = Enum.SurfaceType.Smooth
 Wall2.Color = Color3.fromRGB(33, 84, 185)
 Wall2.Material = Enum.Material.WoodPlanks
-Wall2.Size = Vector3.new(636, 597, 1)
-Wall2.CFrame = CFrame.new(873, 344.1780090332031, -4333.5)
+Wall2.Size = Vector3.new(2047, 597, 1)
+Wall2.CFrame = CFrame.new(1578.5, 344.1780090332031, -4333.5)
 Wall2.Parent = SafePlace
 
 local Wall3 = Instance.new("Part")
@@ -179,5 +179,69 @@ Roof3.Size = Vector3.new(2036, 5, 2047)
 Roof3.CFrame = CFrame.new(160, 642.177978515625, -5344.5)
 Roof3.PivotOffset = CFrame.new(806.8104858398438, 48.178001403808594, -3310.5)
 Roof3.Parent = SafePlace
+
+local MainPart2 = Instance.new("Part")
+MainPart2.Name = "MainPart2"
+MainPart2.Anchored = true
+MainPart2.BottomSurface = Enum.SurfaceType.Smooth
+MainPart2.TopSurface = Enum.SurfaceType.Smooth
+MainPart2.Color = Color3.fromRGB(33, 84, 185)
+MainPart2.Material = Enum.Material.WoodPlanks
+MainPart2.Size = Vector3.new(2048, 5, 2048)
+MainPart2.CFrame = CFrame.new(2202, 48.178001403808594, -5357)
+MainPart2.Parent = SafePlace
+
+local Wall6 = Instance.new("Part")
+Wall6.Name = "Wall6"
+Wall6.Anchored = true
+Wall6.BottomSurface = Enum.SurfaceType.Smooth
+Wall6.TopSurface = Enum.SurfaceType.Smooth
+Wall6.Color = Color3.fromRGB(33, 84, 185)
+Wall6.Material = Enum.Material.WoodPlanks
+Wall6.Size = Vector3.new(2047, 597, 1)
+Wall6.CFrame = CFrame.new(1578.5, 344.1780090332031, -4332.5)
+Wall6.Parent = SafePlace
+
+local Wall7 = Instance.new("Part")
+Wall7.Name = "Wall7"
+Wall7.Anchored = true
+Wall7.BottomSurface = Enum.SurfaceType.Smooth
+Wall7.TopSurface = Enum.SurfaceType.Smooth
+Wall7.Color = Color3.fromRGB(33, 84, 185)
+Wall7.Material = Enum.Material.WoodPlanks
+Wall7.Size = Vector3.new(639, 597, 1)
+Wall7.CFrame = CFrame.new(2907.5, 344.1780090332031, -4332.5)
+Wall7.Parent = SafePlace
+
+local SonicDoor = Instance.new("Part")
+SonicDoor.Name = "SonicDoor"
+SonicDoor.Anchored = true
+SonicDoor.BottomSurface = Enum.SurfaceType.Smooth
+SonicDoor.Transparency = 1
+SonicDoor.TopSurface = Enum.SurfaceType.Smooth
+SonicDoor.Color = Color3.fromRGB(33, 84, 185)
+SonicDoor.Material = Enum.Material.WoodPlanks
+SonicDoor.Size = Vector3.new(622, 598, 197)
+SonicDoor.CFrame = CFrame.new(247, 344.6780090332031, -689.60009765625)
+SonicDoor.Parent = SafePlace
+
+local Texture = Instance.new("Texture")
+Texture.Face = Enum.NormalId.Back
+Texture.Transparency = 0.5
+Texture.Texture = "rbxassetid://16635102960"
+Texture.StudsPerTileV = 620
+Texture.StudsPerTileU = 620
+Texture.Parent = SonicDoor
+
+local Entrance = Instance.new("Part")
+Entrance.Name = "Entrance"
+Entrance.Anchored = true
+Entrance.BottomSurface = Enum.SurfaceType.Smooth
+Entrance.TopSurface = Enum.SurfaceType.Smooth
+Entrance.Color = Color3.fromRGB(33, 84, 185)
+Entrance.Material = Enum.Material.WoodPlanks
+Entrance.Size = Vector3.new(617, 5, 2047)
+Entrance.CFrame = CFrame.new(244.5, 48.178001403808594, -1266.5999755859375)
+Entrance.Parent = SafePlace
 
 SafePlace.Parent = workspace
