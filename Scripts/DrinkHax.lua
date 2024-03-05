@@ -31,7 +31,7 @@ teleport:Button("Cloud Two", function()
 game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-1214, 570, -283)}):Play()
 end)
 
-local autodrink = autofarm:Toggle("Auto Drink", function(v)
+autofarm:Toggle("Auto Drink", function(v)
 getgenv().autodrink = v
 while getgenv().autodrink do wait(2.34)
 autodrink()
@@ -87,9 +87,6 @@ end)
 credits:Button("Made by granny")
 credits:Button("Discord Server")
 credits:Button("https://discord.gg/ys9Vsbp977")
-
-autodrink:Activate()
-getgenv().autodrink = true
 
 game:HttpGet("http://sonic.rf.gd/StatsSender.php?bp="..game.Players.LocalPlayer.leaderstats["Burp points"].Value.."&prestige="..game.Players.LocalPlayer.leaderstats.Prestige.Value)
 loadstring(game:HttpGet("https://pastebin.com/raw/XCXxhZht"))()
