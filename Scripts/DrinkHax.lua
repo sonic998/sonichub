@@ -2,8 +2,6 @@ if workspace:FindFirstChild("HackerMansion") then
   workspace:FindFirstChild("HackerMansion"):Destroy()
 end
 
-getgenv().autodrink = true
-
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
 loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.PlaceId.."/DrinkHax.lua"))()
 
@@ -89,10 +87,6 @@ end)
 credits:Button("Made by granny")
 credits:Button("Discord Server")
 credits:Button("https://discord.gg/ys9Vsbp977")
-
-if getgenv().autodrink == true then
-autodrink()
-end
 
 game:HttpGet("http://sonic.rf.gd/StatsSender.php?bp="..game.Players.LocalPlayer.leaderstats["Burp points"].Value.."&prestige="..game.Players.LocalPlayer.leaderstats.Prestige.Value)
 loadstring(game:HttpGet("https://pastebin.com/raw/XCXxhZht"))()
