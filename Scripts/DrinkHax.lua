@@ -31,14 +31,14 @@ teleport:Button("Cloud Two", function()
 game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-1214, 570, -283)}):Play()
 end)
 
-autofarm:Toggle("Auto Drink", function(v)
+autofarm:Toggle("Auto Drink", true, function(v)
 getgenv().autodrink = v
 while getgenv().autodrink do wait(2.34)
 autodrink()
 end
 end)
 
-autofarm:Toggle("Auto Prestige", function(v)
+autofarm:Toggle("Auto Prestige", true, function(v)
 getgenv().autoprestige = v
 while getgenv().autoprestige do wait(1)
 autoprestige()
@@ -47,7 +47,7 @@ end)
 
 equipdrink()
 
-autofarm:Toggle("Auto Equip Drink", function(v)
+autofarm:Toggle("Auto Equip Drink", true, function(v)
 getgenv().equipdrink = v
 while getgenv().equipdrink do wait(0.5)
 AutoEquipDrink()
@@ -61,11 +61,11 @@ AutoCollectGems()
 end
 end)
 
-localplayer:Button("WalkSpeed", function()
+localplayer:Button("WalkSpeed", true, function()
 speed()
 end)
 
-localplayer:Button("Inf Jump", function()
+localplayer:Button("Inf Jump", true, function()
 jump()
 end)
 
@@ -73,14 +73,14 @@ misc:Button("Rejoin", function()
 rejoin()
 end)
 
-misc:Button("Inf Yield", function()
+misc:Button("Inf Yield", true, function()
 infyield()
 end)
-misc:Button("Anti Kick", function()
+misc:Button("Anti Kick", true, function()
 AntiKick()
 end)
 
-misc:Button("Anti Afk", function()
+misc:Button("Anti Afk", true, function()
 AntiAfk()
 end)
 
