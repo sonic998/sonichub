@@ -83,14 +83,6 @@ end)
 misc:Button("Anti Afk", function()
 AntiAfk()
 end)
-_G.auto = true
-if _G.auto == true then
-while wait(2.34) do
-autodrink()
-autoprestige()
-AutoEquipDrink()
-end
-end
 
 credits:Button("Made by granny")
 credits:Button("Discord Server")
