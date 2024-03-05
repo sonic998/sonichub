@@ -396,35 +396,27 @@ Texture5.StudsPerTileV = 620
 Texture5.StudsPerTileU = 620
 Texture5.Parent = SonicDoor3Side2
 
-local BeanbagChair = Instance.new("Model")
-BeanbagChair.Name = "Beanbag Chair"
-BeanbagChair.WorldPivot = CFrame.new(0.420166015625, 106.49993896484375, -5592.6591796875, -0.7071067690849304, 0, -0.7071067690849304, 0, 1, 0, 0.7071067690849304, 0, -0.7071067690849304)
-BeanbagChair.Parent = HackerMansion
+local Chair = Instance.new("Folder")
+Chair.Name = "Chair"
+Chair.Parent = HackerMansion
 
 local Seat = Instance.new("Seat")
+Seat.Anchored = true
 Seat.BottomSurface = Enum.SurfaceType.Smooth
 Seat.Transparency = 1
 Seat.TopSurface = Enum.SurfaceType.Smooth
 Seat.Color = Color3.fromRGB(27, 42, 53)
 Seat.Massless = true
-Seat.Size = Vector3.new(110.98587036132812, 3.4712092876434326, 122.08464813232422)
-Seat.CFrame = CFrame.new(11.970455169677734, 101.5456314086914, -5585.79345703125, -0.7071066498756409, -0.12278831005096436, -0.6963642239570618, -1.0803354655308794e-07, 0.9848076701164246, -0.17364875972270966, 0.70710688829422, -0.12278811633586884, -0.6963641047477722)
-Seat.Parent = BeanbagChair
+Seat.Size = Vector3.new(129.98587036132812, 9.471209526062012, 129.08465576171875)
+Seat.CFrame = CFrame.new(21.470455169677734, 104.5456314086914, -5582.29345703125)
+Seat.Parent = Chair
 
-local Beanbag = Instance.new("MeshPart")
-Beanbag.Name = "Beanbag"
-Beanbag.Color = Color3.fromRGB(86, 170, 243)
-Beanbag.Material = Enum.Material.Sand
-Beanbag.Size = Vector3.new(187.7869415283203, 111.64385986328125, 189.85592651367188)
-Beanbag.CFrame = CFrame.new(0.420166015625, 106.49993896484375, -5592.6591796875, -0.7071067690849304, 0, -0.7071067690849304, 0, 1, 0, 0.7071067690849304, 0, -0.7071067690849304)
-Beanbag.Parent = BeanbagChair
-
-local WeldConstraint = Instance.new("WeldConstraint")
-WeldConstraint.Parent = Beanbag
-
-BeanbagChair.PrimaryPart = Beanbag
-
-WeldConstraint.Part1 = Beanbag
-WeldConstraint.Part0 = Seat
+local Part = Instance.new("Part")
+Part.Anchored = true
+Part.BottomSurface = Enum.SurfaceType.Smooth
+Part.TopSurface = Enum.SurfaceType.Smooth
+Part.Size = Vector3.new(110, 46, 130)
+Part.CFrame = CFrame.new(23, 73.6780014038086, -5579)
+Part.Parent = Chair
 
 HackerMansion.Parent = workspace
