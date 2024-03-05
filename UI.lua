@@ -245,11 +245,10 @@ Button.TextWrapped = true
 			Instance.new("UICorner", Button)
 			return ButtonFunction
     end
-    function elements:Toggle(txt, enabled, callback)
-	local ToggleFunction = {}
-	txt = txt or "toggle"
-	enabled = enabled or false
-	callback = callback or function() end
+    		function elements:Toggle(txt, callback)
+			local ToggleFunction = {}
+			txt = txt or "toggle"
+			callback = callback or function() end
       local switch = false
       local Toggle = Instance.new("Frame")
       local click = Instance.new("TextButton")
@@ -311,7 +310,6 @@ ColorThingy.Position = UDim2.new(0,280, 0, 10)
 ColorThingy.Size = UDim2.new(0, 18, 0, 20)
 
     Instance.new("UICorner", ColorThingy).CornerRadius = UDim.new(1, 0)
-
       	function ToggleFunction:ChangeState(bool)
 				if bool == true then
 					game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(0, 170, 0)}):Play()
