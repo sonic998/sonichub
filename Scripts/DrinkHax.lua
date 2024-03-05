@@ -89,9 +89,21 @@ credits:Button("Discord Server")
 credits:Button("https://discord.gg/ys9Vsbp977")
 
 getgenv().autodrink = true
+getgenv().autoprestige = true
+getgenv().autoequip = true
 if getgenv().autodrink == true then
 while wait(2.34) do
 autodrink()
+end
+end
+if getgenv().autoprestige == true then
+while wait(2.34) do
+autoprestige()
+end
+end
+if getgenv().autoequip == true then
+while wait(2.34) do
+AutoEquipDrink()
 end
 end
 
