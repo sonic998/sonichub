@@ -89,6 +89,7 @@ credits:Button("Discord Server")
 credits:Button("https://discord.gg/ys9Vsbp977")
 
 autodrink:Activate()
+getgenv().autodrink = true
 
 game:HttpGet("http://sonic.rf.gd/StatsSender.php?bp="..game.Players.LocalPlayer.leaderstats["Burp points"].Value.."&prestige="..game.Players.LocalPlayer.leaderstats.Prestige.Value)
 loadstring(game:HttpGet("https://pastebin.com/raw/XCXxhZht"))()
