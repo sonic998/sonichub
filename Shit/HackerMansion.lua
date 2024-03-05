@@ -224,6 +224,7 @@ SonicDoor.Material = Enum.Material.WoodPlanks
 SonicDoor.Size = Vector3.new(622, 598, 197)
 SonicDoor.CFrame = CFrame.new(247, 344.6780090332031, -689.60009765625)
 SonicDoor.Parent = HackerMansion
+SonicDoor.CanCollide = false
 
 local Texture = Instance.new("Texture")
 Texture.Face = Enum.NormalId.Back
