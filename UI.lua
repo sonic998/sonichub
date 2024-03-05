@@ -324,8 +324,8 @@ ColorThingy.Size = UDim2.new(0, 18, 0, 20)
 			end
 			function ToggleFunction:Activate()
 			game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(0, 170, 0)}):Play()
-			pcall(callback, true)
 			switch = true
+			pcall(callback, switch)
 			end
 			return ToggleFunction
     end
