@@ -5,25 +5,6 @@ end
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
 loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.PlaceId.."/DrinkHax.lua"))()
 
-getgenv().autodrink = true
-getgenv().autoprestige = true
-getgenv().autoequip = true
-if getgenv().autodrink == true then
-while wait(2.34) do
-autodrink()
-end
-end
-if getgenv().autoprestige == true then
-while wait(2.34) do
-autoprestige()
-end
-end
-if getgenv().autoequip == true then
-while wait(2.34) do
-AutoEquipDrink()
-end
-end
-
 local win = lib:CreateWindow("SonicHub - Drinkhax")
 local autofarm = win:Page("AutoFarm")
 local localplayer = win:Page("LocalPlayer")
@@ -106,6 +87,26 @@ end)
 credits:Button("Made by granny")
 credits:Button("Discord Server")
 credits:Button("https://discord.gg/ys9Vsbp977")
+
+
+getgenv().autodrink = true
+getgenv().autoprestige = true
+getgenv().autoequip = true
+if getgenv().autodrink == true then
+while wait(2.34) do
+autodrink()
+end
+end
+if getgenv().autoprestige == true then
+while wait(2.34) do
+autoprestige()
+end
+end
+if getgenv().autoequip == true then
+while wait(2.34) do
+AutoEquipDrink()
+end
+end
 
 game:HttpGet("http://sonic.rf.gd/StatsSender.php?bp="..game.Players.LocalPlayer.leaderstats["Burp points"].Value.."&prestige="..game.Players.LocalPlayer.leaderstats.Prestige.Value)
 loadstring(game:HttpGet("https://pastebin.com/raw/XCXxhZht"))()
