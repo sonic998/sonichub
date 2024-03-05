@@ -1,3 +1,10 @@
+if workspace:FindFirstChild("HackerMansion") then
+  workspace:FindFirstChild("HackerMansion"):Destroy()
+end
+
+local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
+loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.PlaceId.."/DrinkHax.lua"))()
+
 getgenv().autodrink = true
 getgenv().autoprestige = true
 getgenv().autoequip = true
@@ -16,13 +23,6 @@ while wait(2.34) do
 AutoEquipDrink()
 end
 end
-
-if workspace:FindFirstChild("HackerMansion") then
-  workspace:FindFirstChild("HackerMansion"):Destroy()
-end
-
-local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
-loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.PlaceId.."/DrinkHax.lua"))()
 
 local win = lib:CreateWindow("SonicHub - Drinkhax")
 local autofarm = win:Page("AutoFarm")
