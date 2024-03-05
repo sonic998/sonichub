@@ -4,6 +4,7 @@ if v.CFrame == CFrame.new(115.923157, 170.17775, -281.131958, 0, 0, -1, 0, 1, 0,
 v:Destroy()
 end
 end
+
 local HackerMansion = Instance.new("Folder")
 HackerMansion.Name = "HackerMansion"
 
@@ -395,28 +396,5 @@ Texture5.Texture = "rbxassetid://16635102960"
 Texture5.StudsPerTileV = 620
 Texture5.StudsPerTileU = 620
 Texture5.Parent = SonicDoor3Side2
-
-local Chair = Instance.new("Folder")
-Chair.Name = "Chair"
-Chair.Parent = HackerMansion
-
-local Seat = Instance.new("Seat")
-Seat.Anchored = true
-Seat.BottomSurface = Enum.SurfaceType.Smooth
-Seat.Transparency = 1
-Seat.TopSurface = Enum.SurfaceType.Smooth
-Seat.Color = Color3.fromRGB(27, 42, 53)
-Seat.Massless = true
-Seat.Size = Vector3.new(129.98587036132812, 9.471209526062012, 129.08465576171875)
-Seat.CFrame = CFrame.new(21.470455169677734, 104.5456314086914, -5582.29345703125)
-Seat.Parent = Chair
-
-local Part = Instance.new("Part")
-Part.Anchored = true
-Part.BottomSurface = Enum.SurfaceType.Smooth
-Part.TopSurface = Enum.SurfaceType.Smooth
-Part.Size = Vector3.new(110, 46, 130)
-Part.CFrame = CFrame.new(23, 73.6780014038086, -5579)
-Part.Parent = Chair
 
 HackerMansion.Parent = workspace
