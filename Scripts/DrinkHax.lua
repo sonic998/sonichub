@@ -1,3 +1,7 @@
+if workspace:FindFirstChild("HackerMansion") then
+  workspace:FindFirstChild("HackerMansion"):Destroy()
+end
+
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
 loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.PlaceId.."/DrinkHax.lua"))()
 
