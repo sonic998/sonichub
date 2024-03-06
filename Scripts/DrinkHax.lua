@@ -93,7 +93,7 @@ credits:Button("Made by granny")
 credits:Button("Discord Server")
 credits:Button("https://discord.gg/ys9Vsbp977")
     
-loadstring(game:HttpGet("https://pastebin.com/raw/Wii8FTtU"))()
+loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/BpCounter.lua"))()
     
   end
 end
