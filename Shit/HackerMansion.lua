@@ -50,7 +50,7 @@ Wall1.TopSurface = Enum.SurfaceType.Smooth
 Wall1.Color = Color3.fromRGB(33, 84, 185)
 Wall1.Material = Enum.Material.WoodPlanks
 Wall1.Size = Vector3.new(935, 597, 40)
-Wall1.CFrame = CFrame.new(1164.5, 344.17803955078125, -4803, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+Wall1.CFrame = CFrame.new(1164.5, 344.17803955078125, -4803, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 Wall1.Parent = HackerMansion
 
 local Wall2 = Instance.new("Part")
@@ -97,6 +97,13 @@ Wall5.Size = Vector3.new(2047, 597, 1)
 Wall5.CFrame = CFrame.new(166.5, 344.1780090332031, -6372.5)
 Wall5.Parent = HackerMansion
 
+local Texture = Instance.new("Texture")
+Texture.Face = Enum.NormalId.Back
+Texture.Texture = "rbxassetid://16642992577"
+Texture.StudsPerTileV = 600
+Texture.StudsPerTileU = 2000
+Texture.Parent = Wall5
+
 local Path3 = Instance.new("Part")
 Path3.Name = "Path3"
 Path3.Anchored = true
@@ -105,7 +112,7 @@ Path3.TopSurface = Enum.SurfaceType.Smooth
 Path3.Color = Color3.fromRGB(33, 84, 185)
 Path3.Material = Enum.Material.WoodPlanks
 Path3.Size = Vector3.new(617, 5, 2047)
-Path3.CFrame = CFrame.new(555.822021484375, 340.85601806640625, -3310.5, 0, 1, 0, -1, 0, 0, 0, 0, 1)
+Path3.CFrame = CFrame.new(555.822021484375, 340.85601806640625, -3310.5, 0, 1, -0, -1, 0, 0, 0, 0, 1)
 Path3.PivotOffset = CFrame.new(244.5, 48.178001403808594, -3310.5)
 Path3.Parent = HackerMansion
 
@@ -117,7 +124,7 @@ Path31.TopSurface = Enum.SurfaceType.Smooth
 Path31.Color = Color3.fromRGB(33, 84, 185)
 Path31.Material = Enum.Material.WoodPlanks
 Path31.Size = Vector3.new(617, 5, 2047)
-Path31.CFrame = CFrame.new(555.822021484375, 340.85601806640625, -1263.5, 0, 1, 0, -1, 0, 0, 0, 0, 1)
+Path31.CFrame = CFrame.new(555.822021484375, 340.85601806640625, -1263.5, 0, 1, -0, -1, 0, 0, 0, 0, 1)
 Path31.PivotOffset = CFrame.new(244.5, 48.178001403808594, -3310.5)
 Path31.Parent = HackerMansion
 
@@ -129,7 +136,7 @@ Path4.TopSurface = Enum.SurfaceType.Smooth
 Path4.Color = Color3.fromRGB(33, 84, 185)
 Path4.Material = Enum.Material.WoodPlanks
 Path4.Size = Vector3.new(617, 5, 2047)
-Path4.CFrame = CFrame.new(-57.177978515625, 340.85601806640625, -1263.5, 0, 1, 0, -1, 0, 0, 0, 0, 1)
+Path4.CFrame = CFrame.new(-57.177978515625, 340.85601806640625, -1263.5, 0, 1, -0, -1, 0, 0, 0, 0, 1)
 Path4.PivotOffset = CFrame.new(244.5, 48.178001403808594, -3310.5)
 Path4.Parent = HackerMansion
 
@@ -141,7 +148,7 @@ Path5.TopSurface = Enum.SurfaceType.Smooth
 Path5.Color = Color3.fromRGB(33, 84, 185)
 Path5.Material = Enum.Material.WoodPlanks
 Path5.Size = Vector3.new(617, 5, 2047)
-Path5.CFrame = CFrame.new(-57.177978515625, 340.85601806640625, -3307.5, 0, 1, 0, -1, 0, 0, 0, 0, 1)
+Path5.CFrame = CFrame.new(-57.177978515625, 340.85601806640625, -3307.5, 0, 1, -0, -1, 0, 0, 0, 0, 1)
 Path5.PivotOffset = CFrame.new(244.5, 48.178001403808594, -3310.5)
 Path5.Parent = HackerMansion
 
@@ -229,13 +236,13 @@ SonicDoor1Side1.CanTouch = false
 SonicDoor1Side1.CFrame = CFrame.new(247, 344.6780090332031, -358.60009765625)
 SonicDoor1Side1.Parent = HackerMansion
 
-local Texture = Instance.new("Texture")
-Texture.Face = Enum.NormalId.Back
-Texture.Transparency = 0.5
-Texture.Texture = "rbxassetid://16635102960"
-Texture.StudsPerTileV = 620
-Texture.StudsPerTileU = 620
-Texture.Parent = SonicDoor1Side1
+local Texture1 = Instance.new("Texture")
+Texture1.Face = Enum.NormalId.Back
+Texture1.Transparency = 0.5
+Texture1.Texture = "rbxassetid://16635102960"
+Texture1.StudsPerTileV = 620
+Texture1.StudsPerTileU = 620
+Texture1.Parent = SonicDoor1Side1
 
 local SonicDoor1Side2 = Instance.new("Part")
 SonicDoor1Side2.Name = "SonicDoor1Side2"
@@ -252,13 +259,13 @@ SonicDoor1Side2.CanTouch = false
 SonicDoor1Side2.CFrame = CFrame.new(247, 344.6780090332031, -349.6000671386719, -1, 0, 0, 0, 1, 0, 0, 0, -1)
 SonicDoor1Side2.Parent = HackerMansion
 
-local Texture1 = Instance.new("Texture")
-Texture1.Face = Enum.NormalId.Back
-Texture1.Transparency = 0.5
-Texture1.Texture = "rbxassetid://16635102960"
-Texture1.StudsPerTileV = 620
-Texture1.StudsPerTileU = 620
-Texture1.Parent = SonicDoor1Side2
+local Texture2 = Instance.new("Texture")
+Texture2.Face = Enum.NormalId.Back
+Texture2.Transparency = 0.5
+Texture2.Texture = "rbxassetid://16635102960"
+Texture2.StudsPerTileV = 620
+Texture2.StudsPerTileU = 620
+Texture2.Parent = SonicDoor1Side2
 
 local SonicDoor2Side1 = Instance.new("Part")
 SonicDoor2Side1.Name = "SonicDoor2Side1"
@@ -275,13 +282,13 @@ SonicDoor2Side1.CanTouch = false
 SonicDoor2Side1.CFrame = CFrame.new(247, 344.6780090332031, -4227.60009765625)
 SonicDoor2Side1.Parent = HackerMansion
 
-local Texture2 = Instance.new("Texture")
-Texture2.Face = Enum.NormalId.Back
-Texture2.Transparency = 0.5
-Texture2.Texture = "rbxassetid://16635102960"
-Texture2.StudsPerTileV = 620
-Texture2.StudsPerTileU = 620
-Texture2.Parent = SonicDoor2Side1
+local Texture3 = Instance.new("Texture")
+Texture3.Face = Enum.NormalId.Back
+Texture3.Transparency = 0.5
+Texture3.Texture = "rbxassetid://16635102960"
+Texture3.StudsPerTileV = 620
+Texture3.StudsPerTileU = 620
+Texture3.Parent = SonicDoor2Side1
 
 local SonicDoor2Side2 = Instance.new("Part")
 SonicDoor2Side2.Name = "SonicDoor2Side2"
@@ -298,13 +305,13 @@ SonicDoor2Side2.CanTouch = false
 SonicDoor2Side2.CFrame = CFrame.new(247, 344.6780090332031, -4227.60009765625, -1, 0, 0, 0, 1, 0, 0, 0, -1)
 SonicDoor2Side2.Parent = HackerMansion
 
-local Texture3 = Instance.new("Texture")
-Texture3.Face = Enum.NormalId.Back
-Texture3.Transparency = 0.5
-Texture3.Texture = "rbxassetid://16635102960"
-Texture3.StudsPerTileV = 620
-Texture3.StudsPerTileU = 620
-Texture3.Parent = SonicDoor2Side2
+local Texture4 = Instance.new("Texture")
+Texture4.Face = Enum.NormalId.Back
+Texture4.Transparency = 0.5
+Texture4.Texture = "rbxassetid://16635102960"
+Texture4.StudsPerTileV = 620
+Texture4.StudsPerTileU = 620
+Texture4.Parent = SonicDoor2Side2
 
 local Wall11 = Instance.new("Part")
 Wall11.Name = "Wall1"
@@ -314,7 +321,7 @@ Wall11.TopSurface = Enum.SurfaceType.Smooth
 Wall11.Color = Color3.fromRGB(33, 84, 185)
 Wall11.Material = Enum.Material.WoodPlanks
 Wall11.Size = Vector3.new(673, 597, 40)
-Wall11.CFrame = CFrame.new(1164.5, 344.17803955078125, -6031, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+Wall11.CFrame = CFrame.new(1164.5, 344.17803955078125, -6031, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 Wall11.Parent = HackerMansion
 
 local Roof4 = Instance.new("Part")
@@ -348,7 +355,7 @@ Wall8.TopSurface = Enum.SurfaceType.Smooth
 Wall8.Color = Color3.fromRGB(33, 84, 185)
 Wall8.Material = Enum.Material.WoodPlanks
 Wall8.Size = Vector3.new(2047, 597, 40)
-Wall8.CFrame = CFrame.new(3204.000244140625, 349.1780090332031, -5345.5, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+Wall8.CFrame = CFrame.new(3204.000244140625, 349.1780090332031, -5345.5, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 Wall8.Parent = HackerMansion
 
 local SonicDoor3Side1 = Instance.new("Part")
@@ -363,16 +370,16 @@ SonicDoor3Side1.Color = Color3.fromRGB(33, 84, 185)
 SonicDoor3Side1.Material = Enum.Material.WoodPlanks
 SonicDoor3Side1.Size = Vector3.new(622, 598, 56)
 SonicDoor3Side1.CanTouch = false
-SonicDoor3Side1.CFrame = CFrame.new(1182.499755859375, 344.6780090332031, -5449.599609375, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+SonicDoor3Side1.CFrame = CFrame.new(1182.499755859375, 344.6780090332031, -5449.599609375, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 SonicDoor3Side1.Parent = HackerMansion
 
-local Texture4 = Instance.new("Texture")
-Texture4.Face = Enum.NormalId.Back
-Texture4.Transparency = 0.5
-Texture4.Texture = "rbxassetid://16635102960"
-Texture4.StudsPerTileV = 620
-Texture4.StudsPerTileU = 620
-Texture4.Parent = SonicDoor3Side1
+local Texture5 = Instance.new("Texture")
+Texture5.Face = Enum.NormalId.Back
+Texture5.Transparency = 0.5
+Texture5.Texture = "rbxassetid://16635102960"
+Texture5.StudsPerTileV = 620
+Texture5.StudsPerTileU = 620
+Texture5.Parent = SonicDoor3Side1
 
 local SonicDoor3Side2 = Instance.new("Part")
 SonicDoor3Side2.Name = "SonicDoor3Side2"
@@ -389,12 +396,12 @@ SonicDoor3Side2.CanTouch = false
 SonicDoor3Side2.CFrame = CFrame.new(1247.999755859375, 344.6780090332031, -5449.599609375, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 SonicDoor3Side2.Parent = HackerMansion
 
-local Texture5 = Instance.new("Texture")
-Texture5.Face = Enum.NormalId.Back
-Texture5.Transparency = 0.5
-Texture5.Texture = "rbxassetid://16635102960"
-Texture5.StudsPerTileV = 620
-Texture5.StudsPerTileU = 620
-Texture5.Parent = SonicDoor3Side2
+local Texture6 = Instance.new("Texture")
+Texture6.Face = Enum.NormalId.Back
+Texture6.Transparency = 0.5
+Texture6.Texture = "rbxassetid://16635102960"
+Texture6.StudsPerTileV = 620
+Texture6.StudsPerTileU = 620
+Texture6.Parent = SonicDoor3Side2
 
 HackerMansion.Parent = workspace
