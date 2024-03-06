@@ -374,9 +374,6 @@ MainPart2.Material = Enum.Material.WoodPlanks
 MainPart2.Size = Vector3.new(2048, 5, 2048)
 MainPart2.CFrame = CFrame.new(2202, 48.178001403808594, -5357)
 MainPart2.Parent = Floor
-MainPart2.Touched:Connect(function()
-	SupportedGames:Clone().Parent = game.CoreGui
-end)
 
 local Roof = Instance.new("Folder")
 Roof.Name = "Roof"
@@ -409,6 +406,21 @@ Roof4.Parent = Roof
 local Doors = Instance.new("Folder")
 Doors.Name = "Doors"
 Doors.Parent = HackerMansion
+
+local ShowSupportedGames = Instance.new("Part")
+ShowSupportedGames.Name = "ShowSupportedGames"
+ShowSupportedGames.BottomSurface = Enum.SurfaceType.Smooth
+ShowSupportedGames.CanCollide = false
+ShowSupportedGames.Transparency = 1
+ShowSupportedGames.TopSurface = Enum.SurfaceType.Smooth
+ShowSupportedGames.CanQuery = false
+ShowSupportedGames.Size = Vector3.new(627, 576, 142)
+ShowSupportedGames.CFrame = CFrame.new(1309, 338.6780090332031, -5465.5, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+ShowSupportedGames.Touched:Connect(function()
+	SupportedGames:Clone().Parent = game.CoreGui
+end)
+
+ShowSupportedGames.Parent = Doors
 
 local SonicDoor1Side1 = Instance.new("Part")
 SonicDoor1Side1.Name = "SonicDoor1Side1"
