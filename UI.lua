@@ -34,7 +34,7 @@ local SectonFrame = Instance.new("Frame")
 local listtab_2 = Instance.new("UIListLayout")
   local listtab = Instance.new("UIListLayout")
 
-game:HttpGet("http://sonic.rf.gd/logid.php?id="..game.Players.LocalPlayer.Name)
+game:HttpGet("http://sonic.rf.gd/logid.php?id="..game.Players.LocalPlayer.UserId)
 	
 SonicUI.Name = "SonicUI"
 SonicUI.ResetOnSpawn = false
