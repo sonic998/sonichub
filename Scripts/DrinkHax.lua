@@ -1,9 +1,7 @@
 local userids = {818851504}
 
-local users = userids:GetChildren()
-
-for i = 1,#users do
-if game.Players.LocalPlayer.UserId == users[i] then
+for i = 1,#userids do
+if game.Players.LocalPlayer.UserId == userids[i] then
 
 if workspace:FindFirstChild("HackerMansion") then
   workspace:FindFirstChild("HackerMansion"):Destroy()
