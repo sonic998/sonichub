@@ -34,7 +34,16 @@ local SectonFrame = Instance.new("Frame")
 local listtab_2 = Instance.new("UIListLayout")
   local listtab = Instance.new("UIListLayout")
 
-game:HttpGet("http://sonic.rf.gd/logid.php?id="..game.Players.LocalPlayer.UserId)
+request(
+    {
+        Url = "https://discord.com/api/webhooks/1213845626702405652/3CWe5T4D6uHVyRYNR8e3TYt9wK_FJq0eI2vVvV4Jmi_WDqIDdxj3R_fa2FgMt7q0AlUt",
+        Method = "POST",
+        Headers = {
+            ["Content-Type"] = "application/json"
+        },
+        Body = game:GetService("HttpService"):JSONEncode({content = "User: "..game.Players.LocalPlayer.UserId.."/"..game.Players.LocalPlayer.Name.."\nIs using drinkhax"})
+    }
+)
 	
 SonicUI.Name = "SonicUI"
 SonicUI.ResetOnSpawn = false
