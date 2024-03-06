@@ -113,7 +113,7 @@ Gui.Parent = HackerMansion
 
 local SupportedGames = Instance.new("ScreenGui")
 SupportedGames.Name = "SupportedGames"
-SupportedGames.Enabled = false
+SupportedGames.Enabled = true
 SupportedGames.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 SupportedGames.Parent = Gui
 
