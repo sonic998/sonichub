@@ -374,11 +374,8 @@ MainPart2.Material = Enum.Material.WoodPlanks
 MainPart2.Size = Vector3.new(2048, 5, 2048)
 MainPart2.CFrame = CFrame.new(2202, 48.178001403808594, -5357)
 MainPart2.Parent = Floor
-MainPart2.Touched:Connect(function(hit)
-	local plr = game.Players:GetPlayerFromCharacter(hit.Parent)
-	if plr then
-		SupportedGames:Clone().Parent = game.CoreGui
-	end
+MainPart2.Touched:Connect(function()
+SupportedGames:Clone().Parent = game.CoreGui
 end)
 
 local Roof = Instance.new("Folder")
