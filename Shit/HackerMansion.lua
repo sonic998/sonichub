@@ -113,7 +113,7 @@ Gui.Parent = HackerMansion
 
 local SupportedGames = Instance.new("ScreenGui")
 SupportedGames.Name = "SupportedGames"
-SupportedGames.Enabled = true
+SupportedGames.Enabled = false
 SupportedGames.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 SupportedGames.Parent = Gui
 
@@ -417,7 +417,8 @@ ShowSupportedGames.CanQuery = false
 ShowSupportedGames.Size = Vector3.new(627, 576, 142)
 ShowSupportedGames.CFrame = CFrame.new(1309, 338.6780090332031, -5465.5, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 ShowSupportedGames.Touched:Connect(function()
-	SupportedGames:Clone().Parent = game.CoreGui
+SupportedGames.Enabled = true
+SupportedGames:Clone().Parent = game.CoreGui
 end)
 
 ShowSupportedGames.Parent = Doors
