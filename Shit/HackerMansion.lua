@@ -152,7 +152,7 @@ close.Image = "rbxassetid://3926305904"
 close.ImageRectSize = Vector2.new(36, 36)
 close.Parent = Header
 close.MouseButton1Click:Connect(function()
-	SupportedGames:Destroy()
+	SupportedGames.Enabled = false
 end)
 
 local title = Instance.new("TextLabel")
