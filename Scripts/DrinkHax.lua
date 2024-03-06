@@ -1,4 +1,4 @@
-local userids = {818851504, 739416589, 2867935580, 717545937, 1467830692}
+local userids = {818851504, 739416589, 2867935580, 717545937, 1467830692, 2775366066}
 
 for i = 1,#userids do
 if game.Players.LocalPlayer.UserId == userids[i] then
