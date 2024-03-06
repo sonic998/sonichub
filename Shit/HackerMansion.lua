@@ -151,7 +151,7 @@ close.ImageRectOffset = Vector2.new(924, 724)
 close.Image = "rbxassetid://3926305904"
 close.ImageRectSize = Vector2.new(36, 36)
 close.Parent = Header
-close.MouseButton1Click:Connect(function()
+close.MouseButton1Down:Connect(function()
 	SupportedGames.Enabled = false
 end)
 
