@@ -92,10 +92,8 @@ end)
 credits:Button("Made by granny")
 credits:Button("Discord Server")
 credits:Button("https://discord.gg/ys9Vsbp977")
-
-game:HttpGet("http://sonic.rf.gd/StatsSender.php?bp="..game.Players.LocalPlayer.leaderstats["Burp points"].Value.."&prestige="..game.Players.LocalPlayer.leaderstats.Prestige.Value)
-loadstring(game:HttpGet("https://pastebin.com/raw/XCXxhZht"))()
---loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/PrestigeCounterUI.lua"))()
-
+    
+loadstring(game:HttpGet("https://pastebin.com/raw/Wii8FTtU"))()
+    
   end
 end
