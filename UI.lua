@@ -176,6 +176,7 @@ listtab.Padding = UDim.new(0, 10)
 	function Page:Page(txt)
 		txt = txt or "Page"
 local TabButton = Instance.new("TextButton")
+local ThemeTabButton = Instance.new("TextButton")
 local TabCorner = Instance.new("UICorner")
 local listelements = Instance.new("UIListLayout")
 local SectionContainer = Instance.new("ScrollingFrame")
@@ -218,6 +219,28 @@ TabButton.MouseButton1Click:Connect(function()
 		end
 		SectionContainer.Visible = true
 
+[[ThemeTabButton.Name = "ThemeTabButton
+ThemeTabButton.Parent = TabFrame
+ThemeTabButton.BackgroundColor3 = Color3.fromRGB(85, 30, 255)
+ThemeTabButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ThemeTabButton.BorderSizePixel = 0
+ThemeTabButton.Position = UDim2.new(-0.00211435952, 0, 0.163194463, 0)
+ThemeTabButton.Size = UDim2.new(0, 105, 0, 37)
+ThemeTabButton.Font = Enum.Font.SourceSansBold
+ThemeTabButton.Text = "Themes"
+ThemeTabButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ThemeTabButton.TextScaled = true
+ThemeTabButton.TextSize = 14.000
+ThemeTabButton.TextWrapped = true
+ThemeTabButton.MouseButton1Click:Connect(function()
+			for i,v in pairs(SectonFrame:GetChildren()) do
+				if v:IsA("ScrollingFrame") then
+					v.Visible = false
+				end
+			end
+			ThemeContainer.Visible = true
+		end)]]
+		
 TabCorner.Parent = TabButton
     
 listelements.Name = "listelements"
