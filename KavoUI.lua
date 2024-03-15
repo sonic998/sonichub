@@ -182,7 +182,7 @@ function Kavo.CreateLib(kavName, themeList)
 	local dragInput
 	local dragStart
 	local startPos
-	local gui = MainHeader
+	local gui = Main
 
 	local function update(input)
 		local delta = input.Position - dragStart
