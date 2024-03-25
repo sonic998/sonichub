@@ -254,13 +254,31 @@ end)
     
 	local elements = {}
 
+		function Elements:Label(txt)
+			local LabelFunction = {}
+			txt = txt or "label"
+			local Label = Instance.new("TextLabel")
+
+			Label.Name = txt
+			Label.Parent = SectionContainer
+			Label.BackgroundTransparency = 1
+			Label.Position = UDim2.new(0.346938789, 0, 0, 0)
+			Label.Size = UDim2.new(0, 311, 0, 37)
+			Label.Font = Enum.Font.SourceSansBold
+			Label.Text = txt
+			Label.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Label.TextScaled = true
+			Label.TextSize = 14.000
+			Label.TextWrapped = true
+		end
+		
 		function elements:Button(txt, callback)
 			local ButtonFunction = {}
 			txt = txt or "button"
 			callback = callback or function() end
       local Button = Instance.new("TextButton")
 
-      Button.Name = "Button"
+      Button.Name = txt
 Button.Parent = SectionContainer
 Button.BackgroundColor3 = Color3.fromRGB(85, 30, 255)
 Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
