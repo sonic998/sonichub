@@ -254,7 +254,7 @@ end)
     
 	local elements = {}
 
-		function Elements:Label(txt)
+		function elements:Label(txt)
 			local LabelFunction = {}
 			txt = txt or "label"
 			local Label = Instance.new("TextLabel")
