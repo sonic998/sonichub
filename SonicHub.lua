@@ -7,7 +7,7 @@ local games = {
   ["ZombieAttack.lua"] = 1240123653,
   ["RabbitSimulator.lua"] = 1502601752,
   ["GorillaSimulator.lua"] = 1378712700,
-  ["Hoopz.lua"] = 6229116934
+  ["UltraLiftingSimulator.lua"] = 13928941253
 }
 
 for i,v in next, games do
