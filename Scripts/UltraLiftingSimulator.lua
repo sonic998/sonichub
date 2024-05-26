@@ -1,7 +1,7 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
-local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.PlaceId.."/Hoopz.lua"))()
+local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.PlaceId.."/UltraLiftingSimulator.lua"))()
 
-local win = lib:CreateWindow("PhatHubV2 (Paid)")
+local win = lib:CreateWindow("Ultra Lifting Simulator")
 local autofarm = win:Page("AutoFarm")
 local localplayer = win:Page("LocalPlayer")
 local misc = win:Page("Misc")
