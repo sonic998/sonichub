@@ -8,7 +8,7 @@ zbody {
 }
 
 h1,p {
-    color: cyan;
+    color: white;
     font-weight: bold;
     font-size: xx-large;
 }
@@ -16,7 +16,7 @@ h1,p {
 button {
     border-radius: 50px;
     border: none;
-    background-color: blue;
+    background-color: #454545;
     color: white;
     font-weight: bold;
     font-size: xx-large;
@@ -42,9 +42,4 @@ button {
 
 .topnav a:hover {
     color: cyan;
-}
-
-.SupportedGames {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 }
