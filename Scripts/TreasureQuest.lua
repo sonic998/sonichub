@@ -1,4 +1,5 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
+local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.PlaceId.."/TreasureQuest.lua"))()
 
 local win = lib:CreateWindow("SonicHub - Treasure Quest")
 local autofarm = win:Page("AutoFarm")
