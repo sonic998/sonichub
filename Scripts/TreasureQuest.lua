@@ -16,10 +16,6 @@ localplayer:Button("WalkSpeed", function()
   speed()
 end)
 
-localplayer:Button("Inf Jump", function()
-  infjump()
-end)
-
 misc:Button("Rejoin", function()
   rejoin()
 end)
