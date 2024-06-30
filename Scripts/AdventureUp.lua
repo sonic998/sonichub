@@ -7,9 +7,7 @@ local localplayer = win:Page("LocalPlayer")
 local misc = win:Page("Misc")
 
 autofarm:Button("Auto Time Trail", function(v)
-while wait(0.1) do
-autoeat()
-end
+timetrail()
 end)
 
 localplayer:Button("WalkSpeed", function()
