@@ -141,7 +141,7 @@ while wait() do
         local prestige = plr.leaderstats["Prestige"]
 	PrestigeGain.Text = "Prestige: "..prestige.Value
         if cp ~= bp.Value then
-	BpGain.Text = "Bp: "..bp.Value - cp
+	BpGain.Text = "BpGain: "..bp.Value - cp.."+"
         cp = bp.Value
 end
 end
