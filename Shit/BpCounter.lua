@@ -34,6 +34,7 @@ local prestige = plr.leaderstats["Prestige"]
 
 PrestigeGain.Name = "PrestigeGain"
 PrestigeGain.Parent = GainUI
+PrestigeGain.Active = true
 PrestigeGain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 PrestigeGain.BackgroundTransparency = 1.000
 PrestigeGain.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -48,6 +49,7 @@ PrestigeGain.TextWrapped = true
 
 BpGain.Name = "BpGain"
 BpGain.Parent = GainUI
+BpGain.Active = true
 BpGain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 BpGain.BackgroundTransparency = 1.000
 BpGain.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -59,6 +61,81 @@ BpGain.TextColor3 = Color3.fromRGB(255, 0, 0)
 BpGain.TextScaled = true
 BpGain.TextSize = 14.000
 BpGain.TextWrapped = true
+
+local UserInputService = game:GetService("UserInputService")
+
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	local gui = BpGain
+
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0, true); -- drag speed
+	end
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+local UserInputService = game:GetService("UserInputService")
+
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	local gui = PrestigeGain
+
+	local function updatee(input)
+		local delta = input.Position - dragStart
+		gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0, true); -- drag speed
+	end
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			updatee(input)
+		end
+	end)
 
 cp = 0
 
