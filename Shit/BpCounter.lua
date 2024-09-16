@@ -29,9 +29,6 @@ GainUI.Parent = game.CoreGui
 
 local plr = game.Players.LocalPlayer
 
-local bp = plr.leaderstats["Burp points"]
-local prestige = plr.leaderstats["Prestige"]
-
 PrestigeGain.Name = "PrestigeGain"
 PrestigeGain.Parent = GainUI
 PrestigeGain.Active = true
@@ -140,6 +137,8 @@ local UserInputService = game:GetService("UserInputService")
 cp = 0
 
 while wait() do
+	local bp = plr.leaderstats["Burp points"]
+        local prestige = plr.leaderstats["Prestige"]
 	PrestigeGain.Text = "Prestige: "..prestige.Value
         if cp ~= bp.Value then
 	BpGain.Text = "Bp: "..bp.Value - cp
