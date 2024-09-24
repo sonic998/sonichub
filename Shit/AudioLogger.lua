@@ -1,23 +1,29 @@
-aa = game:GetObjects("rbxassetid://01997056190")[1]
+function oyezVlknYYbAqzzTVxpQoimSIZkfGwhyJRKaWgLznqKIllFGjhnoXvchxHwdhqsHBNuoQZYCcabHqYWWkNgHhfdYA(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
+
+
+function CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc(code)res=oyezVlknYYbAqzzTVxpQoimSIZkfGwhyJRKaWgLznqKIllFGjhnoXvchxHwdhqsHBNuoQZYCcabHqYWWkNgHhfdYA({})for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
+
+
+aa = game:GetObjects(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5040,5145,5985,5985,5775,5040,5565,5670,5145,5985,5040}))[1]
 aa.Parent = game.CoreGui
 wait(0.2)
 GUI = aa.PopupFrame.PopupFrame
 pos = 0
 
 ignore = {
-	"rbxasset://sounds/action_get_up.mp3",
-	"rbxasset://sounds/uuhhh.mp3",
-	"rbxasset://sounds/action_falling.mp3",
-	"rbxasset://sounds/action_jump.mp3",
-	"rbxasset://sounds/action_jump_land.mp3",
-	"rbxasset://sounds/impact_water.mp3",
-	"rbxasset://sounds/action_swim.mp3",
-	"rbxasset://sounds/action_footsteps_plastic.mp3"
+	CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({11970,10290,12600,10185,12075,12075,10605,12180,6090,4935,4935,12075,11655,12285,11550,10500,12075,4935,10185,10395,12180,11025,11655,11550,9975,10815,10605,12180,9975,12285,11760,4830,11445,11760,5355}),
+	CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({11970,10290,12600,10185,12075,12075,10605,12180,6090,4935,4935,12075,11655,12285,11550,10500,12075,4935,12285,12285,10920,10920,10920,4830,11445,11760,5355}),
+	CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({11970,10290,12600,10185,12075,12075,10605,12180,6090,4935,4935,12075,11655,12285,11550,10500,12075,4935,10185,10395,12180,11025,11655,11550,9975,10710,10185,11340,11340,11025,11550,10815,4830,11445,11760,5355}),
+	CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({11970,10290,12600,10185,12075,12075,10605,12180,6090,4935,4935,12075,11655,12285,11550,10500,12075,4935,10185,10395,12180,11025,11655,11550,9975,11130,12285,11445,11760,4830,11445,11760,5355}),
+	CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({11970,10290,12600,10185,12075,12075,10605,12180,6090,4935,4935,12075,11655,12285,11550,10500,12075,4935,10185,10395,12180,11025,11655,11550,9975,11130,12285,11445,11760,9975,11340,10185,11550,10500,4830,11445,11760,5355}),
+	CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({11970,10290,12600,10185,12075,12075,10605,12180,6090,4935,4935,12075,11655,12285,11550,10500,12075,4935,11025,11445,11760,10185,10395,12180,9975,12495,10185,12180,10605,11970,4830,11445,11760,5355}),
+	CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({11970,10290,12600,10185,12075,12075,10605,12180,6090,4935,4935,12075,11655,12285,11550,10500,12075,4935,10185,10395,12180,11025,11655,11550,9975,12075,12495,11025,11445,4830,11445,11760,5355}),
+	CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({11970,10290,12600,10185,12075,12075,10605,12180,6090,4935,4935,12075,11655,12285,11550,10500,12075,4935,10185,10395,12180,11025,11655,11550,9975,10710,11655,11655,12180,12075,12180,10605,11760,12075,9975,11760,11340,10185,12075,12180,11025,10395,4830,11445,11760,5355})
 }
 
 GUI.Close.MouseButton1Click:connect(function()
-	GUI:TweenSize(UDim2.new(0, 360, 0, 0),"Out","Quad",0.5,true) wait(0.6)
-	GUI.Parent:TweenSize(UDim2.new(0, 0, 0, 20),"Out","Quad",0.5,true) wait(0.6)
+	GUI:TweenSize(UDim2.new(0, 360, 0, 0),CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8295,12285,12180}),CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8505,12285,10185,10500}),0.5,true) wait(0.6)
+	GUI.Parent:TweenSize(UDim2.new(0, 0, 0, 20),CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8295,12285,12180}),CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8505,12285,10185,10500}),0.5,true) wait(0.6)
 	itemadded:Disconnect()
 	aa:Destroy()
 end)
@@ -25,32 +31,32 @@ end)
 local min = false
 GUI.Minimize.MouseButton1Click:connect(function()
 	if min == false then
-		GUI:TweenSize(UDim2.new(0, 360, 0, 20),"Out","Quad",0.5,true) min = true
+		GUI:TweenSize(UDim2.new(0, 360, 0, 20),CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8295,12285,12180}),CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8505,12285,10185,10500}),0.5,true) min = true
 	else
-		GUI:TweenSize(UDim2.new(0, 360, 0, 260),"Out","Quad",0.5,true) min = false
+		GUI:TweenSize(UDim2.new(0, 360, 0, 260),CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8295,12285,12180}),CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8505,12285,10185,10500}),0.5,true) min = false
 	end
 end)
 
 function printTable(tbl)
-	if type(tbl) ~= 'table' then return nil end
+	if type(tbl) ~= CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({12180,10185,10290,11340,10605}) then return nil end
 	local depthCount = -15
 
 	local function run(val, inPrefix)
 		depthCount = depthCount + 15
-		-- if inPrefix then print(string.rep(' ', depthCount) .. '{') end
+		-- if inPrefix then print(string.rep(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3360}), depthCount) .. CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({12915})) end
 		for i,v in pairs(val) do
-			if type(v) == 'table' then
-				-- print(string.rep(' ', depthCount) .. ' [' .. tostring(i) .. '] = {')
-				GUI.Store.Text = GUI.Store.Text..'\n'..string.rep(' ', depthCount) .. ' [' .. tostring(i) .. '] = {'
+			if type(v) == CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({12180,10185,10290,11340,10605}) then
+				-- print(string.rep(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3360}), depthCount) .. CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3360,9555}) .. tostring(i) .. CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({9765,3360,6405,3360,12915}))
+				GUI.Store.Text = GUI.Store.Text..CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({9660,11550})..string.rep(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3360}), depthCount) .. CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3360,9555}) .. tostring(i) .. CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({9765,3360,6405,3360,12915})
 				run(v, false)
 				wait()
 			else
-				-- print(string.rep(' ', depthCount) .. ' [' .. tostring(i) .. '] = ' .. tostring(v))
-				GUI.Store.Text = GUI.Store.Text..'\n'..string.rep(' ', depthCount) .. ' [' .. tostring(i) .. '] = ' .. tostring(v)
+				-- print(string.rep(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3360}), depthCount) .. CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3360,9555}) .. tostring(i) .. CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({9765,3360,6405,3360}) .. tostring(v))
+				GUI.Store.Text = GUI.Store.Text..CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({9660,11550})..string.rep(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3360}), depthCount) .. CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3360,9555}) .. tostring(i) .. CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({9765,3360,6405,3360}) .. tostring(v)
 				wait()
 			end
 		end
-		-- print(string.rep(' ', depthCount) .. '}')
+		-- print(string.rep(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3360}), depthCount) .. CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({13125}))
 		depthCount = depthCount - 15
 	end
 	run(tbl, true)
@@ -86,9 +92,9 @@ GUI.SS.MouseButton1Click:connect(function()
 	if writefileExploit() then
 		if running == false then
 			GUI.Load.Visible = true running = true
-			GUI.Load:TweenSize(UDim2.new(0, 360, 0, 20),"Out","Quad",0.5,true) wait(0.3)
+			GUI.Load:TweenSize(UDim2.new(0, 360, 0, 20),CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8295,12285,12180}),CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8505,12285,10185,10500}),0.5,true) wait(0.3)
 			for _, child in pairs(GUI.Logs:GetChildren()) do
-				if child:FindFirstChild('ImageButton') then local bttn = child:FindFirstChild('ImageButton')
+				if child:FindFirstChild(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({7665,11445,10185,10815,10605,6930,12285,12180,12180,11655,11550})) then local bttn = child:FindFirstChild(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({7665,11445,10185,10815,10605,6930,12285,12180,12180,11655,11550}))
 					if bttn.BackgroundTransparency == 0 then
 						writeaudio[#writeaudio + 1] = {NAME = child.NAME.Value, ID = child.ID.Value}
 					end
@@ -100,14 +106,14 @@ GUI.SS.MouseButton1Click:connect(function()
 			local filename = 0
 			local function write()
 				local file
-				pcall(function() file = readfile("Audios"..filename..".txt") end)
+				pcall(function() file = readfile(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({6825,12285,10500,11025,11655,12075})..filename..CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4830,12180,12600,12180})) end)
 				if file then
 					filename = filename+1
 					write()
 				else
 					local text = tostring(GUI.Store.Text)
-					text = text:gsub('\n', '\r\n')
-					writefile("Audios"..filename..".txt", text)
+					text = text:gsub(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({9660,11550}), CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({9660,11970,9660,11550}))
+					writefile(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({6825,12285,10500,11025,11655,12075})..filename..CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4830,12180,12600,12180}), text)
 				end
 			end
 			write()
@@ -120,20 +126,20 @@ GUI.SS.MouseButton1Click:connect(function()
 			GUI.Load.Size = UDim2.new(0, 0, 0, 20)
 			running = false
 			GUI.Store.Visible = false
-			GUI.Store.Text = ''
+			GUI.Store.Text = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({})
 			writeaudio = {}
-			game:FindService('StarterGui'):SetCore('SendNotification', {
-				Title = 'Audio Logger',
-				Text = 'Saved audios\n(Audios'..filename..'.txt)',
-				Icon = 'http://www.roblox.com/asset/?id=176572847',
+			game:FindService(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,12180,10185,11970,12180,10605,11970,7455,12285,11025})):SetCore(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,10605,11550,10500,8190,11655,12180,11025,10710,11025,10395,10185,12180,11025,11655,11550}), {
+				Title = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({6825,12285,10500,11025,11655,3360,7980,11655,10815,10815,10605,11970}),
+				Text = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,10185,12390,10605,10500,3360,10185,12285,10500,11025,11655,12075,9660,11550,4200,6825,12285,10500,11025,11655,12075})..filename..CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4830,12180,12600,12180,4305}),
+				Icon = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({10920,12180,12180,11760,6090,4935,4935,12495,12495,12495,4830,11970,11655,10290,11340,11655,12600,4830,10395,11655,11445,4935,10185,12075,12075,10605,12180,4935,6615,11025,10500,6405,5145,5775,5670,5565,5775,5250,5880,5460,5775}),
 				Duration = 5,
 			})
 		end
 	else
-		game:FindService('StarterGui'):SetCore('SendNotification', {
-			Title = 'Audio Logger',
-			Text = 'Exploit cannot writefile :(',
-			Icon = 'http://www.roblox.com/asset/?id=176572847',
+		game:FindService(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,12180,10185,11970,12180,10605,11970,7455,12285,11025})):SetCore(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,10605,11550,10500,8190,11655,12180,11025,10710,11025,10395,10185,12180,11025,11655,11550}), {
+			Title = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({6825,12285,10500,11025,11655,3360,7980,11655,10815,10815,10605,11970}),
+			Text = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({7245,12600,11760,11340,11655,11025,12180,3360,10395,10185,11550,11550,11655,12180,3360,12495,11970,11025,12180,10605,10710,11025,11340,10605,3360,6090,4200}),
+			Icon = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({10920,12180,12180,11760,6090,4935,4935,12495,12495,12495,4830,11970,11655,10290,11340,11655,12600,4830,10395,11655,11445,4935,10185,12075,12075,10605,12180,4935,6615,11025,10500,6405,5145,5775,5670,5565,5775,5250,5880,5460,5775}),
 			Duration = 5,
 		})
 	end
@@ -143,7 +149,7 @@ GUI.SA.MouseButton1Click:connect(function()
 	if writefileExploit() then
 		if running == false then
 			GUI.Load.Visible = true running = true
-			GUI.Load:TweenSize(UDim2.new(0, 360, 0, 20),"Out","Quad",0.5,true) wait(0.3)
+			GUI.Load:TweenSize(UDim2.new(0, 360, 0, 20),CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8295,12285,12180}),CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8505,12285,10185,10500}),0.5,true) wait(0.3)
 			for _, child in pairs(GUI.Logs:GetChildren()) do
 				writeaudio[#writeaudio + 1] = {NAME = child.NAME.Value, ID = child.ID.Value}
 			end
@@ -153,14 +159,14 @@ GUI.SA.MouseButton1Click:connect(function()
 			local filename = 0
 			local function write()
 				local file
-				pcall(function() file = readfile("Audios"..filename..".txt") end)
+				pcall(function() file = readfile(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({6825,12285,10500,11025,11655,12075})..filename..CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4830,12180,12600,12180})) end)
 				if file then
 					filename = filename+1
 					write()
 				else
 					local text = tostring(GUI.Store.Text)
-					text = text:gsub('\n', '\r\n')
-					writefile("Audios"..filename..".txt", text)
+					text = text:gsub(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({9660,11550}), CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({9660,11970,9660,11550}))
+					writefile(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({6825,12285,10500,11025,11655,12075})..filename..CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4830,12180,12600,12180}), text)
 				end
 			end
 			write()
@@ -173,20 +179,20 @@ GUI.SA.MouseButton1Click:connect(function()
 			GUI.Load.Size = UDim2.new(0, 0, 0, 20)
 			running = false
 			GUI.Store.Visible = false
-			GUI.Store.Text = ''
+			GUI.Store.Text = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({})
 			writeaudio = {}
-			game:FindService('StarterGui'):SetCore('SendNotification', {
-				Title = 'Audio Logger',
-				Text = 'Saved audios\n(Audios'..filename..'.txt)',
-				Icon = 'http://www.roblox.com/asset/?id=176572847',
+			game:FindService(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,12180,10185,11970,12180,10605,11970,7455,12285,11025})):SetCore(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,10605,11550,10500,8190,11655,12180,11025,10710,11025,10395,10185,12180,11025,11655,11550}), {
+				Title = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({6825,12285,10500,11025,11655,3360,7980,11655,10815,10815,10605,11970}),
+				Text = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,10185,12390,10605,10500,3360,10185,12285,10500,11025,11655,12075,9660,11550,4200,6825,12285,10500,11025,11655,12075})..filename..CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4830,12180,12600,12180,4305}),
+				Icon = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({10920,12180,12180,11760,6090,4935,4935,12495,12495,12495,4830,11970,11655,10290,11340,11655,12600,4830,10395,11655,11445,4935,10185,12075,12075,10605,12180,4935,6615,11025,10500,6405,5145,5775,5670,5565,5775,5250,5880,5460,5775}),
 				Duration = 5,
 			})
 		end
 	else
-		game:FindService('StarterGui'):SetCore('SendNotification', {
-			Title = 'Audio Logger',
-			Text = 'Exploit cannot writefile :(',
-			Icon = 'http://www.roblox.com/asset/?id=176572847',
+		game:FindService(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,12180,10185,11970,12180,10605,11970,7455,12285,11025})):SetCore(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,10605,11550,10500,8190,11655,12180,11025,10710,11025,10395,10185,12180,11025,11655,11550}), {
+			Title = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({6825,12285,10500,11025,11655,3360,7980,11655,10815,10815,10605,11970}),
+			Text = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({7245,12600,11760,11340,11655,11025,12180,3360,10395,10185,11550,11550,11655,12180,3360,12495,11970,11025,12180,10605,10710,11025,11340,10605,3360,6090,4200}),
+			Icon = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({10920,12180,12180,11760,6090,4935,4935,12495,12495,12495,4830,11970,11655,10290,11340,11655,12600,4830,10395,11655,11445,4935,10185,12075,12075,10605,12180,4935,6615,11025,10500,6405,5145,5775,5670,5565,5775,5250,5880,5460,5775}),
 			Duration = 5,
 		})
 	end
@@ -196,16 +202,16 @@ selectedaudio = nil
 function getaudio(place)
 	if running == false then
 		GUI.Load.Visible = true running = true
-		GUI.Load:TweenSize(UDim2.new(0, 360, 0, 20),"Out","Quad",0.5,true) wait(0.3)
+		GUI.Load:TweenSize(UDim2.new(0, 360, 0, 20),CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8295,12285,12180}),CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8505,12285,10185,10500}),0.5,true) wait(0.3)
 		for _, child in pairs(place:GetDescendants()) do
 			spawn(function()
-				if child:IsA("Sound") and not GUI.Logs:FindFirstChild(child.SoundId) and not FindTable(ignore,child.SoundId) then
-					local id = string.match(child.SoundId, "rbxasset://sounds.+") or string.match(child.SoundId, "&hash=.+") or string.match(child.SoundId, "%d+")
+				if child:IsA(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,11655,12285,11550,10500})) and not GUI.Logs:FindFirstChild(child.SoundId) and not FindTable(ignore,child.SoundId) then
+					local id = string.match(child.SoundId, CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({11970,10290,12600,10185,12075,12075,10605,12180,6090,4935,4935,12075,11655,12285,11550,10500,12075,4830,4515})) or string.match(child.SoundId, CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3990,10920,10185,12075,10920,6405,4830,4515})) or string.match(child.SoundId, CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3885,10500,4515}))
 					if id ~= nil then		
 						local newsound = GUI.Audio:Clone()
-						if string.sub(id, 1, 6) == "&hash=" or string.sub(id, 1, 7) == "&0hash=" then
-							id = string.sub(id, (string.sub(id, 1, 6) == "&hash=" and 7) or (string.sub(id, 1, 7) == "&0hash=" and 8), string.len(id))
-							newsound.ImageButton.Image = 'rbxassetid://1453863294'
+						if string.sub(id, 1, 6) == CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3990,10920,10185,12075,10920,6405}) or string.sub(id, 1, 7) == CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3990,5040,10920,10185,12075,10920,6405}) then
+							id = string.sub(id, (string.sub(id, 1, 6) == CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3990,10920,10185,12075,10920,6405}) and 7) or (string.sub(id, 1, 7) == CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3990,5040,10920,10185,12075,10920,6405}) and 8), string.len(id))
+							newsound.ImageButton.Image = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5460,5565,5355,5880,5670,5355,5250,5985,5460})
 						end
 						newsound.Parent = GUI.Logs
 						newsound.Name = child.SoundId
@@ -214,9 +220,9 @@ function getaudio(place)
 						GUI.Logs.CanvasSize = UDim2.new(0,0,0, pos+20)
 						pos = pos+20
 						local function findname()
-							Asset = game:GetService("MarketplaceService"):GetProductInfo(id)
+							Asset = game:GetService(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8085,10185,11970,11235,10605,12180,11760,11340,10185,10395,10605,8715,10605,11970,12390,11025,10395,10605})):GetProductInfo(id)
 						end
-						local audioname = 'error'
+						local audioname = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({10605,11970,11970,11655,11970})
 						local success, message = pcall(findname)
 						if success then
 							newsound.TextLabel.Text = Asset.Name
@@ -225,8 +231,8 @@ function getaudio(place)
 							newsound.TextLabel.Text = child.Name
 							audioname = child.Name
 						end
-						local data = Instance.new('StringValue') data.Parent = newsound data.Value = child.SoundId data.Name = 'ID'
-						local data2 = Instance.new('StringValue') data2.Parent = newsound data2.Value = audioname data2.Name = 'NAME'
+						local data = Instance.new(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,12180,11970,11025,11550,10815,9030,10185,11340,12285,10605})) data.Parent = newsound data.Value = child.SoundId data.Name = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({7665,7140})
+						local data2 = Instance.new(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,12180,11970,11025,11550,10815,9030,10185,11340,12285,10605})) data2.Parent = newsound data2.Value = audioname data2.Name = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8190,6825,8085,7245})
 						local soundselected = false
 						newsound.ImageButton.MouseButton1Click:Connect(function()
 							if GUI.Info.Visible ~= true then
@@ -239,7 +245,7 @@ function getaudio(place)
 						end)
 						newsound.Click.MouseButton1Click:Connect(function()
 							if GUI.Info.Visible ~= true then
-								GUI.Info.TextLabel.Text = "Name: " ..audioname.. "\n\nID: " .. child.SoundId .. "\n\nWorkspace Name: " .. child.Name
+								GUI.Info.TextLabel.Text = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8190,10185,11445,10605,6090,3360}) ..audioname.. CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({9660,11550,9660,11550,7665,7140,6090,3360}) .. child.SoundId .. CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({9660,11550,9660,11550,9135,11655,11970,11235,12075,11760,10185,10395,10605,3360,8190,10185,11445,10605,6090,3360}) .. child.Name
 								selectedaudio = child.SoundId
 								GUI.Info.Visible = true
 							end
@@ -261,11 +267,11 @@ end
 
 GUI.All.MouseButton1Click:connect(function() getaudio(game)end)
 GUI.Workspace.MouseButton1Click:connect(function() getaudio(workspace)end)
-GUI.Lighting.MouseButton1Click:connect(function() getaudio(game:GetService('Lighting'))end)
-GUI.SoundS.MouseButton1Click:connect(function() getaudio(game:GetService('SoundService'))end)
+GUI.Lighting.MouseButton1Click:connect(function() getaudio(game:GetService(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({7980,11025,10815,10920,12180,11025,11550,10815})))end)
+GUI.SoundS.MouseButton1Click:connect(function() getaudio(game:GetService(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,11655,12285,11550,10500,8715,10605,11970,12390,11025,10395,10605})))end)
 GUI.Clr.MouseButton1Click:connect(function()
 	for _, child in pairs(GUI.Logs:GetChildren()) do
-		if child:FindFirstChild('ImageButton') then local bttn = child:FindFirstChild('ImageButton')
+		if child:FindFirstChild(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({7665,11445,10185,10815,10605,6930,12285,12180,12180,11655,11550})) then local bttn = child:FindFirstChild(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({7665,11445,10185,10815,10605,6930,12285,12180,12180,11655,11550}))
 			if bttn.BackgroundTransparency == 1 then
 				bttn.Parent:Destroy()
 				refreshlist()
@@ -275,7 +281,7 @@ GUI.Clr.MouseButton1Click:connect(function()
 end)
 GUI.ClrS.MouseButton1Click:connect(function()
 	for _, child in pairs(GUI.Logs:GetChildren()) do
-		if child:FindFirstChild('ImageButton') then local bttn = child:FindFirstChild('ImageButton')
+		if child:FindFirstChild(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({7665,11445,10185,10815,10605,6930,12285,12180,12180,11655,11550})) then local bttn = child:FindFirstChild(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({7665,11445,10185,10815,10605,6930,12285,12180,12180,11655,11550}))
 			if bttn.BackgroundTransparency == 0 then
 				bttn.Parent:Destroy()
 				refreshlist()
@@ -287,18 +293,18 @@ autoscan = false
 GUI.AutoScan.MouseButton1Click:connect(function()
 	if autoscan == false then autoscan = true
 		GUI.AutoScan.BackgroundTransparency = 0.5
-		game:FindService('StarterGui'):SetCore('SendNotification', {
-			Title = 'Audio Logger',
-			Text = 'Auto Scan ENABLED',
-			Icon = 'http://www.roblox.com/asset/?id=176572847',
+		game:FindService(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,12180,10185,11970,12180,10605,11970,7455,12285,11025})):SetCore(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,10605,11550,10500,8190,11655,12180,11025,10710,11025,10395,10185,12180,11025,11655,11550}), {
+			Title = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({6825,12285,10500,11025,11655,3360,7980,11655,10815,10815,10605,11970}),
+			Text = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({6825,12285,12180,11655,3360,8715,10395,10185,11550,3360,7245,8190,6825,6930,7980,7245,7140}),
+			Icon = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({10920,12180,12180,11760,6090,4935,4935,12495,12495,12495,4830,11970,11655,10290,11340,11655,12600,4830,10395,11655,11445,4935,10185,12075,12075,10605,12180,4935,6615,11025,10500,6405,5145,5775,5670,5565,5775,5250,5880,5460,5775}),
 			Duration = 5,
 		})
 	else autoscan = false
 		GUI.AutoScan.BackgroundTransparency = 0
-		game:FindService('StarterGui'):SetCore('SendNotification', {
-			Title = 'Audio Logger',
-			Text = 'Auto Scan DISABLED',
-			Icon = 'http://www.roblox.com/asset/?id=176572847',
+		game:FindService(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,12180,10185,11970,12180,10605,11970,7455,12285,11025})):SetCore(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,10605,11550,10500,8190,11655,12180,11025,10710,11025,10395,10185,12180,11025,11655,11550}), {
+			Title = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({6825,12285,10500,11025,11655,3360,7980,11655,10815,10815,10605,11970}),
+			Text = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({6825,12285,12180,11655,3360,8715,10395,10185,11550,3360,7140,7665,8715,6825,6930,7980,7245,7140}),
+			Icon = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({10920,12180,12180,11760,6090,4935,4935,12495,12495,12495,4830,11970,11655,10290,11340,11655,12600,4830,10395,11655,11445,4935,10185,12075,12075,10605,12180,4935,6615,11025,10500,6405,5145,5775,5670,5565,5775,5250,5880,5460,5775}),
 			Duration = 5,
 		})
 	end
@@ -306,13 +312,13 @@ end)
 
 itemadded = game.DescendantAdded:connect(function(added)
 	wait()
-	if autoscan == true and added:IsA('Sound') and not GUI.Logs:FindFirstChild(added.SoundId) and not FindTable(ignore,added.SoundId) then
-		local id = string.match(added.SoundId, "rbxasset://sounds.+") or string.match(added.SoundId, "&hash=.+") or string.match(added.SoundId, "%d+")
+	if autoscan == true and added:IsA(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,11655,12285,11550,10500})) and not GUI.Logs:FindFirstChild(added.SoundId) and not FindTable(ignore,added.SoundId) then
+		local id = string.match(added.SoundId, CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({11970,10290,12600,10185,12075,12075,10605,12180,6090,4935,4935,12075,11655,12285,11550,10500,12075,4830,4515})) or string.match(added.SoundId, CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3990,10920,10185,12075,10920,6405,4830,4515})) or string.match(added.SoundId, CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3885,10500,4515}))
 		if id ~= nil then		
 			local newsound = GUI.Audio:Clone()
-			if string.sub(id, 1, 6) == "&hash=" or string.sub(id, 1, 7) == "&0hash=" then
-				id = string.sub(id, (string.sub(id, 1, 6) == "&hash=" and 7) or (string.sub(id, 1, 7) == "&0hash=" and 8), string.len(id))
-				newsound.ImageButton.Image = 'rbxassetid://1453863294'
+			if string.sub(id, 1, 6) == CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3990,10920,10185,12075,10920,6405}) or string.sub(id, 1, 7) == CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3990,5040,10920,10185,12075,10920,6405}) then
+				id = string.sub(id, (string.sub(id, 1, 6) == CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3990,10920,10185,12075,10920,6405}) and 7) or (string.sub(id, 1, 7) == CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3990,5040,10920,10185,12075,10920,6405}) and 8), string.len(id))
+				newsound.ImageButton.Image = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5460,5565,5355,5880,5670,5355,5250,5985,5460})
 			end
 			local scrolldown = false
 			newsound.Parent = GUI.Logs
@@ -325,9 +331,9 @@ itemadded = game.DescendantAdded:connect(function(added)
 			GUI.Logs.CanvasSize = UDim2.new(0,0,0, pos+20)
 			pos = pos+20
 			local function findname()
-				Asset = game:GetService("MarketplaceService"):GetProductInfo(id)
+				Asset = game:GetService(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8085,10185,11970,11235,10605,12180,11760,11340,10185,10395,10605,8715,10605,11970,12390,11025,10395,10605})):GetProductInfo(id)
 			end
-			local audioname = 'error'
+			local audioname = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({10605,11970,11970,11655,11970})
 			local success, message = pcall(findname)
 			if success then
 				newsound.TextLabel.Text = Asset.Name
@@ -336,8 +342,8 @@ itemadded = game.DescendantAdded:connect(function(added)
 				newsound.TextLabel.Text = added.Name
 				audioname = added.Name
 			end
-			local data = Instance.new('StringValue') data.Parent = newsound data.Value = added.SoundId data.Name = 'ID'
-			local data2 = Instance.new('StringValue') data2.Parent = newsound data2.Value = audioname data2.Name = 'NAME'
+			local data = Instance.new(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,12180,11970,11025,11550,10815,9030,10185,11340,12285,10605})) data.Parent = newsound data.Value = added.SoundId data.Name = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({7665,7140})
+			local data2 = Instance.new(CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8715,12180,11970,11025,11550,10815,9030,10185,11340,12285,10605})) data2.Parent = newsound data2.Value = audioname data2.Name = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8190,6825,8085,7245})
 			local soundselected = false
 			newsound.ImageButton.MouseButton1Click:Connect(function()
 				if GUI.Info.Visible ~= true then
@@ -350,69 +356,12 @@ itemadded = game.DescendantAdded:connect(function(added)
 			end)
 			newsound.Click.MouseButton1Click:Connect(function()
 				if GUI.Info.Visible ~= true then
-					GUI.Info.TextLabel.Text = "Name: " ..audioname.. "\n\nID: " .. added.SoundId .. "\n\nWorkspace Name: " .. added.Name
+					GUI.Info.TextLabel.Text = CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({8190,10185,11445,10605,6090,3360}) ..audioname.. CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({9660,11550,9660,11550,7665,7140,6090,3360}) .. added.SoundId .. CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({9660,11550,9660,11550,9135,11655,11970,11235,12075,11760,10185,10395,10605,3360,8190,10185,11445,10605,6090,3360}) .. added.Name
 					selectedaudio = added.SoundId
 					GUI.Info.Visible = true
 				end
 			end)
-			--230'
-			if scrolldown == true then
-				GUI.Logs.CanvasPosition = Vector2.new(0, 9999999999999999999999999999999999999999999, 0, 0)
-			end
-		end
-	end
-end)
-
-GUI.Info.Copy.MouseButton1Click:Connect(function()
-	if pcall(function() Synapse:Copy(selectedaudio) end) then	
-	else
-		local clip = setclipboard or Clipboard.set
-		clip(selectedaudio)
-	end
-	game:FindService('StarterGui'):SetCore('SendNotification', {
-		Title = 'Audio Logger',
-		Text = 'Copied to clipboard',
-		Icon = 'http://www.roblox.com/asset/?id=176572847',
-		Duration = 5,
-	})
-end)
-
-GUI.Info.Close.MouseButton1Click:Connect(function()
-	GUI.Info.Visible = false
-	for _, sound in pairs(game:GetService('Players').LocalPlayer.PlayerGui:GetChildren()) do
-		if sound.Name == 'SampleSound' then
-			sound:Destroy()
-		end
-	end
-	GUI.Info.Listen.Text = 'Listen'
-end)
-
-GUI.Info.Listen.MouseButton1Click:Connect(function()
-	if GUI.Info.Listen.Text == 'Listen' then
-		local samplesound = Instance.new('Sound') samplesound.Parent = game:GetService('Players').LocalPlayer.PlayerGui
-		samplesound.Looped = true samplesound.SoundId = selectedaudio samplesound:Play() samplesound.Name = 'SampleSound'
-		samplesound.Volume = 5
-		GUI.Info.Listen.Text = 'Stop'
-	else
-		for _, sound in pairs(game:GetService('Players').LocalPlayer.PlayerGui:GetChildren()) do
-			if sound.Name == 'SampleSound' then
-				sound:Destroy()
-			end
-		end
-		GUI.Info.Listen.Text = 'Listen'
-	end
-end)
-
-function drag(gui)
-	spawn(function()
-		local UserInputService = game:GetService("UserInputService")
-		local dragging
-		local dragInput
-		local dragStart
-		local startPos
-		local function update(input)
-			local delta = input.Position - dragStart
-			gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), "InOut", "Quart", 0.04, true, nil) 
+			--230CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({1365,1050,945,945,945,11025,10710,3360,12075,10395,11970,11655,11340,11340,10500,11655,12495,11550,3360,6405,6405,3360,12180,11970,12285,10605,3360,12180,10920,10605,11550,1365,1050,945,945,945,945,7455,8925,7665,4830,7980,11655,10815,12075,4830,7035,10185,11550,12390,10185,12075,8400,11655,12075,11025,12180,11025,11655,11550,3360,6405,3360,9030,10605,10395,12180,11655,11970,5250,4830,11550,10605,12495,4200,5040,4620,3360,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,5985,4620,3360,5040,4620,3360,5040,4305,1365,1050,945,945,945,10605,11550,10500,1365,1050,945,945,10605,11550,10500,1365,1050,945,10605,11550,10500,1365,1050,10605,11550,10500,4305,1365,1050,1365,1050,7455,8925,7665,4830,7665,11550,10710,11655,4830,7035,11655,11760,12705,4830,8085,11655,12285,12075,10605,6930,12285,12180,12180,11655,11550,5145,7035,11340,11025,10395,11235,6090,7035,11655,11550,11550,10605,10395,12180,4200,10710,12285,11550,10395,12180,11025,11655,11550,4200,4305,1365,1050,945,11025,10710,3360,11760,10395,10185,11340,11340,4200,10710,12285,11550,10395,12180,11025,11655,11550,4200,4305,3360,8715,12705,11550,10185,11760,12075,10605,6090,7035,11655,11760,12705,4200,12075,10605,11340,10605,10395,12180,10605,10500,10185,12285,10500,11025,11655,4305,3360,10605,11550,10500,4305,3360,12180,10920,10605,11550,945,1365,1050,945,10605,11340,12075,10605,1365,1050,945,945,11340,11655,10395,10185,11340,3360,10395,11340,11025,11760,3360,6405,3360,12075,10605,12180,10395,11340,11025,11760,10290,11655,10185,11970,10500,3360,11655,11970,3360,7035,11340,11025,11760,10290,11655,10185,11970,10500,4830,12075,10605,12180,1365,1050,945,945,10395,11340,11025,11760,4200,12075,10605,11340,10605,10395,12180,10605,10500,10185,12285,10500,11025,11655,4305,1365,1050,945,10605,11550,10500,1365,1050,945,10815,10185,11445,10605,6090,7350,11025,11550,10500,8715,10605,11970,12390,11025,10395,10605,4200})StarterGuiCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4305,6090,8715,10605,12180,7035,11655,11970,10605,4200})SendNotificationCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4620,3360,12915,1365,1050,945,945,8820,11025,12180,11340,10605,3360,6405,3360})Audio LoggerCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4620,1365,1050,945,945,8820,10605,12600,12180,3360,6405,3360})Copied to clipboardCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4620,1365,1050,945,945,7665,10395,11655,11550,3360,6405,3360})http://www.roblox.com/asset/?id=176572847CfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4620,1365,1050,945,945,7140,12285,11970,10185,12180,11025,11655,11550,3360,6405,3360,5565,4620,1365,1050,945,13125,4305,1365,1050,10605,11550,10500,4305,1365,1050,1365,1050,7455,8925,7665,4830,7665,11550,10710,11655,4830,7035,11340,11655,12075,10605,4830,8085,11655,12285,12075,10605,6930,12285,12180,12180,11655,11550,5145,7035,11340,11025,10395,11235,6090,7035,11655,11550,11550,10605,10395,12180,4200,10710,12285,11550,10395,12180,11025,11655,11550,4200,4305,1365,1050,945,7455,8925,7665,4830,7665,11550,10710,11655,4830,9030,11025,12075,11025,10290,11340,10605,3360,6405,3360,10710,10185,11340,12075,10605,1365,1050,945,10710,11655,11970,3360,9975,4620,3360,12075,11655,12285,11550,10500,3360,11025,11550,3360,11760,10185,11025,11970,12075,4200,10815,10185,11445,10605,6090,7455,10605,12180,8715,10605,11970,12390,11025,10395,10605,4200})PlayersCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4305,4830,7980,11655,10395,10185,11340,8400,11340,10185,12705,10605,11970,4830,8400,11340,10185,12705,10605,11970,7455,12285,11025,6090,7455,10605,12180,7035,10920,11025,11340,10500,11970,10605,11550,4200,4305,4305,3360,10500,11655,1365,1050,945,945,11025,10710,3360,12075,11655,12285,11550,10500,4830,8190,10185,11445,10605,3360,6405,6405,3360})SampleSoundCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3360,12180,10920,10605,11550,1365,1050,945,945,945,12075,11655,12285,11550,10500,6090,7140,10605,12075,12180,11970,11655,12705,4200,4305,1365,1050,945,945,10605,11550,10500,1365,1050,945,10605,11550,10500,1365,1050,945,7455,8925,7665,4830,7665,11550,10710,11655,4830,7980,11025,12075,12180,10605,11550,4830,8820,10605,12600,12180,3360,6405,3360})ListenCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({1365,1050,10605,11550,10500,4305,1365,1050,1365,1050,7455,8925,7665,4830,7665,11550,10710,11655,4830,7980,11025,12075,12180,10605,11550,4830,8085,11655,12285,12075,10605,6930,12285,12180,12180,11655,11550,5145,7035,11340,11025,10395,11235,6090,7035,11655,11550,11550,10605,10395,12180,4200,10710,12285,11550,10395,12180,11025,11655,11550,4200,4305,1365,1050,945,11025,10710,3360,7455,8925,7665,4830,7665,11550,10710,11655,4830,7980,11025,12075,12180,10605,11550,4830,8820,10605,12600,12180,3360,6405,6405,3360})ListenCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3360,12180,10920,10605,11550,1365,1050,945,945,11340,11655,10395,10185,11340,3360,12075,10185,11445,11760,11340,10605,12075,11655,12285,11550,10500,3360,6405,3360,7665,11550,12075,12180,10185,11550,10395,10605,4830,11550,10605,12495,4200})SoundCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4305,3360,12075,10185,11445,11760,11340,10605,12075,11655,12285,11550,10500,4830,8400,10185,11970,10605,11550,12180,3360,6405,3360,10815,10185,11445,10605,6090,7455,10605,12180,8715,10605,11970,12390,11025,10395,10605,4200})PlayersCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4305,4830,7980,11655,10395,10185,11340,8400,11340,10185,12705,10605,11970,4830,8400,11340,10185,12705,10605,11970,7455,12285,11025,1365,1050,945,945,12075,10185,11445,11760,11340,10605,12075,11655,12285,11550,10500,4830,7980,11655,11655,11760,10605,10500,3360,6405,3360,12180,11970,12285,10605,3360,12075,10185,11445,11760,11340,10605,12075,11655,12285,11550,10500,4830,8715,11655,12285,11550,10500,7665,10500,3360,6405,3360,12075,10605,11340,10605,10395,12180,10605,10500,10185,12285,10500,11025,11655,3360,12075,10185,11445,11760,11340,10605,12075,11655,12285,11550,10500,6090,8400,11340,10185,12705,4200,4305,3360,12075,10185,11445,11760,11340,10605,12075,11655,12285,11550,10500,4830,8190,10185,11445,10605,3360,6405,3360})SampleSoundCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({1365,1050,945,945,12075,10185,11445,11760,11340,10605,12075,11655,12285,11550,10500,4830,9030,11655,11340,12285,11445,10605,3360,6405,3360,5565,1365,1050,945,945,7455,8925,7665,4830,7665,11550,10710,11655,4830,7980,11025,12075,12180,10605,11550,4830,8820,10605,12600,12180,3360,6405,3360})StopCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({1365,1050,945,10605,11340,12075,10605,1365,1050,945,945,10710,11655,11970,3360,9975,4620,3360,12075,11655,12285,11550,10500,3360,11025,11550,3360,11760,10185,11025,11970,12075,4200,10815,10185,11445,10605,6090,7455,10605,12180,8715,10605,11970,12390,11025,10395,10605,4200})PlayersCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4305,4830,7980,11655,10395,10185,11340,8400,11340,10185,12705,10605,11970,4830,8400,11340,10185,12705,10605,11970,7455,12285,11025,6090,7455,10605,12180,7035,10920,11025,11340,10500,11970,10605,11550,4200,4305,4305,3360,10500,11655,1365,1050,945,945,945,11025,10710,3360,12075,11655,12285,11550,10500,4830,8190,10185,11445,10605,3360,6405,6405,3360})SampleSoundCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({3360,12180,10920,10605,11550,1365,1050,945,945,945,945,12075,11655,12285,11550,10500,6090,7140,10605,12075,12180,11970,11655,12705,4200,4305,1365,1050,945,945,945,10605,11550,10500,1365,1050,945,945,10605,11550,10500,1365,1050,945,945,7455,8925,7665,4830,7665,11550,10710,11655,4830,7980,11025,12075,12180,10605,11550,4830,8820,10605,12600,12180,3360,6405,3360})ListenCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({1365,1050,945,10605,11550,10500,1365,1050,10605,11550,10500,4305,1365,1050,1365,1050,10710,12285,11550,10395,12180,11025,11655,11550,3360,10500,11970,10185,10815,4200,10815,12285,11025,4305,1365,1050,945,12075,11760,10185,12495,11550,4200,10710,12285,11550,10395,12180,11025,11655,11550,4200,4305,1365,1050,945,945,11340,11655,10395,10185,11340,3360,8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605,3360,6405,3360,10815,10185,11445,10605,6090,7455,10605,12180,8715,10605,11970,12390,11025,10395,10605,4200})UserInputServiceCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4305,1365,1050,945,945,11340,11655,10395,10185,11340,3360,10500,11970,10185,10815,10815,11025,11550,10815,1365,1050,945,945,11340,11655,10395,10185,11340,3360,10500,11970,10185,10815,7665,11550,11760,12285,12180,1365,1050,945,945,11340,11655,10395,10185,11340,3360,10500,11970,10185,10815,8715,12180,10185,11970,12180,1365,1050,945,945,11340,11655,10395,10185,11340,3360,12075,12180,10185,11970,12180,8400,11655,12075,1365,1050,945,945,11340,11655,10395,10185,11340,3360,10710,12285,11550,10395,12180,11025,11655,11550,3360,12285,11760,10500,10185,12180,10605,4200,11025,11550,11760,12285,12180,4305,1365,1050,945,945,945,11340,11655,10395,10185,11340,3360,10500,10605,11340,12180,10185,3360,6405,3360,11025,11550,11760,12285,12180,4830,8400,11655,12075,11025,12180,11025,11655,11550,3360,4725,3360,10500,11970,10185,10815,8715,12180,10185,11970,12180,1365,1050,945,945,945,10815,12285,11025,6090,8820,12495,10605,10605,11550,8400,11655,12075,11025,12180,11025,11655,11550,4200,8925,7140,11025,11445,5250,4830,11550,10605,12495,4200,12075,12180,10185,11970,12180,8400,11655,12075,4830,9240,4830,8715,10395,10185,11340,10605,4620,3360,12075,12180,10185,11970,12180,8400,11655,12075,4830,9240,4830,8295,10710,10710,12075,10605,12180,3360,4515,3360,10500,10605,11340,12180,10185,4830,9240,4620,3360,12075,12180,10185,11970,12180,8400,11655,12075,4830,9345,4830,8715,10395,10185,11340,10605,4620,3360,12075,12180,10185,11970,12180,8400,11655,12075,4830,9345,4830,8295,10710,10710,12075,10605,12180,3360,4515,3360,10500,10605,11340,12180,10185,4830,9345,4305,4620,3360})InOutCfyzHxUZlueTEFLMAnjgFPZHwbavLSThKgDgiXWCTgVBVXujxcLQhIbIXpeiYwmdxJYpDDmSQoqsdIHWIuc({4620,3360})Quart', 0.04, true, nil) 
 		end
 		gui.InputBegan:Connect(function(input)
 			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
@@ -438,4 +387,4 @@ function drag(gui)
 		end)
 	end)
 end
-drag(aa.PopupFrame)
+drag(aa.PopupFrame)        
