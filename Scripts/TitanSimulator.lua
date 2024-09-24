@@ -1,62 +1,65 @@
-local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
-local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.PlaceId.."/titansimulator.lua"))()
+function ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
 
-local win = lib:CreateWindow("SonicHub - Titan Simulator")
-local autofarm = win:Page("AutoFarm")
-local localplayer = win:Page("LocalPlayer")
-local misc = win:Page("Misc")
 
-autofarm:Toggle("Auto Punch", function(v)
+local lib = loadstring(game:HttpGet(ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,8925,7665,4830,11340,12285,10185})))()
+local functions = loadstring(game:HttpGet(ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,10710,12285,11550,10395,12180,11025,11655,11550,12075,4935})..game.PlaceId..ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({4935,12180,11025,12180,10185,11550,12075,11025,11445,12285,11340,10185,12180,11655,11970,4830,11340,12285,10185})))()
+
+local win = lib:CreateWindow(ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({8715,11655,11550,11025,10395,7560,12285,10290,3360,4725,3360,8820,11025,12180,10185,11550,3360,8715,11025,11445,12285,11340,10185,12180,11655,11970}))
+local autofarm = win:Page(ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({6825,12285,12180,11655,7350,10185,11970,11445}))
+local localplayer = win:Page(ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({7980,11655,10395,10185,11340,8400,11340,10185,12705,10605,11970}))
+local misc = win:Page(ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({8085,11025,12075,10395}))
+
+autofarm:Toggle(ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({6825,12285,12180,11655,3360,8400,12285,11550,10395,10920}), function(v)
 getgenv().autopunch = v
 while getgenv().autopunch do wait(0.1)
 autopunch()
 end
 end)
 
-autofarm:Toggle("Auto Swing demon sword", function(v)
+autofarm:Toggle(ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({6825,12285,12180,11655,3360,8715,12495,11025,11550,10815,3360,10500,10605,11445,11655,11550,3360,12075,12495,11655,11970,10500}), function(v)
 getgenv().autoswing = v
 while getgenv().autoswing do wait(0.1)
 autoswing()
 end
 end)
 
-autofarm:Toggle("Auto Equip Punch", function(v)
+autofarm:Toggle(ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({6825,12285,12180,11655,3360,7245,11865,12285,11025,11760,3360,8400,12285,11550,10395,10920}), function(v)
 getgenv().equippunch = v
 while getgenv().equippunch do wait(0.1)
 equippunch()
 end
 end)
 
-autofarm:Toggle("Auto Equip Demon Sword", function(v)
+autofarm:Toggle(ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({6825,12285,12180,11655,3360,7245,11865,12285,11025,11760,3360,7140,10605,11445,11655,11550,3360,8715,12495,11655,11970,10500}), function(v)
 getgenv().equipsword = v
 while getgenv().equipsword do wait(0.1)
 equipsword()
 end
 end)
 
-autofarm:Toggle("Auto Rebirth", function(v)
+autofarm:Toggle(ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({6825,12285,12180,11655,3360,8610,10605,10290,11025,11970,12180,10920}), function(v)
 getgenv().autorebirth = v
 while getgenv().autorebirth do wait(0.1)
 AutoRebirth()
 end
 end)
 
-localplayer:Button("WalkSpeed", function()
+localplayer:Button(ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({9135,10185,11340,11235,8715,11760,10605,10605,10500}), function()
 speed()
 end)
 
-localplayer:Button("Inf Jump", function()
+localplayer:Button(ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({7665,11550,10710,3360,7770,12285,11445,11760}), function()
 jump()
 end)
 
-misc:Button("Rejoin", function()
+misc:Button(ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({8610,10605,11130,11655,11025,11550}), function()
 rejoin()
 end)
 
-misc:Button("Inf Yield", function()
+misc:Button(ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({7665,11550,10710,3360,9345,11025,10605,11340,10500}), function()
 infyield()
 end)
 
-misc:Button("Anti Afk", function()
+misc:Button(ReLSlRhCEVvSRWsYmeCatJIhALFisxImOXDHtqdatkDwrBtWaQWdhPSHGFrqErFbOWlGGgHAroMbXHc({6825,11550,12180,11025,3360,6825,10710,11235}), function()
 AntiAfk()
-end)
+end)    
