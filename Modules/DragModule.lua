@@ -1,18 +1,8 @@
-local UserInputService = game:GetService("UserInputService")
+function xxCbkKOUAqZOGjuCbSLhve(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
 
-local dragging
-local dragInput
-local dragStart
-local startPos
 
-local DragShit = {}
+local UserInputService = game:GetService(xxCbkKOUAqZOGjuCbSLhve({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605}))
 
-function DragShit:Drag(gui)
-local function update(input)
-	local delta = input.Position - dragStart
-	gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0, true); -- drag speed
-end
-gui.InputBegan:Connect(function(input)
 	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 		dragging = true
 		dragStart = input.Position
@@ -26,11 +16,13 @@ gui.InputBegan:Connect(function(input)
 	end
 end)
 
+
 gui.InputChanged:Connect(function(input)
 	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 		dragInput = input
 	end
 end)
+
 
 UserInputService.InputChanged:Connect(function(input)
 	if input == dragInput and dragging then
@@ -39,4 +31,5 @@ UserInputService.InputChanged:Connect(function(input)
 end)
 end
 
-return DragShit
+
+return DragShit    
