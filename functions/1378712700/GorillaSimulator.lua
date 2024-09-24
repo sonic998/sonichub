@@ -1,57 +1,26 @@
+function lWbFkrCKFbRpeSiIYksDUUHABJPreGfdTxYhuiyBcmTxegYFSZobmFPMPTbsKFXFTJYKfACGNSEINiVZaCJbUEjekHPI(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
+
+
 function speed()
-local mt = getrawmetatable(game)
-setreadonly(mt, false)
-local old = mt.__newindex
 
-    mt.__newindex = newcclosure(function(a, b, c)
-    if tostring(a) == "Humanoid" and tostring(b) == "WalkSpeed" then
-        return old(a, b, 100)
-    end
-    return old(a,b,c)
-    end)
-     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
-end
-
-function autoeat()
-for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-if v.Name == "Banana" then
-v:Activate()
-end
-end
-end
-
-function autoequip()
-local Players = game:GetService("Players")
-local player = Players:FindFirstChildOfClass("Player")
-if player and player.Character then
-local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-if humanoid then
-local tool = Players.LocalPlayer.Backpack:FindFirstChild("Banana")
-if tool then
-humanoid:EquipTool(tool)
-end
-end
-end
-end
-
-function jump()
-game:GetService("UserInputService").jumpRequest:Connect(function()
-     game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass"Humanoid":ChangeState("Jumping")
 end)
 end
 
+
 function rejoin()
-game:GetService("TeleportService"):Teleport(game.PlaceId)
+game:GetService(lWbFkrCKFbRpeSiIYksDUUHABJPreGfdTxYhuiyBcmTxegYFSZobmFPMPTbsKFXFTJYKfACGNSEINiVZaCJbUEjekHPI({8820,10605,11340,10605,11760,11655,11970,12180,8715,10605,11970,12390,11025,10395,10605})):Teleport(game.PlaceId)
 end
 
+
 function infyield()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+  loadstring(game:HttpGet(lWbFkrCKFbRpeSiIYksDUUHABJPreGfdTxYhuiyBcmTxegYFSZobmFPMPTbsKFXFTJYKfACGNSEINiVZaCJbUEjekHPI({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,7245,10500,10815,10605,7665,9345,4935,11025,11550,10710,11025,11550,11025,12180,10605,12705,11025,10605,11340,10500,4935,11445,10185,12075,12180,10605,11970,4935,12075,11655,12285,11970,10395,10605})))()
 end
     
 function AntiAfk()
-local bb=game:GetService("VirtualUser")
-game:GetService("Players").LocalPlayer.Idled:Connect(function()
+local bb=game:GetService(lWbFkrCKFbRpeSiIYksDUUHABJPreGfdTxYhuiyBcmTxegYFSZobmFPMPTbsKFXFTJYKfACGNSEINiVZaCJbUEjekHPI({9030,11025,11970,12180,12285,10185,11340,8925,12075,10605,11970}))
+game:GetService(lWbFkrCKFbRpeSiIYksDUUHABJPreGfdTxYhuiyBcmTxegYFSZobmFPMPTbsKFXFTJYKfACGNSEINiVZaCJbUEjekHPI({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Idled:Connect(function()
 bb:CaptureController()
 bb:ClickButton2(Vector2.new())
 end)
 end
+    
