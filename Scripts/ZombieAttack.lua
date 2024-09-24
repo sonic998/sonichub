@@ -1,35 +1,38 @@
-local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
-local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.PlaceId.."/ZombieAttack.lua"))()
+function MIFEAxWtvSXU(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
 
-local win = lib:CreateWindow("SonicHub - Zombie Attack")
-local autofarm = win:Page("AutoFarm")
-local localplayer = win:Page("LocalPlayer")
-local misc = win:Page("Misc")
 
-autofarm:Toggle("Autokill", function(v)
+local lib = loadstring(game:HttpGet(MIFEAxWtvSXU({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,8925,7665,4830,11340,12285,10185})))()
+local functions = loadstring(game:HttpGet(MIFEAxWtvSXU({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,10710,12285,11550,10395,12180,11025,11655,11550,12075,4935})..game.PlaceId..MIFEAxWtvSXU({4935,9450,11655,11445,10290,11025,10605,6825,12180,12180,10185,10395,11235,4830,11340,12285,10185})))()
+
+local win = lib:CreateWindow(MIFEAxWtvSXU({8715,11655,11550,11025,10395,7560,12285,10290,3360,4725,3360,9450,11655,11445,10290,11025,10605,3360,6825,12180,12180,10185,10395,11235}))
+local autofarm = win:Page(MIFEAxWtvSXU({6825,12285,12180,11655,7350,10185,11970,11445}))
+local localplayer = win:Page(MIFEAxWtvSXU({7980,11655,10395,10185,11340,8400,11340,10185,12705,10605,11970}))
+local misc = win:Page(MIFEAxWtvSXU({8085,11025,12075,10395}))
+
+autofarm:Toggle(MIFEAxWtvSXU({6825,12285,12180,11655,11235,11025,11340,11340}), function(v)
 autokill(v)
 end)
 
-autofarm:Toggle("Auto Equip Gun", function(v)
+autofarm:Toggle(MIFEAxWtvSXU({6825,12285,12180,11655,3360,7245,11865,12285,11025,11760,3360,7455,12285,11550}), function(v)
 EquipGun()
 end)
 
-localplayer:Button("WalkSpeed", function()
+localplayer:Button(MIFEAxWtvSXU({9135,10185,11340,11235,8715,11760,10605,10605,10500}), function()
 speed()
 end)
 
-localplayer:Button("Inf Jump", function()
+localplayer:Button(MIFEAxWtvSXU({7665,11550,10710,3360,7770,12285,11445,11760}), function()
 jump()
 end)
 
-misc:Button("Rejoin", function()
+misc:Button(MIFEAxWtvSXU({8610,10605,11130,11655,11025,11550}), function()
 rejoin()
 end)
 
-misc:Button("Inf Yield", function()
+misc:Button(MIFEAxWtvSXU({7665,11550,10710,3360,9345,11025,10605,11340,10500}), function()
 infyield()
 end)
 
-misc:Button("Anti Afk", function()
+misc:Button(MIFEAxWtvSXU({6825,11550,12180,11025,3360,6825,10710,11235}), function()
 AntiAfk()
-end)
+end)    
