@@ -1,47 +1,50 @@
-local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
-local functions = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/functions/"..game.PlaceId.."/RabbitSimulator.lua"))()
+function pxWIISrAXjFPZzuOLDZNEMRQxyVTJvpPCgKJExCQMghpGVOqGSfAm(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
 
-local win = lib:CreateWindow("SonicHub - Rabbit Simulator 2")
-local autofarm = win:Page("AutoFarm")
-local localplayer = win:Page("LocalPlayer")
-local misc = win:Page("Misc")
 
-autofarm:Button("Auto Eat Carrot", function(v)
+local lib = loadstring(game:HttpGet(pxWIISrAXjFPZzuOLDZNEMRQxyVTJvpPCgKJExCQMghpGVOqGSfAm({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,8925,7665,4830,11340,12285,10185})))()
+local functions = loadstring(game:HttpGet(pxWIISrAXjFPZzuOLDZNEMRQxyVTJvpPCgKJExCQMghpGVOqGSfAm({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,10710,12285,11550,10395,12180,11025,11655,11550,12075,4935})..game.PlaceId..pxWIISrAXjFPZzuOLDZNEMRQxyVTJvpPCgKJExCQMghpGVOqGSfAm({4935,8610,10185,10290,10290,11025,12180,8715,11025,11445,12285,11340,10185,12180,11655,11970,4830,11340,12285,10185})))()
+
+local win = lib:CreateWindow(pxWIISrAXjFPZzuOLDZNEMRQxyVTJvpPCgKJExCQMghpGVOqGSfAm({8715,11655,11550,11025,10395,7560,12285,10290,3360,4725,3360,8610,10185,10290,10290,11025,12180,3360,8715,11025,11445,12285,11340,10185,12180,11655,11970,3360,5250}))
+local autofarm = win:Page(pxWIISrAXjFPZzuOLDZNEMRQxyVTJvpPCgKJExCQMghpGVOqGSfAm({6825,12285,12180,11655,7350,10185,11970,11445}))
+local localplayer = win:Page(pxWIISrAXjFPZzuOLDZNEMRQxyVTJvpPCgKJExCQMghpGVOqGSfAm({7980,11655,10395,10185,11340,8400,11340,10185,12705,10605,11970}))
+local misc = win:Page(pxWIISrAXjFPZzuOLDZNEMRQxyVTJvpPCgKJExCQMghpGVOqGSfAm({8085,11025,12075,10395}))
+
+autofarm:Button(pxWIISrAXjFPZzuOLDZNEMRQxyVTJvpPCgKJExCQMghpGVOqGSfAm({6825,12285,12180,11655,3360,7245,10185,12180,3360,7035,10185,11970,11970,11655,12180}), function(v)
 while wait(0.1) do
 autoeat()
 end
 end)
 
-autofarm:Toggle("Auto Equip Carrot", function(v)
+autofarm:Toggle(pxWIISrAXjFPZzuOLDZNEMRQxyVTJvpPCgKJExCQMghpGVOqGSfAm({6825,12285,12180,11655,3360,7245,11865,12285,11025,11760,3360,7035,10185,11970,11970,11655,12180}), function(v)
 getgenv().autoequip = v
 while getgenv().autoequip do wait(0.1)
 autoequip()
 end
 end)
 
-autofarm:Toggle("Auto Rebirth", function(v)
+autofarm:Toggle(pxWIISrAXjFPZzuOLDZNEMRQxyVTJvpPCgKJExCQMghpGVOqGSfAm({6825,12285,12180,11655,3360,8610,10605,10290,11025,11970,12180,10920}), function(v)
 getgenv().autorebirth = v
 while getgenv().autorebirth do wait(0.1)
 autorebirth()
 end
 end)
 
-localplayer:Button("WalkSpeed", function()
+localplayer:Button(pxWIISrAXjFPZzuOLDZNEMRQxyVTJvpPCgKJExCQMghpGVOqGSfAm({9135,10185,11340,11235,8715,11760,10605,10605,10500}), function()
   speed()
 end)
 
-localplayer:Button("Inf Jump", function()
+localplayer:Button(pxWIISrAXjFPZzuOLDZNEMRQxyVTJvpPCgKJExCQMghpGVOqGSfAm({7665,11550,10710,3360,7770,12285,11445,11760}), function()
   infjump()
 end)
 
-misc:Button("Rejoin", function()
+misc:Button(pxWIISrAXjFPZzuOLDZNEMRQxyVTJvpPCgKJExCQMghpGVOqGSfAm({8610,10605,11130,11655,11025,11550}), function()
   rejoin()
 end)
 
-misc:Button("Inf Yield", function()
+misc:Button(pxWIISrAXjFPZzuOLDZNEMRQxyVTJvpPCgKJExCQMghpGVOqGSfAm({7665,11550,10710,3360,9345,11025,10605,11340,10500}), function()
 infyield()
 end)
 
-misc:Button("Anti Afk", function()
+misc:Button(pxWIISrAXjFPZzuOLDZNEMRQxyVTJvpPCgKJExCQMghpGVOqGSfAm({6825,11550,12180,11025,3360,6825,10710,11235}), function()
 antiafk()
-end)
+end)    
