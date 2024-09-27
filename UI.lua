@@ -1,23 +1,23 @@
-function qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
+function inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
 
 
 if get_hidden_gui or gethui then
 	local hiddenUI = get_hidden_gui or gethui
 	for i,v in pairs(hiddenUI():GetChildren()) do
-		if v:IsA(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8715,10395,11970,10605,10605,11550,7455,12285,11025})) and v.Name == qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8715,11655,11550,11025,10395,8925,7665}) then
+		if v:IsA(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8715,10395,11970,10605,10605,11550,7455,12285,11025})) and v.Name == inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8715,11655,11550,11025,10395,8925,7665}) then
 			v:Destroy()
 		end
 	end
 elseif syn and syn.protect_gui then
 	for i,v in pairs(game.CoreGui:GetChildren()) do
-		if v:IsA(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8715,10395,11970,10605,10605,11550,7455,12285,11025})) and v.Name == qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8715,11655,11550,11025,10395,8925,7665}) then
+		if v:IsA(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8715,10395,11970,10605,10605,11550,7455,12285,11025})) and v.Name == inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8715,11655,11550,11025,10395,8925,7665}) then
 			syn.unprotect_gui(v)
 			v:Destroy()
 		end
 	end
 else
 	for i,v in pairs(game.CoreGui:GetChildren()) do
-		if v:IsA(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8715,10395,11970,10605,10605,11550,7455,12285,11025})) and v.Name == qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8715,11655,11550,11025,10395,8925,7665}) then
+		if v:IsA(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8715,10395,11970,10605,10605,11550,7455,12285,11025})) and v.Name == inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8715,11655,11550,11025,10395,8925,7665}) then
 			v:Destroy()
 		end
 	end
@@ -28,26 +28,26 @@ local lib = {}
 
 
 function lib:CreateWindow(txt)
-	local SonicUI = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8715,10395,11970,10605,10605,11550,7455,12285,11025}))
-	local header = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7350,11970,10185,11445,10605}))
-	local main = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7350,11970,10185,11445,10605}))
-	local UIGradient = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7455,11970,10185,10500,11025,10605,11550,12180}))
-	local title = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
-	local close = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7665,11445,10185,10815,10605,6930,12285,12180,12180,11655,11550}))
-	local TabFrame = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7350,11970,10185,11445,10605}))
-	local TabContainer = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8715,10395,11970,11655,11340,11340,11025,11550,10815,7350,11970,10185,11445,10605}))
-	local UIGradient_2 = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7455,11970,10185,10500,11025,10605,11550,12180}))
-	local SectonFrame = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7350,11970,10185,11445,10605}))
-	local listtab_2 = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7980,11025,12075,12180,7980,10185,12705,11655,12285,12180}))
-	local listtab = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7980,11025,12075,12180,7980,10185,12705,11655,12285,12180}))
-	local Min = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
-	local UIGradient_3 = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7455,11970,10185,10500,11025,10605,11550,12180}))
+	local SonicUI = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8715,10395,11970,10605,10605,11550,7455,12285,11025}))
+	local header = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7350,11970,10185,11445,10605}))
+	local main = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7350,11970,10185,11445,10605}))
+	local UIGradient = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7455,11970,10185,10500,11025,10605,11550,12180}))
+	local title = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
+	local close = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7665,11445,10185,10815,10605,6930,12285,12180,12180,11655,11550}))
+	local TabFrame = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7350,11970,10185,11445,10605}))
+	local TabContainer = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8715,10395,11970,11655,11340,11340,11025,11550,10815,7350,11970,10185,11445,10605}))
+	local UIGradient_2 = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7455,11970,10185,10500,11025,10605,11550,12180}))
+	local SectonFrame = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7350,11970,10185,11445,10605}))
+	local listtab_2 = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7980,11025,12075,12180,7980,10185,12705,11655,12285,12180}))
+	local listtab = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7980,11025,12075,12180,7980,10185,12705,11655,12285,12180}))
+	local Min = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
+	local UIGradient_3 = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7455,11970,10185,10500,11025,10605,11550,12180}))
 
-	SonicUI.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8715,11655,11550,11025,10395,8925,7665})
+	SonicUI.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8715,11655,11550,11025,10395,8925,7665})
 	SonicUI.ResetOnSpawn = false
-	SonicUI.Parent = game:GetService(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7035,11655,11970,10605,7455,12285,11025}))
+	SonicUI.Parent = game:GetService(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7035,11655,11970,10605,7455,12285,11025}))
 
-	game:GetService(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605})).InputBegan:Connect(function(current, ok) 
+	game:GetService(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605})).InputBegan:Connect(function(current, ok) 
 		if not ok then 
 			if current.KeyCode == Enum.KeyCode.RightAlt then 
 				if SonicUI.Enabled == true then
@@ -59,7 +59,7 @@ function lib:CreateWindow(txt)
 		end
 	end)
 	
-	header.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({10920,10605,10185,10500,10605,11970})
+	header.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({10920,10605,10185,10500,10605,11970})
 	header.Parent = SonicUI
 	header.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	header.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -68,12 +68,12 @@ function lib:CreateWindow(txt)
 	header.Size = UDim2.new(0, 473, 0, 28)
 	header.Active = true
 	
-	Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7035,11655,11970,11550,10605,11970}), header)
+	Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7035,11655,11970,11550,10605,11970}), header)
 	
 	UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(165, 30, 255)), ColorSequenceKeypoint.new(0.22, Color3.fromRGB(85, 85, 255)), ColorSequenceKeypoint.new(0.46, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(0.73, Color3.fromRGB(85, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(171, 4, 255))}
 	UIGradient_3.Parent = header
 
-	main.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({11445,10185,11025,11550})
+	main.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({11445,10185,11025,11550})
 	main.Parent = header
 	main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	main.BorderSizePixel = 0
@@ -81,13 +81,13 @@ function lib:CreateWindow(txt)
 	main.Size = UDim2.new(0, 473, 0, 288)
 	main.ClipsDescendants = true
 
-	Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7035,11655,11970,11550,10605,11970}), main).CornerRadius = UDim.new(0, 9)
+	Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7035,11655,11970,11550,10605,11970}), main).CornerRadius = UDim.new(0, 9)
 
 	UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(165, 30, 255)), ColorSequenceKeypoint.new(0.22, Color3.fromRGB(85, 85, 255)), ColorSequenceKeypoint.new(0.46, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(0.73, Color3.fromRGB(85, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(171, 4, 255))}
 	UIGradient.Parent = main
 
 
-	local UserInputService = game:GetService(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605}))
+	local UserInputService = game:GetService(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605}))
 
 	local dragging
 	local dragInput
@@ -97,7 +97,7 @@ function lib:CreateWindow(txt)
 
 	local function update(input)
 		local delta = input.Position - dragStart
-		gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8295,12285,12180}), qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7980,11025,11550,10605,10185,11970}), 0, true); -- drag speed
+		gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8295,12285,12180}), inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7980,11025,11550,10605,10185,11970}), 0, true); -- drag speed
 	end
 	gui.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
@@ -125,7 +125,7 @@ function lib:CreateWindow(txt)
 		end
 	end)
 
-	title.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({12180,11025,12180,11340,10605})
+	title.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({12180,11025,12180,11340,10605})
 	title.Parent = header
 	title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	title.BackgroundTransparency = 1.000
@@ -140,20 +140,20 @@ function lib:CreateWindow(txt)
 	title.TextSize = 14.000
 	title.TextWrapped = true
 
-	close.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({10395,11340,11655,12075,10605})
+	close.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({10395,11340,11655,12075,10605})
 	close.Parent = header
 	close.BackgroundTransparency = 1.000
 	close.Position = UDim2.new(0.946088791, 0, 0.0187499784, 0)
 	close.Size = UDim2.new(0, 25, 0, 25)
 	close.ZIndex = 2
-	close.Image = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5355,5985,5250,5670,5355,5040,5565,5985,5040,5460})
+	close.Image = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5355,5985,5250,5670,5355,5040,5565,5985,5040,5460})
 	close.ImageRectOffset = Vector2.new(284, 4)
 	close.ImageRectSize = Vector2.new(24, 24)
 	close.MouseButton1Click:Connect(function()
 		SonicUI:Destroy()
 	end)
 	
-	Min.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8085,11025,11550})
+	Min.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8085,11025,11550})
 	Min.Parent = header
 	Min.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Min.BackgroundTransparency = 1.000
@@ -162,7 +162,7 @@ function lib:CreateWindow(txt)
 	Min.Position = UDim2.new(0.863425016, 0, 0.0190000013, 0)
 	Min.Size = UDim2.new(0, 25, 0, 25)
 	Min.Font = Enum.Font.SourceSansBold
-	Min.Text = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({6300})
+	Min.Text = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({6300})
 	Min.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Min.TextScaled = true
 	Min.TextSize = 14.000
@@ -170,14 +170,16 @@ function lib:CreateWindow(txt)
 	local toggle = false
 	Min.MouseButton1Click:Connect(function()
 		if not toggle then
-			game:GetService(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(main, TweenInfo.new(0.2), {Size = UDim2.new(0, 473, 0, 0)}):Play()
+			game:GetService(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(main, TweenInfo.new(0.2), {Size = UDim2.new(0, 473, 0, 0)}):Play()
+			Min.Rotation = -90
 		elseif toggle then
-			game:GetService(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(main, TweenInfo.new(0.2), {Size = UDim2.new(0, 473, 0, 288)}):Play()
+			game:GetService(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(main, TweenInfo.new(0.2), {Size = UDim2.new(0, 473, 0, 288)}):Play()
+			Min.Rotation = 0
 		end
 		toggle = not toggle
 	end)
 
-	TabFrame.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10185,10290,7350,11970,10185,11445,10605})
+	TabFrame.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10185,10290,7350,11970,10185,11445,10605})
 	TabFrame.Parent = main
 	TabFrame.BackgroundColor3 = Color3.fromRGB(108, 19, 164)
 	TabFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
@@ -185,12 +187,12 @@ function lib:CreateWindow(txt)
 	TabFrame.Position = UDim2.new(0.002, 0,0.021, 0)
 	TabFrame.Size = UDim2.new(0, 120, 0, 280)
 
-	Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7035,11655,11970,11550,10605,11970}), TabFrame).CornerRadius = UDim.new(0, 9)
+	Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7035,11655,11970,11550,10605,11970}), TabFrame).CornerRadius = UDim.new(0, 9)
 
 	UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(165, 60, 255)), ColorSequenceKeypoint.new(0.22, Color3.fromRGB(85, 100, 255)), ColorSequenceKeypoint.new(0.46, Color3.fromRGB(170, 30, 255)), ColorSequenceKeypoint.new(0.73, Color3.fromRGB(85, 30, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(171, 30, 255))}
 	UIGradient_2.Parent = TabFrame
 
-	TabContainer.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10185,10290,7035,11655,11550,12180,10185,11025,11550,10605,11970})
+	TabContainer.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10185,10290,7035,11655,11550,12180,10185,11025,11550,10605,11970})
 	TabContainer.Parent = TabFrame
 	TabContainer.BackgroundColor3 = Color3.fromRGB(108, 19, 164)
 	TabContainer.BackgroundTransparency = 1
@@ -203,18 +205,18 @@ function lib:CreateWindow(txt)
 	TabContainer.ScrollingDirection = Enum.ScrollingDirection.Y
 	TabContainer.ClipsDescendants = true
 
-	SectonFrame.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8715,10605,10395,12180,11655,11550,7350,11970,10185,11445,10605})
+	SectonFrame.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8715,10605,10395,12180,11655,11550,7350,11970,10185,11445,10605})
 	SectonFrame.Parent = main
 	SectonFrame.BackgroundColor3 = Color3.fromRGB(108, 19, 164)
 	SectonFrame.BackgroundTransparency = 1.000
 	SectonFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
 	SectonFrame.BorderSizePixel = 0
-	SectonFrame.Position = UDim2.new(0.272947401, 0, 0.131429255, 0)
+	SectonFrame.Position = UDim2.new(0.272947401, 0, 0.021, 0)
 	SectonFrame.Size = UDim2.new(0, 343, 0, 250)
 
-	Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7035,11655,11970,11550,10605,11970}), SectonFrame).CornerRadius = UDim.new(0, 9)
+	Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7035,11655,11970,11550,10605,11970}), SectonFrame).CornerRadius = UDim.new(0, 9)
 
-	listtab.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({11340,11025,12075,12180,12180,10185,10290})
+	listtab.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({11340,11025,12075,12180,12180,10185,10290})
 	listtab.Parent = TabContainer
 	listtab.HorizontalAlignment = Enum.HorizontalAlignment.Center
 	listtab.SortOrder = Enum.SortOrder.LayoutOrder
@@ -226,11 +228,11 @@ function lib:CreateWindow(txt)
 	local Page = {}
 
 	function Page:Page(txt)
-		txt = txt or qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8400,10185,10815,10605})
-		local TabButton = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
-		local ThemeTabButton = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
-		local listelements = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7980,11025,12075,12180,7980,10185,12705,11655,12285,12180}))
-		local SectionContainer = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8715,10395,11970,11655,11340,11340,11025,11550,10815,7350,11970,10185,11445,10605}))
+		txt = txt or inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8400,10185,10815,10605})
+		local TabButton = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
+		local ThemeTabButton = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
+		local listelements = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7980,11025,12075,12180,7980,10185,12705,11655,12285,12180}))
+		local SectionContainer = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8715,10395,11970,11655,11340,11340,11025,11550,10815,7350,11970,10185,11445,10605}))
 
 		SectionContainer.Name = txt
 		SectionContainer.Parent = SectonFrame
@@ -259,7 +261,7 @@ function lib:CreateWindow(txt)
 		TabButton.TextWrapped = true
 		TabButton.MouseButton1Click:Connect(function()
 			for i,v in pairs(SectonFrame:GetChildren()) do
-				if v:IsA(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8715,10395,11970,11655,11340,11340,11025,11550,10815,7350,11970,10185,11445,10605})) then
+				if v:IsA(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8715,10395,11970,11655,11340,11340,11025,11550,10815,7350,11970,10185,11445,10605})) then
 					v.Visible = false
 				end
 			end
@@ -267,15 +269,15 @@ function lib:CreateWindow(txt)
 		end)
 
 		for i,v in pairs(SectonFrame:GetChildren()) do
-			if v:IsA(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8715,10395,11970,11655,11340,11340,11025,11550,10815,7350,11970,10185,11445,10605})) then
+			if v:IsA(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8715,10395,11970,11655,11340,11340,11025,11550,10815,7350,11970,10185,11445,10605})) then
 				v.Visible = false
 			end
 		end
 		SectionContainer.Visible = true
 
-		Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7035,11655,11970,11550,10605,11970}), TabButton).CornerRadius = UDim.new(0, 8)
+		Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7035,11655,11970,11550,10605,11970}), TabButton).CornerRadius = UDim.new(0, 8)
 
-		--ThemeTabButton.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10920,10605,11445,10605,8820,10185,10290,6930,12285,12180,12180,11655,11550})
+		--ThemeTabButton.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10920,10605,11445,10605,8820,10185,10290,6930,12285,12180,12180,11655,11550})
 		--ThemeTabButton.Parent = TabContainer
 		--ThemeTabButton.BackgroundColor3 = Color3.fromRGB(85, 30, 255)
 		--ThemeTabButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -283,14 +285,14 @@ function lib:CreateWindow(txt)
 		--ThemeTabButton.Position = UDim2.new(-0.00211435952, 0, 0.163194463, 0)
 		--ThemeTabButton.Size = UDim2.new(0, 105, 0, 37)
 		--ThemeTabButton.Font = Enum.Font.SourceSansBold
-		--ThemeTabButton.Text = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10920,10605,11445,10605,12075})
+		--ThemeTabButton.Text = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10920,10605,11445,10605,12075})
 		--ThemeTabButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 		--ThemeTabButton.TextScaled = true
 		--ThemeTabButton.TextSize = 14.000
 		--ThemeTabButton.TextWrapped = true
 		--ThemeTabButton.MouseButton1Click:Connect(function()
 		--for i,v in pairs(SectonFrame:GetChildren()) do
-		--if v:IsA(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8715,10395,11970,11655,11340,11340,11025,11550,10815,7350,11970,10185,11445,10605})) then
+		--if v:IsA(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8715,10395,11970,11655,11340,11340,11025,11550,10815,7350,11970,10185,11445,10605})) then
 		--v.Visible = false
 		--end
 		--end
@@ -299,7 +301,7 @@ function lib:CreateWindow(txt)
 
 
 
-		listelements.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({11340,11025,12075,12180,10605,11340,10605,11445,10605,11550,12180,12075})
+		listelements.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({11340,11025,12075,12180,10605,11340,10605,11445,10605,11550,12180,12075})
 		listelements.Parent = SectionContainer
 		listelements.HorizontalAlignment = Enum.HorizontalAlignment.Center
 		listelements.SortOrder = Enum.SortOrder.LayoutOrder
@@ -312,8 +314,8 @@ function lib:CreateWindow(txt)
 
 		function elements:Label(txt)
 			local LabelFunction = {}
-			txt = txt or qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({11340,10185,10290,10605,11340})
-			local Label = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
+			txt = txt or inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({11340,10185,10290,10605,11340})
+			local Label = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
 
 			Label.Name = txt
 			Label.Parent = SectionContainer
@@ -335,9 +337,9 @@ function lib:CreateWindow(txt)
 
 		function elements:Button(txt, callback)
 			local ButtonFunction = {}
-			txt = txt or qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({10290,12285,12180,12180,11655,11550})
+			txt = txt or inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({10290,12285,12180,12180,11655,11550})
 			callback = callback or function() end
-			local Button = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
+			local Button = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
 
 			Button.Name = txt
 			Button.Parent = SectionContainer
@@ -355,19 +357,19 @@ function lib:CreateWindow(txt)
 			Button.MouseButton1Click:Connect(function()
 				pcall(callback)
 			end)
-			Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7035,11655,11970,11550,10605,11970}), Button)
+			Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7035,11655,11970,11550,10605,11970}), Button)
 			return ButtonFunction
 		end
 		function elements:Toggle(txt, callback)
 			local ToggleFunction = {}
-			txt = txt or qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({12180,11655,10815,10815,11340,10605})
+			txt = txt or inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({12180,11655,10815,10815,11340,10605})
 			callback = callback or function() end
 			local switch = false
-			local Toggle = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7350,11970,10185,11445,10605}))
-			local click = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
-			local Txt = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
-			local Toggle_2 = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7350,11970,10185,11445,10605}))
-			local ColorThingy = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7350,11970,10185,11445,10605}))
+			local Toggle = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7350,11970,10185,11445,10605}))
+			local click = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
+			local Txt = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
+			local Toggle_2 = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7350,11970,10185,11445,10605}))
+			local ColorThingy = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7350,11970,10185,11445,10605}))
 
 			Toggle.Name = txt
 			Toggle.Parent = SectionContainer
@@ -376,9 +378,9 @@ function lib:CreateWindow(txt)
 			Toggle.BorderSizePixel = 0
 			Toggle.Size = UDim2.new(0, 311, 0, 37)
 
-			Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7035,11655,11970,11550,10605,11970}), Toggle)
+			Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7035,11655,11970,11550,10605,11970}), Toggle)
 
-			click.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({10395,11340,11025,10395,11235})
+			click.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({10395,11340,11025,10395,11235})
 			click.Parent = Toggle
 			click.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			click.BackgroundTransparency = 1.000
@@ -386,20 +388,20 @@ function lib:CreateWindow(txt)
 			click.BorderSizePixel = 0
 			click.Size = UDim2.new(0, 311, 0, 37)
 			click.Font = Enum.Font.SourceSans
-			click.Text = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({})
+			click.Text = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({})
 			click.TextColor3 = Color3.fromRGB(0, 0, 0)
 			click.TextSize = 14.000
 			click.MouseButton1Click:Connect(function()
 				if switch == false then
-					game:GetService(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(0, 170, 0)}):Play()
+					game:GetService(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(0, 170, 0)}):Play()
 				elseif switch == true then
-					game:GetService(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(170, 0, 0)}):Play()
+					game:GetService(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(170, 0, 0)}):Play()
 				end
 				switch = not switch
 				pcall(callback, switch)
 			end)
 
-			Txt.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,12600,12180})
+			Txt.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,12600,12180})
 			Txt.Parent = Toggle
 			Txt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			Txt.BackgroundTransparency = 1.000
@@ -414,7 +416,7 @@ function lib:CreateWindow(txt)
 			Txt.TextWrapped = true
 			Txt.TextXAlignment = Enum.TextXAlignment.Center
 
-			ColorThingy.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7035,11655,11340,11655,11970,8820,10920,11025,11550,10815,12705})
+			ColorThingy.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7035,11655,11340,11655,11970,8820,10920,11025,11550,10815,12705})
 			ColorThingy.Parent = Toggle
 			ColorThingy.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 			ColorThingy.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -422,45 +424,45 @@ function lib:CreateWindow(txt)
 			ColorThingy.Position = UDim2.new(0,280, 0, 10)
 			ColorThingy.Size = UDim2.new(0, 18, 0, 20)
 
-			Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7035,11655,11970,11550,10605,11970}), ColorThingy).CornerRadius = UDim.new(1, 0)
+			Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7035,11655,11970,11550,10605,11970}), ColorThingy).CornerRadius = UDim.new(1, 0)
 			function ToggleFunction:ChangeState(bool)
 				if bool == true then
-					game:GetService(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(0, 170, 0)}):Play()
+					game:GetService(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(0, 170, 0)}):Play()
 				end
 				if bool == false then
-					game:GetService(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(170, 0, 0)}):Play()
+					game:GetService(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(170, 0, 0)}):Play()
 				end
 				switch = bool
 				pcall(callback, switch)
 			end
 			function ToggleFunction:ChangeColor()
 				switch = true
-				game:GetService(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(0, 170, 0)}):Play()
+				game:GetService(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(0, 170, 0)}):Play()
 			end
 			return ToggleFunction
 		end
 		function elements:Dropdown(txt, list, callback)
 			local DropDownFunction = {}
 			list = list or {}
-			txt = txt or qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7140,11970,11655,11760,10500,11655,12495,11550})
+			txt = txt or inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7140,11970,11655,11760,10500,11655,12495,11550})
 			callback = callback or function() end
 			local opened = false
 			local DropYSize = 33
 
 
-			local dropFrame = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7350,11970,10185,11445,10605}))
-			local dropOpen = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
-			local listImg = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7665,11445,10185,10815,10605,7980,10185,10290,10605,11340}))
-			local itemTextbox = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
+			local dropFrame = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7350,11970,10185,11445,10605}))
+			local dropOpen = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
+			local listImg = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7665,11445,10185,10815,10605,7980,10185,10290,10605,11340}))
+			local itemTextbox = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
 
-			local UICorner = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7035,11655,11970,11550,10605,11970}))
-			local UIListLayout = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7980,11025,12075,12180,7980,10185,12705,11655,12285,12180}))
+			local UICorner = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7035,11655,11970,11550,10605,11970}))
+			local UIListLayout = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7980,11025,12075,12180,7980,10185,12705,11655,12285,12180}))
 
 
 			local ms = game.Players.LocalPlayer:GetMouse()
 
 
-			dropFrame.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({10500,11970,11655,11760,7350,11970,10185,11445,10605})
+			dropFrame.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({10500,11970,11655,11760,7350,11970,10185,11445,10605})
 			dropFrame.Parent = sectionInners
 			dropFrame.BackgroundColor3 = themeList.Background
 			dropFrame.BorderSizePixel = 0
@@ -469,13 +471,13 @@ function lib:CreateWindow(txt)
 			dropFrame.ClipsDescendants = true
 
 			local btn = dropOpen
-			dropOpen.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({10500,11970,11655,11760,8295,11760,10605,11550})
+			dropOpen.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({10500,11970,11655,11760,8295,11760,10605,11550})
 			dropOpen.Parent = dropFrame
 			dropOpen.BackgroundColor3 = themeList.ElementColor
 			dropOpen.Size = UDim2.new(0, 352, 0, 33)
 			dropOpen.AutoButtonColor = false
 			dropOpen.Font = Enum.Font.SourceSans
-			dropOpen.Text = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({})
+			dropOpen.Text = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({})
 			dropOpen.TextColor3 = Color3.fromRGB(0, 0, 0)
 			dropOpen.TextSize = 14.000
 			dropOpen.ClipsDescendants = true
@@ -483,7 +485,7 @@ function lib:CreateWindow(txt)
 				if not focusing then
 					if opened then
 						opened = false
-						dropFrame:TweenSize(UDim2.new(0, 352, 0, 33), qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7665,11550,8295,12285,12180}), qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7980,11025,11550,10605,10185,11970}), 0.08)
+						dropFrame:TweenSize(UDim2.new(0, 352, 0, 33), inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7665,11550,8295,12285,12180}), inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7980,11025,11550,10605,10185,11970}), 0.08)
 						wait(0.1)
 						if btn.AbsoluteSize.X >= btn.AbsoluteSize.Y then
 							size = (btn.AbsoluteSize.X * 1.5)
@@ -492,7 +494,7 @@ function lib:CreateWindow(txt)
 						end
 					else
 						opened = true
-						dropFrame:TweenSize(UDim2.new(0, 352, 0, UIListLayout.AbsoluteContentSize.Y), qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7665,11550,8295,12285,12180}), qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7980,11025,11550,10605,10185,11970}), 0.08, true)
+						dropFrame:TweenSize(UDim2.new(0, 352, 0, UIListLayout.AbsoluteContentSize.Y), inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7665,11550,8295,12285,12180}), inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7980,11025,11550,10605,10185,11970}), 0.08, true)
 						wait(0.1)
 						if btn.AbsoluteSize.X >= btn.AbsoluteSize.Y then
 							size = (btn.AbsoluteSize.X * 1.5)
@@ -503,19 +505,19 @@ function lib:CreateWindow(txt)
 				end
 			end)
 
-			listImg.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({11340,11025,12075,12180,7665,11445,10815})
+			listImg.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({11340,11025,12075,12180,7665,11445,10815})
 			listImg.Parent = dropOpen
 			listImg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			listImg.BackgroundTransparency = 1.000
 			listImg.BorderColor3 = Color3.fromRGB(27, 42, 53)
 			listImg.Position = UDim2.new(0.0199999996, 0, 0.180000007, 0)
 			listImg.Size = UDim2.new(0, 21, 0, 21)
-			listImg.Image = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5355,5985,5250,5670,5355,5040,5565,5985,5040,5460})
+			listImg.Image = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5355,5985,5250,5670,5355,5040,5565,5985,5040,5460})
 			listImg.ImageColor3 = themeList.SchemeColor
 			listImg.ImageRectOffset = Vector2.new(644, 364)
 			listImg.ImageRectSize = Vector2.new(36, 36)
 
-			itemTextbox.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({11025,12180,10605,11445,8820,10605,12600,12180,10290,11655,12600})
+			itemTextbox.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({11025,12180,10605,11445,8820,10605,12600,12180,10290,11655,12600})
 			itemTextbox.Parent = dropOpen
 			itemTextbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			itemTextbox.BackgroundTransparency = 1.000
@@ -535,7 +537,7 @@ function lib:CreateWindow(txt)
 			UIListLayout.Padding = UDim.new(0, 3)
 
 			local ms = game.Players.LocalPlayer:GetMouse()
-			local uis = game:GetService(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605}))
+			local uis = game:GetService(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605}))
 
 			local hovering = false
 			btn.MouseEnter:Connect(function()
@@ -556,29 +558,29 @@ function lib:CreateWindow(txt)
 			end)       
 
 			for i,v in next, list do
-				local optionSelect = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
-				local UICorner_2 = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7035,11655,11970,11550,10605,11970}))
-				local Sample1 = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7665,11445,10185,10815,10605,7980,10185,10290,10605,11340}))
+				local optionSelect = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
+				local UICorner_2 = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7035,11655,11970,11550,10605,11970}))
+				local Sample1 = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7665,11445,10185,10815,10605,7980,10185,10290,10605,11340}))
 
 				local ms = game.Players.LocalPlayer:GetMouse()
-				Sample1.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8715,10185,11445,11760,11340,10605,5145})
+				Sample1.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8715,10185,11445,11760,11340,10605,5145})
 				Sample1.Parent = optionSelect
 				Sample1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Sample1.BackgroundTransparency = 1.000
-				Sample1.Image = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({10920,12180,12180,11760,6090,4935,4935,12495,12495,12495,4830,11970,11655,10290,11340,11655,12600,4830,10395,11655,11445,4935,10185,12075,12075,10605,12180,4935,6615,11025,10500,6405,5460,5565,5670,5040,5985,5040,5985,5670,5040,5985})
+				Sample1.Image = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({10920,12180,12180,11760,6090,4935,4935,12495,12495,12495,4830,11970,11655,10290,11340,11655,12600,4830,10395,11655,11445,4935,10185,12075,12075,10605,12180,4935,6615,11025,10500,6405,5460,5565,5670,5040,5985,5040,5985,5670,5040,5985})
 				Sample1.ImageColor3 = themeList.SchemeColor
 				Sample1.ImageTransparency = 0.600
 
 				local sample1 = Sample1
 				DropYSize = DropYSize + 33
-				optionSelect.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({11655,11760,12180,11025,11655,11550,8715,10605,11340,10605,10395,12180})
+				optionSelect.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({11655,11760,12180,11025,11655,11550,8715,10605,11340,10605,10395,12180})
 				optionSelect.Parent = dropFrame
 				optionSelect.BackgroundColor3 = themeList.ElementColor
 				optionSelect.Position = UDim2.new(0, 0, 0.235294119, 0)
 				optionSelect.Size = UDim2.new(0, 352, 0, 33)
 				optionSelect.AutoButtonColor = false
 				optionSelect.Font = Enum.Font.GothamSemibold
-				optionSelect.Text = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({3360,3360})..v
+				optionSelect.Text = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({3360,3360})..v
 				optionSelect.TextColor3 = Color3.fromRGB(themeList.TextColor.r * 255 - 6, themeList.TextColor.g * 255 - 6, themeList.TextColor.b * 255 - 6)
 				optionSelect.TextSize = 14.000
 				optionSelect.TextXAlignment = Enum.TextXAlignment.Left
@@ -588,7 +590,7 @@ function lib:CreateWindow(txt)
 						opened = false
 						callback(v)
 						itemTextbox.Text = v
-						dropFrame:TweenSize(UDim2.new(0, 352, 0, 33), qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7665,11550,8295,12285,12180}), qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7980,11025,11550,10605,10185,11970}), 0.08)
+						dropFrame:TweenSize(UDim2.new(0, 352, 0, 33), inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7665,11550,8295,12285,12180}), inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7980,11025,11550,10605,10185,11970}), 0.08)
 						wait(0.1)
 						updateSectionFrame()
 						UpdateSize()
@@ -602,7 +604,7 @@ function lib:CreateWindow(txt)
 						else
 							size = (optionSelect.AbsoluteSize.Y * 1.5)
 						end
-						c:TweenSizeAndPosition(UDim2.new(0, size, 0, size), UDim2.new(0.5, (-size / 2), 0.5, (-size / 2)), qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8295,12285,12180}), qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8505,12285,10185,10500}), len, true, nil)
+						c:TweenSizeAndPosition(UDim2.new(0, size, 0, size), UDim2.new(0.5, (-size / 2), 0.5, (-size / 2)), inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8295,12285,12180}), inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8505,12285,10185,10500}), len, true, nil)
 						for i = 1, 10 do
 							c.ImageTransparency = c.ImageTransparency + 0.05
 							wait(len / 12)
@@ -641,7 +643,7 @@ function lib:CreateWindow(txt)
 		end
 		function elements:Drop(txt, list, callback)
 			local DropFunction = {}
-			txt = txt or qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7140,11970,11655,11760,10500,11655,12495,11550})
+			txt = txt or inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7140,11970,11655,11760,10500,11655,12495,11550})
 			list = list or {}
 			callback = callback or function() end   
 
@@ -649,48 +651,48 @@ function lib:CreateWindow(txt)
 			local DropYSize = 33
 
 
-			local dropFrame = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7350,11970,10185,11445,10605}))
-			local dropOpen = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
-			local itemTextbox = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
-			local UICorner = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7035,11655,11970,11550,10605,11970}))
-			local UIListLayout = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7980,11025,12075,12180,7980,10185,12705,11655,12285,12180}))
+			local dropFrame = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7350,11970,10185,11445,10605}))
+			local dropOpen = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
+			local itemTextbox = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
+			local UICorner = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7035,11655,11970,11550,10605,11970}))
+			local UIListLayout = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7980,11025,12075,12180,7980,10185,12705,11655,12285,12180}))
 
 			local ms = game.Players.LocalPlayer:GetMouse()
 
-			dropFrame.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({10500,11970,11655,11760,7350,11970,10185,11445,10605})
+			dropFrame.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({10500,11970,11655,11760,7350,11970,10185,11445,10605})
 			dropFrame.Parent = SectionContainer
 			dropFrame.BackgroundColor3 = Color3.fromRGB(85, 30, 255)
 			dropFrame.BorderSizePixel = 0
 			dropFrame.Position = UDim2.new(0, 0, 1.23571432, 0)
 			dropFrame.Size = UDim2.new(0, 311, 0, 37)
 			dropFrame.ClipsDescendants = true
-			Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7035,11655,11970,11550,10605,11970}), dropFrame).CornerRadius = UDim.new(0, 8)
+			Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7035,11655,11970,11550,10605,11970}), dropFrame).CornerRadius = UDim.new(0, 8)
 			local btn = dropOpen
-			dropOpen.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({10500,11970,11655,11760,8295,11760,10605,11550})
+			dropOpen.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({10500,11970,11655,11760,8295,11760,10605,11550})
 			dropOpen.Parent = dropFrame
 			dropOpen.BackgroundColor3 = Color3.fromRGB(85, 30, 255)
 			dropOpen.Size = UDim2.new(0, 311, 0, 37)
 			dropOpen.AutoButtonColor = false
 			dropOpen.Font = Enum.Font.SourceSans
-			dropOpen.Text = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({})
+			dropOpen.Text = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({})
 			dropOpen.TextColor3 = Color3.fromRGB(0, 0, 0)
 			dropOpen.TextSize = 14.000
 			dropOpen.ClipsDescendants = true
 			dropOpen.MouseButton1Click:Connect(function()
 				if opened then
 					opened = false
-					dropFrame:TweenSize(UDim2.new(0, 311, 0, 37), qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7665,11550,8295,12285,12180}), qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7980,11025,11550,10605,10185,11970}), 0.08)
+					dropFrame:TweenSize(UDim2.new(0, 311, 0, 37), inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7665,11550,8295,12285,12180}), inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7980,11025,11550,10605,10185,11970}), 0.08)
 					wait(0.1)
 				else
 					opened = true
-					dropFrame:TweenSize(UDim2.new(0, 311, 0, UIListLayout.AbsoluteContentSize.Y), qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7665,11550,8295,12285,12180}), qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7980,11025,11550,10605,10185,11970}), 0.08, true)
+					dropFrame:TweenSize(UDim2.new(0, 311, 0, UIListLayout.AbsoluteContentSize.Y), inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7665,11550,8295,12285,12180}), inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7980,11025,11550,10605,10185,11970}), 0.08, true)
 					wait(0.1)
 				end
 			end)
 
-			Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7035,11655,11970,11550,10605,11970}), dropOpen).CornerRadius = UDim.new(0, 8)
+			Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7035,11655,11970,11550,10605,11970}), dropOpen).CornerRadius = UDim.new(0, 8)
 
-			itemTextbox.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({11025,12180,10605,11445,8820,10605,12600,12180,10290,11655,12600})
+			itemTextbox.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({11025,12180,10605,11445,8820,10605,12600,12180,10290,11655,12600})
 			itemTextbox.Parent = dropOpen
 			itemTextbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			itemTextbox.BackgroundTransparency = 1.000
@@ -708,24 +710,24 @@ function lib:CreateWindow(txt)
 			UIListLayout.Padding = UDim.new(0, 3)
 
 			local ms = game.Players.LocalPlayer:GetMouse()
-			local uis = game:GetService(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605}))
+			local uis = game:GetService(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605}))
 
 
 			for i,v in next, list do
-				local optionSelect = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
-				local UICorner_2 = Instance.new(qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({8925,7665,7035,11655,11970,11550,10605,11970}))
+				local optionSelect = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
+				local UICorner_2 = Instance.new(inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({8925,7665,7035,11655,11970,11550,10605,11970}))
 
 				local ms = game.Players.LocalPlayer:GetMouse()
 
 				DropYSize = DropYSize + 33
-				optionSelect.Name = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({11655,11760,12180,11025,11655,11550,8715,10605,11340,10605,10395,12180})
+				optionSelect.Name = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({11655,11760,12180,11025,11655,11550,8715,10605,11340,10605,10395,12180})
 				optionSelect.Parent = dropFrame
 				optionSelect.BackgroundColor3 = Color3.fromRGB(85, 30, 255)
 				optionSelect.Position = UDim2.new(0, 0, 0.235294119, 0)
 				optionSelect.Size = UDim2.new(0, 311, 0, 37)
 				optionSelect.AutoButtonColor = false
 				optionSelect.Font = Enum.Font.GothamSemibold
-				optionSelect.Text = qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({3360,3360})..v
+				optionSelect.Text = inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({3360,3360})..v
 				optionSelect.TextColor3 = Color3.fromRGB(255,255,255)
 				optionSelect.TextSize = 14.000
 				optionSelect.TextXAlignment = Enum.TextXAlignment.Left
@@ -733,7 +735,7 @@ function lib:CreateWindow(txt)
 				optionSelect.MouseButton1Click:Connect(function()
 					opened = false
 					callback(v)
-					dropFrame:TweenSize(UDim2.new(0, 311, 0, 37), qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7665,11550,8295,12285,12180}), qTbQSovYsAcggffjUerSRhsdeDWjXhLhSJxWaRnensCVJwIkfuxLnPcAG({7980,11025,11550,10605,10185,11970}), 0.08)
+					dropFrame:TweenSize(UDim2.new(0, 311, 0, 37), inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7665,11550,8295,12285,12180}), inXhfbljAdprVEOCpQzKgQUwClExrdjHlfngdcvaJQQEILzdLUaAD({7980,11025,11550,10605,10185,11970}), 0.08)
 					wait(0.1)       
 				end)
 
