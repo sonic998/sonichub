@@ -1,38 +1,38 @@
-function SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
+function XgUsJuolSEUoAWQdgqmEjeeXqoN(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
 
 
 if get_hidden_gui or gethui then
 	local hiddenUI = get_hidden_gui or gethui
 	for i,v in pairs(hiddenUI():GetChildren()) do
-		if v:IsA(SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({8715,10395,11970,10605,10605,11550,7455,12285,11025})) and v.Name == SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({7455,10185,11025,11550,8925,7665}) then
+		if v:IsA(XgUsJuolSEUoAWQdgqmEjeeXqoN({8715,10395,11970,10605,10605,11550,7455,12285,11025})) and v.Name == XgUsJuolSEUoAWQdgqmEjeeXqoN({7455,10185,11025,11550,8925,7665}) then
 			v:Destroy()
 		end
 	end
 elseif syn and syn.protect_gui then
 	for i,v in pairs(game.CoreGui:GetChildren()) do
-		if v:IsA(SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({8715,10395,11970,10605,10605,11550,7455,12285,11025})) and v.Name == SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({7455,10185,11025,11550,8925,7665}) then
+		if v:IsA(XgUsJuolSEUoAWQdgqmEjeeXqoN({8715,10395,11970,10605,10605,11550,7455,12285,11025})) and v.Name == XgUsJuolSEUoAWQdgqmEjeeXqoN({7455,10185,11025,11550,8925,7665}) then
 			syn.unprotect_gui(v)
 			v:Destroy()
 		end
 	end
 else
 	for i,v in pairs(game.CoreGui:GetChildren()) do
-		if v:IsA(SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({8715,10395,11970,10605,10605,11550,7455,12285,11025})) and v.Name == SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({7455,10185,11025,11550,8925,7665}) then
+		if v:IsA(XgUsJuolSEUoAWQdgqmEjeeXqoN({8715,10395,11970,10605,10605,11550,7455,12285,11025})) and v.Name == XgUsJuolSEUoAWQdgqmEjeeXqoN({7455,10185,11025,11550,8925,7665}) then
 			v:Destroy()
 		end
 	end
 end
 
-local GainUI = Instance.new(SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({8715,10395,11970,10605,10605,11550,7455,12285,11025}))
-local BpGain = Instance.new(SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
-local PrestigeGain = Instance.new(SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
+local GainUI = Instance.new(XgUsJuolSEUoAWQdgqmEjeeXqoN({8715,10395,11970,10605,10605,11550,7455,12285,11025}))
+local BpGain = Instance.new(XgUsJuolSEUoAWQdgqmEjeeXqoN({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
+local PrestigeGain = Instance.new(XgUsJuolSEUoAWQdgqmEjeeXqoN({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
 
-GainUI.Name = SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({7455,10185,11025,11550,8925,7665})
+GainUI.Name = XgUsJuolSEUoAWQdgqmEjeeXqoN({7455,10185,11025,11550,8925,7665})
 GainUI.Parent = game.CoreGui
 
 local plr = game.Players.LocalPlayer
 
-PrestigeGain.Name = SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({8400,11970,10605,12075,12180,11025,10815,10605,7455,10185,11025,11550})
+PrestigeGain.Name = XgUsJuolSEUoAWQdgqmEjeeXqoN({8400,11970,10605,12075,12180,11025,10815,10605,7455,10185,11025,11550})
 PrestigeGain.Parent = GainUI
 PrestigeGain.Active = true
 PrestigeGain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -47,7 +47,7 @@ PrestigeGain.TextScaled = true
 PrestigeGain.TextSize = 14.000
 PrestigeGain.TextWrapped = true
 
-BpGain.Name = SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({6930,11760,7455,10185,11025,11550})
+BpGain.Name = XgUsJuolSEUoAWQdgqmEjeeXqoN({6930,11760,7455,10185,11025,11550})
 BpGain.Parent = GainUI
 BpGain.Active = true
 BpGain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -61,9 +61,10 @@ BpGain.TextColor3 = Color3.fromRGB(255, 0, 0)
 BpGain.TextScaled = true
 BpGain.TextSize = 14.000
 BpGain.TextWrapped = true
-getgenv().drag = true
+
+getgenv().drag = false
 if getgenv().drag == true then
-local UserInputService = game:GetService(SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605}))
+local UserInputService = game:GetService(XgUsJuolSEUoAWQdgqmEjeeXqoN({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605}))
 
 	local dragging
 	local dragInput
@@ -73,7 +74,7 @@ local UserInputService = game:GetService(SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhX
 
 	local function update(input)
 		local delta = input.Position - dragStart
-		gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({8295,12285,12180}), SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({7980,11025,11550,10605,10185,11970}), 0, true); -- drag speed
+		gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), XgUsJuolSEUoAWQdgqmEjeeXqoN({8295,12285,12180}), XgUsJuolSEUoAWQdgqmEjeeXqoN({7980,11025,11550,10605,10185,11970}), 0, true); -- drag speed
 	end
 	gui.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
@@ -100,7 +101,7 @@ local UserInputService = game:GetService(SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhX
 			update(input)
 		end
 	end)
-local UserInputService = game:GetService(SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605}))
+local UserInputService = game:GetService(XgUsJuolSEUoAWQdgqmEjeeXqoN({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605}))
 
 	local dragging
 	local dragInput
@@ -110,7 +111,7 @@ local UserInputService = game:GetService(SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhX
 
 	local function updatee(input)
 		local delta = input.Position - dragStart
-		gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({8295,12285,12180}), SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({7980,11025,11550,10605,10185,11970}), 0, true); -- drag speed
+		gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), XgUsJuolSEUoAWQdgqmEjeeXqoN({8295,12285,12180}), XgUsJuolSEUoAWQdgqmEjeeXqoN({7980,11025,11550,10605,10185,11970}), 0, true); -- drag speed
 	end
 	gui.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
@@ -142,11 +143,11 @@ end
 cp = 0
 
 while wait() do
-	local bp = plr.leaderstats[SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({6930,12285,11970,11760,3360,11760,11655,11025,11550,12180,12075})]
-        local prestige = plr.leaderstats[SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({8400,11970,10605,12075,12180,11025,10815,10605})]
-	PrestigeGain.Text = SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({8400,11970,10605,12075,12180,11025,10815,10605,6090,3360})..prestige.Value
+	local bp = plr.leaderstats[XgUsJuolSEUoAWQdgqmEjeeXqoN({6930,12285,11970,11760,3360,11760,11655,11025,11550,12180,12075})]
+        local prestige = plr.leaderstats[XgUsJuolSEUoAWQdgqmEjeeXqoN({8400,11970,10605,12075,12180,11025,10815,10605})]
+	PrestigeGain.Text = XgUsJuolSEUoAWQdgqmEjeeXqoN({8400,11970,10605,12075,12180,11025,10815,10605,6090,3360})..prestige.Value
         if cp ~= bp.Value then
-	BpGain.Text = SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({6930,11760,7455,10185,11025,11550,6090,3360})..bp.Value - cp..SoigtYrwCzzxgrjvBQVtMNXufdCkrjPEEgwrVhXzphUkyMxdtKAfgNTazlPnjAwJOufgMGYFduNNYKLPxEnUEwGpWfUSGfAEGpW({4515})
+	BpGain.Text = XgUsJuolSEUoAWQdgqmEjeeXqoN({6930,11760,7455,10185,11025,11550,6090,3360})..bp.Value - cp..XgUsJuolSEUoAWQdgqmEjeeXqoN({4515})
         cp = bp.Value
 end
 end
