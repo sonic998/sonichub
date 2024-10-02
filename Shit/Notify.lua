@@ -53,7 +53,7 @@ function notifylib:Notify(txt)
 	Header.Parent = Notify
 	Header.BackgroundColor3 = theme.SchemeColor
 	Header.BackgroundTransparency = 0.400
-	Header.Position = UDim2.new(-0.00221961387, 0, -0.0023698993, 0)
+	Header.Position = UDim2.new(0.391, -121, 0.257, 33)
 	Header.Size = UDim2.new(0, 325, 0, 25)
 
 	Instance.new("UICorner", Header)
