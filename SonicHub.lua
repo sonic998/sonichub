@@ -16,5 +16,11 @@ local games = {
 for i,v in next, games do
 	if game.PlaceId == v then
 	loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Scripts/" .. i))()
+	else
+		getgenv().unsupported = true
 end
+end
+
+if getgenv().unsupported == true then
+loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Scripts/Unsupported.lua"))()
 end
