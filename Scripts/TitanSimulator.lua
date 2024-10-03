@@ -72,6 +72,10 @@ localplayer:Toggle("Safe Place", function()
 loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/BaseplateTitan.lua"))()
 end)
 
+localplayer:Button("Tp to safeplace", function()
+game:GetService("TweenService"):Create(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-3734, 16195, -3477)}):Play()
+end)
+
 misc:Button("Rejoin", function()
 game:GetService("TeleportService"):Teleport(game.PlaceId)
 end)
