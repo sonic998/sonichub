@@ -11,12 +11,15 @@ local games = {
   ["TreasureQuest.lua"] = 2960777560,
   ["AdventureUp.lua"] = 3194820651,
   ["EatingSimulator.lua"] = 1128235362,
-  ["WeightLifting.lua"] = 1597043326,
-  ["SurviveAndKillTheKillersFromArea51.lua"] = 155382109
+  ["WeightLifting.lua"] = 1597043326
 }
 
 for i,v in next, games do
 	if game.PlaceId == v then
 	loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Scripts/" .. i))()
 end
+	if game.CreatorId == 60100179 then
+
+	loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Scripts/SurviveAndKillTheKillersFromArea51.lua"))()
+	end
 end
