@@ -4,7 +4,6 @@ _G.win = lib:CreateWindow("GrannyXhub - Lift Legends Simulator")
 local autofarm = _G.win:Page("AutoFarm")
 local teleport = _G.win:Page("Teleport")
 local misc = _G.win:Page("Misc")
-loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/GamesMenu.lua"))()
 
 teleport:Drop("Locations", {"Last World", "Spawn"}, function(v)
 if v == "Last World" then
