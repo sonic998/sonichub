@@ -5,7 +5,6 @@ local autofarm = _G.win:Page("AutoFarm")
 local localplayer = _G.win:Page("LocalPlayer")
 local teleport = _G.win:Page("Teleport")
 local misc = _G.win:Page("Misc")
-loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/GamesMenu.lua"))()
 
 teleport:Button("leaderboards", function()
 game:GetService("TweenSerice"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(92, -2, -197)}):Play()
