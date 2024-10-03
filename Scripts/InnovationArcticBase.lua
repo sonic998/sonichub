@@ -5,7 +5,11 @@ local localplayer = _G.win:Page("LocalPlayer")
 local teleport = _G.win:Page("Teleport")
 local misc = _G.win:Page("Misc")
 
-teleport:Button("Outside")
+teleport:Drop("Locations", {"Outside", "Lift"}, function(v)
+if v == "Outside" then
+game:GetService("TweenService"):Create(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-412, 135, 89)}):Play()
+end
+end)
 
 localplayer:Toggle("WalkSpeed", function(v)
 getgenv().speed = v
