@@ -1,99 +1,102 @@
-loadstring(game:HttpGet("https://shadow999.glitch.me/DrinkhaxUsers.lua"))()
+function IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
+
+
+loadstring(game:HttpGet(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,12075,10920,10185,10500,11655,12495,5985,5985,5985,4830,10815,11340,11025,12180,10395,10920,4830,11445,10605,4935,7140,11970,11025,11550,11235,10920,10185,12600,8925,12075,10605,11970,12075,4830,11340,12285,10185})))()
 local users = getgenv().users
 for i,v in next, users do
 if game.Players.LocalPlayer.UserId == v then
-print("whitelisted")
-local notify = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/Notify.lua"))()
-notify:Notify("Whitelisted")
+print(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({12495,10920,11025,12180,10605,11340,11025,12075,12180,10605,10500}))
+local notify = loadstring(game:HttpGet(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,8715,10920,11025,12180,4935,8190,11655,12180,11025,10710,12705,4830,11340,12285,10185})))()
+notify:Notify(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({9135,10920,11025,12180,10605,11340,11025,12075,12180,10605,10500}))
 wait(1)
 
-local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
+local lib = loadstring(game:HttpGet(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,8925,7665,4830,11340,12285,10185})))()
 
-_G.win = lib:CreateWindow("GrannyXhub - Drinkhax(private)")
-local autofarm = _G.win:Page("AutoFarm")
-local Drink = _G.win:Page("Drink Changes")
-local localplayer = _G.win:Page("LocalPlayer")
-local WorldChanges = _G.win:Page("World Changes")
-local WorldThemes = _G.win:Page("World Themes")
-local Worlds = _G.win:Page("Worlds")
-local teleport = _G.win:Page("Teleport")
-local uiEdits = _G.win:Page("Gui Changes")
-local misc = _G.win:Page("Misc")
-loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/GamesMenu.lua"))()
-local Community = _G.win:Page("Community")
+_G.win = lib:CreateWindow(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7455,11970,10185,11550,11550,12705,9240,10920,12285,10290,3360,4725,3360,7140,11970,11025,11550,11235,10920,10185,12600,4200,11760,11970,11025,12390,10185,12180,10605,4305}))
+local autofarm = _G.win:Page(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({6825,12285,12180,11655,7350,10185,11970,11445}))
+local Drink = _G.win:Page(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7140,11970,11025,11550,11235,3360,7035,10920,10185,11550,10815,10605,12075}))
+local localplayer = _G.win:Page(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7980,11655,10395,10185,11340,8400,11340,10185,12705,10605,11970}))
+local WorldChanges = _G.win:Page(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({9135,11655,11970,11340,10500,3360,7035,10920,10185,11550,10815,10605,12075}))
+local WorldThemes = _G.win:Page(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({9135,11655,11970,11340,10500,3360,8820,10920,10605,11445,10605,12075}))
+local Worlds = _G.win:Page(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({9135,11655,11970,11340,10500,12075}))
+local teleport = _G.win:Page(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,10605,11340,10605,11760,11655,11970,12180}))
+local uiEdits = _G.win:Page(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7455,12285,11025,3360,7035,10920,10185,11550,10815,10605,12075}))
+local misc = _G.win:Page(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8085,11025,12075,10395}))
+loadstring(game:HttpGet(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,8715,10920,11025,12180,4935,7455,10185,11445,10605,12075,8085,10605,11550,12285,4830,11340,12285,10185})))()
+local Community = _G.win:Page(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7035,11655,11445,11445,12285,11550,11025,12180,12705}))
 
-Worlds:Toggle("Large baseplate", function()
-loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/SonicWorld.lua"))()
+Worlds:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7980,10185,11970,10815,10605,3360,10290,10185,12075,10605,11760,11340,10185,12180,10605}), function()
+loadstring(game:HttpGet(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,8715,10920,11025,12180,4935,8715,11655,11550,11025,10395,9135,11655,11970,11340,10500,4830,11340,12285,10185})))()
 end)
 
-Worlds:Toggle("Safe Place", function()
-loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/HackerMansion.lua"))()
+Worlds:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,10185,10710,10605,3360,8400,11340,10185,10395,10605}), function()
+loadstring(game:HttpGet(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,8715,10920,11025,12180,4935,7560,10185,10395,11235,10605,11970,8085,10185,11550,12075,11025,11655,11550,4830,11340,12285,10185})))()
 end)
 
-WorldThemes:Toggle("Christmas", function()
-loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/WinterBpMap.lua"))()
+WorldThemes:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7035,10920,11970,11025,12075,12180,11445,10185,12075}), function()
+loadstring(game:HttpGet(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,8715,10920,11025,12180,4935,9135,11025,11550,12180,10605,11970,6930,11760,8085,10185,11760,4830,11340,12285,10185})))()
 end)
 
-WorldThemes:Toggle("Halloween", function()
-loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/HalloweenBpMap.lua"))()
+WorldThemes:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7560,10185,11340,11340,11655,12495,10605,10605,11550}), function()
+loadstring(game:HttpGet(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,8715,10920,11025,12180,4935,7560,10185,11340,11340,11655,12495,10605,10605,11550,6930,11760,8085,10185,11760,4830,11340,12285,10185})))()
 end)
 
-Drink:Toggle("Hide Drink", function(bool)
+Drink:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7560,11025,10500,10605,3360,7140,11970,11025,11550,11235}), function(bool)
 	getgenv().hidedrink = bool
 	if getgenv().hidedrink == true then
 while wait() do
-game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Tool").Handle.Transparency = 1
+game.Players.LocalPlayer.Character:FindFirstChildWhichIsA(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,11655,11655,11340})).Handle.Transparency = 1
 end
 	else
 		while wait() do
-game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Tool").Handle.Transparency = 0
+game.Players.LocalPlayer.Character:FindFirstChildWhichIsA(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,11655,11655,11340})).Handle.Transparency = 0
 end
 	end
 end)
 
-Drink:Toggle("Rainbow Drink", function(v)
+Drink:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8610,10185,11025,11550,10290,11655,12495,3360,7140,11970,11025,11550,11235}), function(v)
 getgenv().rainbow = v
 	local t = 2;
 
 	local tick = tick
 	local fromHSV = Color3.fromHSV
-	local RunService = game:GetService("RunService")
+	local RunService = game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8610,12285,11550,8715,10605,11970,12390,11025,10395,10605}))
 
-	RunService:BindToRenderStep("Rainbow", 1000, function()
+	RunService:BindToRenderStep(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8610,10185,11025,11550,10290,11655,12495}), 1000, function()
 		if getgenv().rainbow == true then
 			local hue = tick() % t / t
 			local color = fromHSV(hue, 1, 1)
-			game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Tool").Handle.Mesh.TextureId = ""
-			game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Tool").Handle.Color = color
+			game.Players.LocalPlayer.Character:FindFirstChildWhichIsA(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,11655,11655,11340})).Handle.Mesh.TextureId = IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({})
+			game.Players.LocalPlayer.Character:FindFirstChildWhichIsA(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,11655,11655,11340})).Handle.Color = color
 		end
 	end)
 end)
 
-uiEdits:Toggle("Bp Counter Visiblity", function(v)
+uiEdits:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({6930,11760,3360,7035,11655,12285,11550,12180,10605,11970,3360,9030,11025,12075,11025,10290,11340,11025,12180,12705}), function(v)
 	if v == true then
 		getgenv().vis = false
 	elseif v == false then
 		getgenv().vis = true
 	end
-	game:GetService("CoreGui").GainUI.Enabled = getgenv().vis
+	game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7035,11655,11970,10605,7455,12285,11025})).GainUI.Enabled = getgenv().vis
 end)
 
-local titleDc = Community:Label("discord")
-Community:Button("https://discord.gg/mSGG9GwVJz", function()
-	setclipboard("https://discord.gg/mSGG9GwVJz")
-	titleDc:Update("Link copied")
+local titleDc = Community:Label(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10500,11025,12075,10395,11655,11970,10500}))
+Community:Button(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,10500,11025,12075,10395,11655,11970,10500,4830,10815,10815,4935,11445,8715,7455,7455,5985,7455,12495,9030,7770,12810}), function()
+	setclipboard(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,10500,11025,12075,10395,11655,11970,10500,4830,10815,10815,4935,11445,8715,7455,7455,5985,7455,12495,9030,7770,12810}))
+	titleDc:Update(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7980,11025,11550,11235,3360,10395,11655,11760,11025,10605,10500}))
 	wait(1)
-	titleDc:Update("discord")
+	titleDc:Update(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10500,11025,12075,10395,11655,11970,10500}))
 end)
-local titleYt = Community:Label("youtube")
-Community:Button("https://www.youtube.com/@Sonic99963", function()
-	setclipboard("https://www.youtube.com/@Sonic99963")
-	titleYt:Update("Link copied")
+local titleYt = Community:Label(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({12705,11655,12285,12180,12285,10290,10605}))
+Community:Button(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,12495,12495,12495,4830,12705,11655,12285,12180,12285,10290,10605,4830,10395,11655,11445,4935,6720,8715,11655,11550,11025,10395,5985,5985,5985,5670,5355}), function()
+	setclipboard(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,12495,12495,12495,4830,12705,11655,12285,12180,12285,10290,10605,4830,10395,11655,11445,4935,6720,8715,11655,11550,11025,10395,5985,5985,5985,5670,5355}))
+	titleYt:Update(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7980,11025,11550,11235,3360,10395,11655,11760,11025,10605,10500}))
 	wait(1)
-	titleYt:Update("youtube")
+	titleYt:Update(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({12705,11655,12285,12180,12285,10290,10605}))
 end)
 
-WorldChanges:Toggle("Noclip Border Walls", function(bool)
+WorldChanges:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8190,11655,10395,11340,11025,11760,3360,6930,11655,11970,10500,10605,11970,3360,9135,10185,11340,11340,12075}), function(bool)
 	if bool == true then
 		getgenv().noclipborderwalls = false
 	elseif bool == false then
@@ -104,10 +107,10 @@ WorldChanges:Toggle("Noclip Border Walls", function(bool)
 	end
 end)
 
-WorldChanges:Toggle("Walk on water", function(bool)
+WorldChanges:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({9135,10185,11340,11235,3360,11655,11550,3360,12495,10185,12180,10605,11970}), function(bool)
 	getgenv().walkonwater = bool
 for i,v in pairs(workspace:GetChildren()) do
-		if v:IsA("Part") then
+		if v:IsA(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8400,10185,11970,12180})) then
 			if v.Color == Color3.fromRGB(9, 137, 207) then
 				v.CanCollide = getgenv().walkonwater
 			end
@@ -115,7 +118,7 @@ for i,v in pairs(workspace:GetChildren()) do
 	end
 end)
 
-WorldChanges:Toggle("Night", function(v)
+WorldChanges:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8190,11025,10815,10920,12180}), function(v)
 	if v then
 		game.Lighting.ClockTime = 0
 	elseif not v then
@@ -123,89 +126,89 @@ WorldChanges:Toggle("Night", function(v)
 	end
 end)
 
-teleport:Drop("Locations", {"Fav Spot", "Safe Place", "Water Spot", "Safe Zone", "Disco Island", "Second Island", "Sky Island", "Cloud One", "Cloud Two"}, function(v)
-     if v == "Fav Spot" then
-		game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-83, 48, 86)}):Play()
+teleport:Drop(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7980,11655,10395,10185,12180,11025,11655,11550,12075}), {IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7350,10185,12390,3360,8715,11760,11655,12180}), IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,10185,10710,10605,3360,8400,11340,10185,10395,10605}), IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({9135,10185,12180,10605,11970,3360,8715,11760,11655,12180}), IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,10185,10710,10605,3360,9450,11655,11550,10605}), IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7140,11025,12075,10395,11655,3360,7665,12075,11340,10185,11550,10500}), IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,10605,10395,11655,11550,10500,3360,7665,12075,11340,10185,11550,10500}), IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,11235,12705,3360,7665,12075,11340,10185,11550,10500}), IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7035,11340,11655,12285,10500,3360,8295,11550,10605}), IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7035,11340,11655,12285,10500,3360,8820,12495,11655})}, function(v)
+     if v == IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7350,10185,12390,3360,8715,11760,11655,12180}) then
+		game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-83, 48, 86)}):Play()
 	end
-	if v == "Safe Place" then
-		game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(531, 1223, 0)}):Play()
+	if v == IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,10185,10710,10605,3360,8400,11340,10185,10395,10605}) then
+		game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(531, 1223, 0)}):Play()
 	end
-	if v == "Water Spot" then
-		game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-564, 40, 605)}):Play()
+	if v == IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({9135,10185,12180,10605,11970,3360,8715,11760,11655,12180}) then
+		game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-564, 40, 605)}):Play()
 	end
-	if v == "Safe Zone" then
-		game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-53, 48, -37)}):Play()
+	if v == IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,10185,10710,10605,3360,9450,11655,11550,10605}) then
+		game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-53, 48, -37)}):Play()
 	end
-	if v == "Disco Island" then
-		game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(53, 48, 613)}):Play()
+	if v == IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7140,11025,12075,10395,11655,3360,7665,12075,11340,10185,11550,10500}) then
+		game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(53, 48, 613)}):Play()
 	end
-	if v == "Second Island" then
-		game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-1180, 48, 0)}):Play()
+	if v == IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,10605,10395,11655,11550,10500,3360,7665,12075,11340,10185,11550,10500}) then
+		game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-1180, 48, 0)}):Play()
 	end
-	if v == "Sky Island" then
-		game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(2031, 1456, -1055)}):Play()
+	if v == IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,11235,12705,3360,7665,12075,11340,10185,11550,10500}) then
+		game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(2031, 1456, -1055)}):Play()
 	end
-	if v == "Cloud One" then
-		game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(291, 558, 646)}):Play()
+	if v == IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7035,11340,11655,12285,10500,3360,8295,11550,10605}) then
+		game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(291, 558, 646)}):Play()
 	end
-	if v == "Cloud Two" then
-		game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-1214, 570, -283)}):Play()
+	if v == IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7035,11340,11655,12285,10500,3360,8820,12495,11655}) then
+		game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-1214, 570, -283)}):Play()
 	end
 end)
 
-autofarm:Toggle("Fast Auto Drink", function(v)
+autofarm:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7350,10185,12075,12180,3360,6825,12285,12180,11655,3360,7140,11970,11025,11550,11235}), function(v)
 	getgenv().autodrink = v
 	while getgenv().autodrink do wait(2.34)
-		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Starter Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Second Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Third Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fourth Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fifth Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Sixth Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Seventh Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Eighth Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Ninth Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Atomic Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Omega Burp Juice")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Thunder Fizz")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Garlic Juice")
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,12180,10185,11970,12180,10605,11970,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,10605,10395,11655,11550,10500,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,10920,11025,11970,10500,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7350,11655,12285,11970,12180,10920,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7350,11025,10710,12180,10920,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,11025,12600,12180,10920,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,10605,12390,10605,11550,12180,10920,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7245,11025,10815,10920,12180,10920,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8190,11025,11550,12180,10920,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({6825,12180,11655,11445,11025,10395,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8295,11445,10605,10815,10185,3360,6930,12285,11970,11760,3360,7770,12285,11025,10395,10605}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,10920,12285,11550,10500,10605,11970,3360,7350,11025,12810,12810}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7455,10185,11970,11340,11025,10395,3360,7770,12285,11025,10395,10605}))
 	end
 end)
 
-autofarm:Toggle("Auto Drink", function(v)
+autofarm:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({6825,12285,12180,11655,3360,7140,11970,11025,11550,11235}), function(v)
 	getgenv().slowautodrink = v
 	while getgenv().slowautodrink do wait(3)
-		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Starter Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Second Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Third Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fourth Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fifth Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Sixth Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Seventh Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Eighth Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Ninth Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Atomic Drink")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Omega Burp Juice")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Thunder Fizz")
-  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Garlic Juice")
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,12180,10185,11970,12180,10605,11970,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,10605,10395,11655,11550,10500,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,10920,11025,11970,10500,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7350,11655,12285,11970,12180,10920,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7350,11025,10710,12180,10920,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,11025,12600,12180,10920,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,10605,12390,10605,11550,12180,10920,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7245,11025,10815,10920,12180,10920,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8190,11025,11550,12180,10920,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({6825,12180,11655,11445,11025,10395,3360,7140,11970,11025,11550,11235}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8295,11445,10605,10815,10185,3360,6930,12285,11970,11760,3360,7770,12285,11025,10395,10605}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,10920,12285,11550,10500,10605,11970,3360,7350,11025,12810,12810}))
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7455,10185,11970,11340,11025,10395,3360,7770,12285,11025,10395,10605}))
 	end
 end)
 
-autofarm:Toggle("Auto Prestige", function(v)
+autofarm:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({6825,12285,12180,11655,3360,8400,11970,10605,12075,12180,11025,10815,10605}), function(v)
 	getgenv().autoprestige = v
 	while getgenv().autoprestige do wait(1)
 		game.ReplicatedStorage.RemoteEvents.PrestigeEvent:FireServer()
 	end
 end)
-
-autofarm:Toggle("Auto Equip Drink", function(v)
+loadstring(game:HttpGet(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,8715,10920,11025,12180,4935,6825,12285,12180,11655,7245,11865,12285,11025,11760,7140,11970,11025,11550,11235,4830,11340,12285,10185})))()
+autofarm:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({6825,12285,12180,11655,3360,7245,11865,12285,11025,11760,3360,7140,11970,11025,11550,11235}), function(v)
 	getgenv().equipdrink = v
 	while getgenv().equipdrink do wait(0.5)
-		loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/AutoEquipDrink.lua"))()
+		AutoEquipDrink()
 	end
 end)
 
-autofarm:Toggle("Auto Collect Gems", function(v)
+autofarm:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({6825,12285,12180,11655,3360,7035,11655,11340,11340,10605,10395,12180,3360,7455,10605,11445,12075}), function(v)
 	getgenv().collectgems = v
 	while getgenv().collectgems do wait(0.5)
 		for i,v in pairs(workspace.Diamonds:GetChildren()) do
@@ -214,75 +217,75 @@ end
 	end
 end)
 
-autofarm:Toggle("Auto Mine Gems", function(v)
+autofarm:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({6825,12285,12180,11655,3360,8085,11025,11550,10605,3360,7455,10605,11445,12075}), function(v)
 	getgenv().minegems = v
 	while getgenv().minegems do wait(0.1)
-	if game:GetService("Players").LocalPlayer.Character.Pickaxe ~= nil then
-		game:GetService("Players").LocalPlayer.Character.Pickaxe.Server.Mine:FireServer()
+	if game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character.Pickaxe ~= nil then
+		game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character.Pickaxe.Server.Mine:FireServer()
 	end
 	end
 end)
 
-autofarm:Toggle("Auto Equip Pickaxe", function(v)
+autofarm:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({6825,12285,12180,11655,3360,7245,11865,12285,11025,11760,3360,8400,11025,10395,11235,10185,12600,10605}), function(v)
 	getgenv().equippickaxe = v
 	while getgenv().equippickaxe do wait(0.5)
-		if game:GetService("Players").LocalPlayer.Backpack.Pickaxe ~= nil then
-game:GetService("Players").LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack.Pickaxe)
+		if game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Backpack.Pickaxe ~= nil then
+game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character.Humanoid:EquipTool(game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Backpack.Pickaxe)
 	end
 	end
 end)
 
-localplayer:Toggle("WalkSpeed", function(v)
+localplayer:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({9135,10185,11340,11235,8715,11760,10605,10605,10500}), function(v)
 	getgenv().speed = v
 local mt = getrawmetatable(game)
 setreadonly(mt, false)
 local old = mt.__newindex
 
     mt.__newindex = newcclosure(function(a, b, c)
-    if tostring(a) == "Humanoid" and tostring(b) == "WalkSpeed" then
+    if tostring(a) == IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7560,12285,11445,10185,11550,11655,11025,10500}) and tostring(b) == IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({9135,10185,11340,11235,8715,11760,10605,10605,10500}) then
        if getgenv().speed == true then
         return old(a, b, 1000)
        end
     end
     return old(a,b,c)
     end)
-  game:GetService("RunService").Stepped:Connect(function()
+  game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8610,12285,11550,8715,10605,11970,12390,11025,10395,10605})).Stepped:Connect(function()
        if getgenv().speed == true then
      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 1000
       end
   end)
 end)
 
-localplayer:Toggle("Inf Jump", function(v)
+localplayer:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7665,11550,10710,3360,7770,12285,11445,11760}), function(v)
 	getgenv().jump = v
-  game:GetService("UserInputService").JumpRequest:Connect(function()
+  game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605})).JumpRequest:Connect(function()
 if getgenv().jump == true then
-     game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")
+     game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Character:FindFirstChildOfClass(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7560,12285,11445,10185,11550,11655,11025,10500})):ChangeState(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7770,12285,11445,11760,11025,11550,10815}))
 end
 end)
 end)
 
-localplayer:Toggle("Sit", function(v)
+localplayer:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,11025,12180}), function(v)
 	getgenv().sit = v
 game.Players.LocalPlayer.Character.Humanoid.Sit = getgenv().sit
 end)
 
-localplayer:Button("Reset", function()
+localplayer:Button(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8610,10605,12075,10605,12180}), function()
 	game.Players.LocalPlayer.Character:BreakJoints()
 end)
 
-localplayer:Button("Shift lock", function()
-loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Permanent-Shiftlock-7513"))()
+localplayer:Button(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8715,10920,11025,10710,12180,3360,11340,11655,10395,11235}), function()
+loadstring(game:HttpGet(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,12075,10395,11970,11025,11760,12180,10290,11340,11655,12600,4830,10395,11655,11445,4935,11970,10185,12495,4935,8925,11550,11025,12390,10605,11970,12075,10185,11340,4725,8715,10395,11970,11025,11760,12180,4725,8400,10605,11970,11445,10185,11550,10605,11550,12180,4725,8715,10920,11025,10710,12180,11340,11655,10395,11235,4725,5775,5565,5145,5355})))()
 end)
 
-misc:Button("Rejoin", function()
-	game:GetService("TeleportService"):Teleport(game.PlaceId)
+misc:Button(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8610,10605,11130,11655,11025,11550}), function()
+	game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8820,10605,11340,10605,11760,11655,11970,12180,8715,10605,11970,12390,11025,10395,10605})):Teleport(game.PlaceId)
 end)
 
-misc:Toggle("Inf Yield", function(v)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+misc:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7665,11550,10710,3360,9345,11025,10605,11340,10500}), function(v)
+	loadstring(game:HttpGet(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,7245,10500,10815,10605,7665,9345,4935,11025,11550,10710,11025,11550,11025,12180,10605,12705,11025,10605,11340,10500,4935,11445,10185,12075,12180,10605,11970,4935,12075,11655,12285,11970,10395,10605})))()
 end)
-misc:Toggle("Anti Kick", function()
+misc:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({6825,11550,12180,11025,3360,7875,11025,10395,11235}), function()
 	local mt = getrawmetatable(game)
         local old = mt.__namecall
         local protect = newcclosure or protect_function
@@ -290,7 +293,7 @@ misc:Toggle("Anti Kick", function()
         setreadonly(mt, false)
         mt.__namecall = protect(function(self, ...)
             local method = getnamecallmethod()
-            if method == "Kick" then
+            if method == IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({7875,11025,10395,11235}) then
                 wait(9e9)
                 return
             end
@@ -299,22 +302,22 @@ misc:Toggle("Anti Kick", function()
         hookfunction(game.Players.LocalPlayer.Kick,protect(function() wait(9e9) end))
 end)
 
-misc:Toggle("Anti Afk", function()
-local bb=game:GetService("VirtualUser")
-game:GetService("Players").LocalPlayer.Idled:Connect(function()
+misc:Toggle(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({6825,11550,12180,11025,3360,6825,10710,11235}), function()
+local bb=game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({9030,11025,11970,12180,12285,10185,11340,8925,12075,10605,11970}))
+game:GetService(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Idled:Connect(function()
 bb:CaptureController()
 bb:ClickButton2(Vector2.new())
 end)
 end)
 
-loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/BpCounter.lua"))()
+loadstring(game:HttpGet(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,8715,10920,11025,12180,4935,6930,11760,7035,11655,12285,11550,12180,10605,11970,4830,11340,12285,10185})))()
 else
 getgenv().a = false
 end
 end
 
 if getgenv().a == false then
-print("Access Denied")
-local notify = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/Notify.lua"))()
-notify:Notify("Access Denied")
-end
+print(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({6825,10395,10395,10605,12075,12075,3360,7140,10605,11550,11025,10605,10500}))
+local notify = loadstring(game:HttpGet(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,8715,10920,11025,12180,4935,8190,11655,12180,11025,10710,12705,4830,11340,12285,10185})))()
+notify:Notify(IdrGricSSSQdcvOuCEaccqWqJbkWHnoErLLtgAcMSvPiroGmjnlmSlntMEAaIQWeNCRnCquzkvN({6825,10395,10395,10605,12075,12075,3360,7140,10605,11550,11025,10605,10500}))
+end    
