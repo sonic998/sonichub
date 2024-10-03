@@ -4,7 +4,6 @@ _G.win = lib:CreateWindow("GrannyXhub - Zombie Attack")
 local autofarm = _G.win:Page("AutoFarm")
 local localplayer = _G.win:Page("LocalPlayer")
 local misc = _G.win:Page("Misc")
-loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/GamesMenu.lua"))()
 
 autofarm:Toggle("Autokill", function(v)
 getgenv().farm = v
