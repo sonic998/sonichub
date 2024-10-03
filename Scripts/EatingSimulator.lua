@@ -13,6 +13,7 @@ if v.Name == "Burger" then
 v:Activate()
 end
 end
+end
 end)
 
 autofarm:Toggle("Auto equip burger", function(v)
