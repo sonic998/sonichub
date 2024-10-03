@@ -1,10 +1,10 @@
-local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
-
 if game.CreatorId == 60100179 then
 if game.PlaceId == 2092166489 then
 getgenv().title = "GrannyXhub - Survive and Kill the killers from Area 51 - classic"
 end
 end
+local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
+
 if game.CreatorId == 60100179 then
 _G.win = lib:CreateWindow(getgenv().title)
 local localplayer = _G.win:Page("LocalPlayer")
