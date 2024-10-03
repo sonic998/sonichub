@@ -68,6 +68,10 @@ end
 end)
 end)
 
+localplayer:Toggle("Safe Place", function()
+loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/BaseplateTitan.lua"))()
+end)
+
 misc:Button("Rejoin", function()
 game:GetService("TeleportService"):Teleport(game.PlaceId)
 end)
