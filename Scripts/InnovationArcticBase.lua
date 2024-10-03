@@ -4,7 +4,6 @@ _G.win = lib:CreateWindow("GrannyXhub - Innovation Arctic Base")
 local localplayer = _G.win:Page("LocalPlayer")
 local teleport = _G.win:Page("Teleport")
 local misc = _G.win:Page("Misc")
-loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/GamesMenu.lua"))()
 
 teleport:Button("Outside")
 
