@@ -10,7 +10,6 @@ _G.win = lib:CreateWindow(getgenv().title)
 local localplayer = _G.win:Page("LocalPlayer")
 local Teleport = _G.win:Page("Teleport")
 local misc = _G.win:Page("Misc")
-loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/GamesMenu.lua"))()
 
 if game.PlaceId == 2092166489 then
 Teleport:Drop("Spawn", {"Spawn"}, function(v)
