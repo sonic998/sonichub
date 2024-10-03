@@ -1,16 +1,24 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
 
-_G.win = lib:CreateWindow("GrannyXhub - Survive and Kill the killers from Area 51")
+if game.CreatorId == 60100179 then
+if game.PlaceId == 2092166489 then
+getgenv().title = "GrannyXhub - Survive and Kill the killers from Area 51 - classic"
+end
+end
+if game.CreatorId == 60100179 then
+_G.win = lib:CreateWindow(getgenv().title)
 local localplayer = _G.win:Page("LocalPlayer")
 local Teleport = _G.win:Page("Teleport")
 local misc = _G.win:Page("Misc")
 loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/GamesMenu.lua"))()
 
+if game.PlaceId == 2092166489 then
 Teleport:Drop("Spawn", {"Spawn"}, function(v)
 if v == "Spawn" then
 game:GetService("TweenService"):Create(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new()}):Play()
 end
 end)
+end
 
 localplayer:Toggle("WalkSpeed", function(v)
   getgenv().speed = v
@@ -55,3 +63,4 @@ bb:CaptureController()
 bb:ClickButton2(Vector2.new())
 end)
 end)
+end
