@@ -4,9 +4,8 @@ _G.win = lib:CreateWindow("GrannyXhub - Treasure Quest")
 local autofarm = _G.win:Page("AutoFarm")
 local localplayer = _G.win:Page("LocalPlayer")
 local misc = _G.win:Page("Misc")
-loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/GamesMenu.lua"))()
 
-autofarm:Toggle("Autofarm", function(v)
+autofarm:Toggle("Autofarm(not work)", function(v)
 getgenv().autofarm = v
 while getgenv().autofarm == true do wait(0.1)
 
