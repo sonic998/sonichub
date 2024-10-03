@@ -4,7 +4,6 @@ _G.win = lib:CreateWindow("GrannyXhub - Rabbit Simulator 2")
 local autofarm = _G.win:Page("AutoFarm")
 local localplayer = _G.win:Page("LocalPlayer")
 local misc = _G.win:Page("Misc")
-loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/GamesMenu.lua"))()
 
 autofarm:Button("Auto Eat Carrot", function(v)
 while wait(0.1) do
