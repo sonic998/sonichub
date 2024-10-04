@@ -18,8 +18,8 @@ for i,v in next, games do
 	if game.PlaceId == v then
 	loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Scripts/" .. i))()
 end
-	if game.CreatorId == 60100179 then
+end
 
+	if game.CreatorId == 60100179 then
 	loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Scripts/SurviveAndKillTheKillersFromArea51.lua"))()
 	end
-end
