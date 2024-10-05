@@ -71,7 +71,7 @@ end)
 end)
 
 localplayer:Button("Fire", function()
-for i = 1,10 do
+for i = 1,2 do
 local fire = Instance.new("Fire", game.Players.LocalPlayer.Character.HumanoidRootPart)
 fire.Heat = 25
 fire.size = 30
@@ -127,7 +127,7 @@ end
 end)
 
 localplayer:Button("Particle", function()
-for i = 1,10 do
+for i = 1,2 do
 local particle = Instance.new("ParticleEmitter", game.Players.LocalPlayer.Character.HumanoidRootPart)
 particle.Color = ColorSequence.new(Color3.fromRGB(0, 85, 255))
 particle.Size = NumberSequence.new(5)
