@@ -2,8 +2,18 @@ local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"
 
 _G.win = lib:CreateWindow("Grannyxhub - Titan Simulator")
 local autofarm = _G.win:Page("AutoFarm")
+local teleport = _G.win:Page("Teleport")
 local localplayer = _G.win:Page("LocalPlayer")
 local misc = _G.win:Page("Misc")
+
+teleport:Drop("locations", {"Spawn", "Safe place"}, function(v)
+if v == "Spawn" then
+game:GetService("TweenService"):Create(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(597, 17, 68)}):Play()
+end
+if v == "Safe place" then
+game:GetService("TweenService"):Create(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-3734, 16195, -3477)}):Play()
+end
+end)
 
 autofarm:Toggle("Auto Punch", function(v)
 getgenv().autopunch = v
@@ -126,10 +136,6 @@ end)
 
 localplayer:Toggle("Safe Place", function()
 loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/BaseplateTitan.lua"))()
-end)
-
-localplayer:Button("Tp to safeplace", function()
-game:GetService("TweenService"):Create(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-3734, 16195, -3477)}):Play()
 end)
 
 misc:Button("Rejoin", function()
