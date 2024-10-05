@@ -68,8 +68,8 @@ end
 end)
 end)
 
-localplayer:Toggle("Fire", function()
-for i = 1,30 do
+localplayer:Button("Fire", function()
+for i = 1,100 do
 Instance.new("Fire", game.Players.LocalPlayer.Character.HumanoidRootPart)
 end
 end)
