@@ -7,7 +7,7 @@ local teleport = _G.win:Page("Teleport")
 local misc = _G.win:Page("Misc")
 
 teleport:Button("leaderboards", function()
-game:GetService("TweenSerice"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(92, -2, -197)}):Play()
+game:GetService("TweenSerice"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(74, -1, -219)}):Play()
 end)
 
 autofarm:Toggle("Auto Eat Banana", function(v)
