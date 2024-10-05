@@ -12,10 +12,44 @@ game:GetService("Players").LocalPlayer.Character.Weight.ToolScript.Lift:FireServ
 end
 end)
 
+autofarm:Toggle("Auto Equip Weight", function(v)
+getgenv().autoequip = v
+while getgenv().autoequip do wait(0.1)
+local Players = game:GetService("Players")
+local player = Players:FindFirstChildOfClass("Player")
+if player and player.Character then
+local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+if humanoid then
+local tool = Players.LocalPlayer.Backpack:FindFirstChild("Weight")
+if tool then
+humanoid:EquipTool(tool)
+end
+end
+end
+end
+end)
+
 autofarm:Toggle("Auto drink soda", function(v)
 getgenv().drink = v
 while getgenv().drink == true do wait(0.1)
 game:GetService("Players").LocalPlayer.Character.Drink.ToolScript.Drink:FireServer()
+end
+end)
+
+autofarm:Toggle("Auto Equip Drink", function(v)
+getgenv().autoequip = v
+while getgenv().autoequip do wait(0.1)
+local Players = game:GetService("Players")
+local player = Players:FindFirstChildOfClass("Player")
+if player and player.Character then
+local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+if humanoid then
+local tool = Players.LocalPlayer.Backpack:FindFirstChild("Drink")
+if tool then
+humanoid:EquipTool(tool)
+end
+end
+end
 end
 end)
 
