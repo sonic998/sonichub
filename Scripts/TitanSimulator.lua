@@ -68,6 +68,12 @@ end
 end)
 end)
 
+localplayer:Toggle("Fire", function()
+for i = 1,30 do
+Instance.new("Fire", game.Players.LocalPlayer.Character.HumanoidRootPart)
+end
+end)
+
 localplayer:Toggle("Safe Place", function()
 loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/BaseplateTitan.lua"))()
 end)
