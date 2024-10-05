@@ -2,6 +2,7 @@ local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"
 
 _G.win = lib:CreateWindow("GrannyXhub - Lift Legends Simulator")
 local autofarm = _G.win:Page("AutoFarm")
+local localplayer = _G.win:Page("Localplayer")
 local teleport = _G.win:Page("Teleport")
 local misc = _G.win:Page("Misc")
 
@@ -82,7 +83,7 @@ misc:Button("Rejoin", function()
   game:GetService("TeleportService"):Teleport(game.PlaceId)
 end)
 
-misc:Button("Fire", function()
+localplayer:Button("Fire", function()
 for i = 1,5 do
 local fire = Instance.new("Fire", game.Players.LocalPlayer.Character.HumanoidRootPart)
 fire.Heat = 25
@@ -136,6 +137,19 @@ local fire16 = Instance.new("Fire", game.Players.LocalPlayer.Character.HumanoidR
 fire16.Heat = 25
 fire16.size = 30
 end
+end)
+
+localplayer:Toggle("Sit", function(v)
+	getgenv().sit = v
+game.Players.LocalPlayer.Character.Humanoid.Sit = getgenv().sit
+end)
+
+localplayer:Button("Reset", function()
+	game.Players.LocalPlayer.Character:BreakJoints()
+end)
+
+localplayer:Button("Shift lock", function()
+loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Permanent-Shiftlock-7513"))()
 end)
 
 misc:Toggle("Inf Yield", function()
