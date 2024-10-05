@@ -33,9 +33,11 @@ local old = mt.__newindex
     end
     return old(a,b,c)
     end)
-  while getgenv().speed == true do wait()
-     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 500
-  end
+ game:GetService("RunService").Stepped:Connect(function()
+       if getgenv().speed == true then
+     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+      end
+  end)
 end)
 
 localplayer:Toggle("Inf Jump", function(v)
