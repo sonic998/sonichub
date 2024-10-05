@@ -82,7 +82,7 @@ misc:Button("Rejoin", function()
   game:GetService("TeleportService"):Teleport(game.PlaceId)
 end)
 
-localplayer:Button("Fire", function()
+misc:Button("Fire", function()
 for i = 1,5 do
 local fire = Instance.new("Fire", game.Players.LocalPlayer.Character.HumanoidRootPart)
 fire.Heat = 25
