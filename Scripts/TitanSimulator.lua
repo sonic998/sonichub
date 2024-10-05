@@ -69,8 +69,10 @@ end)
 end)
 
 localplayer:Button("Fire", function()
-for i = 1,100 do
-Instance.new("Fire", game.Players.LocalPlayer.Character.HumanoidRootPart)
+for i = 1,10 do
+local fire = Instance.new("Fire", game.Players.LocalPlayer.Character.HumanoidRootPart)
+fire.Heat = 25
+fire.size = 30
 end
 end)
 
