@@ -15,9 +15,7 @@ getgenv().autoeat = v
 while getgenv().autoeat do wait(0.1)
 for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
 if v.Name == "Banana" then
-if v:WaitForChild("bananaScript") then
-v:WaitForChild("bananaScript").replicator:FireServer("eat")
-end
+v:Activate()
 end
 end
 end
