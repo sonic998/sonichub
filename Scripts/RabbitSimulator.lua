@@ -40,12 +40,24 @@ end
 end)
 
 localplayer:Toggle("WalkSpeed", function(v)
-  getgenv().jump = v
-  game:GetService("UserInputService").JumpRequest:Connect(function()
-  if getgenv().jump == true then
-     game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")
-end
-end)
+getgenv().speed = v
+local mt = getrawmetatable(game)
+setreadonly(mt, false)
+local old = mt.__newindex
+
+    mt.__newindex = newcclosure(function(a, b, c)
+    if tostring(a) == "Humanoid" and tostring(b) == "WalkSpeed" then
+    if getgenv().speed == true then
+        return old(a, b, 100)
+    end
+    end
+    return old(a,b,c)
+    end)
+ game:GetService("RunService").Stepped:Connect(function()
+       if getgenv().speed == true then
+     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+      end
+  end)
 end)
 
 localplayer:Toggle("Inf Jump", function(v)
