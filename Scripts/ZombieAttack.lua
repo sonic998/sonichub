@@ -154,6 +154,20 @@ fire16.Heat = 25
 fire16.size = 30
 end)
 
+localplayer:Toggle("Sit", function(v)
+	getgenv().sit = v
+game.Players.LocalPlayer.Character.Humanoid.Sit = getgenv().sit
+end)
+
+localplayer:Button("Reset", function()
+	game.Players.LocalPlayer.Character:BreakJoints()
+end)
+
+localplayer:Button("Shift lock", function()
+loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Permanent-Shiftlock-7513"))()
+end)
+
+
 misc:Button("Rejoin", function()
 game:GetService("TeleportService"):Teleport(game.PlaceId)
 end)
