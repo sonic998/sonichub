@@ -49,14 +49,16 @@ local old = mt.__newindex
     mt.__newindex = newcclosure(function(a, b, c)
     if tostring(a) == "Humanoid" and tostring(b) == "WalkSpeed" then
     if getgenv().speed == true then
-        return old(a, b, 100)
+        return old(a, b, 600)
     end
     end
     return old(a,b,c)
     end)
-  while getgenv().speed == true do wait()
-     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 500
-  end
+ game:GetService("RunService").Stepped:Connect(function()
+       if getgenv().speed == true then
+     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 600
+      end
+  end)
 end)
 
 localplayer:Toggle("Inf Jump", function(v)
