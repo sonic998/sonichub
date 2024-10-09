@@ -35,7 +35,14 @@ while _G.autofarm do
     wait(0.1)
 end
 end)
-autofarm:Toggle("Auto Swing(not work)")
+autofarm:Toggle("Auto Swing", function(v)
+getgenv().swing = v
+while getgenv().swing == true do wait(0.1)
+game.ReplicatedStorage.Aero.AeroRemoteServices.GameService.WeaponAttackStart:FireServer()
+wait(0.65)
+game.ReplicatedStorage.Aero.AeroRemoteServices.GameService.WeaponAnimComplete:FireServer()
+end
+end)
 autofarm:Toggle("Auto Rebirth(not work)")
 
 localplayer:Toggle("WalkSpeed", function(v)
