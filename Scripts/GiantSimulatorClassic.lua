@@ -2,8 +2,15 @@ local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"
 
 _G.win = lib:CreateWindow("GrannyXhub - Giant Simulator Classic")
 local autofarm = _G.win:Page("AutoFarm")
+local teleport = _G.win:Page("Teleport")
 local localplayer = _G.win:Page("LocalPlayer")
 local misc = _G.win:Page("Misc")
+
+teleport:Drop("Locations", {"Cave"}, function(v)
+if v == "Cave" then
+game:GetService("TweenService"):Create(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(2186, 204, -929)}):Play()
+end
+end)
 
 autofarm:Toggle("Auto Collect Orb", function(v)
 _G.autofarm = v
