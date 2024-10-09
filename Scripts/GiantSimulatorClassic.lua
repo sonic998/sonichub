@@ -22,7 +22,6 @@ while _G.autofarm do
                 {CFrame = v.CFrame}
             )
             tween:Play()
-            end)
             tween.Completed:Wait()
         end
     end
