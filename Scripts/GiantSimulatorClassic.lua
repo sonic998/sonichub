@@ -5,7 +5,30 @@ local autofarm = _G.win:Page("AutoFarm")
 local localplayer = _G.win:Page("LocalPlayer")
 local misc = _G.win:Page("Misc")
 
-autofarm:Toggle("Auto Collect Orb(not work)")
+autofarm:Toggle("Auto Collect Orb", function(v)
+_G.autofarm = v
+_G.tpspeed = 0.7
+
+local ts = game:GetService("TweenService")
+local player = game.Players.LocalPlayer
+
+while _G.autofarm do
+    for _, v in pairs(workspace.Scene.ResourceNodes1:GetChildren()) do
+        if not _G.autofarm then break end
+        if v:IsA("Part") and v:FindFirstChild("Prefab") then
+            local tween = ts:Create(
+                player.Character.HumanoidRootPart,
+                TweenInfo.new(_G.tpspeed),
+                {CFrame = v.CFrame}
+            )
+            tween:Play()
+            end)
+            tween.Completed:Wait()
+        end
+    end
+    wait(0.1)
+end
+end)
 autofarm:Toggle("Auto Swing(not work)")
 autofarm:Toggle("Auto Rebirth(not work)")
 
