@@ -44,6 +44,12 @@ game.ReplicatedStorage.Aero.AeroRemoteServices.GameService.WeaponAnimComplete:Fi
 end
 end)
 autofarm:Toggle("Auto Rebirth(not work)")
+autofarm:Toggle("Auto Tp to boss", function(v)
+getgenv().boss = v
+while getgenv().boss == true do wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.NPC.Boss.Borock.UpperTorso.CFrame
+end
+end)
 
 localplayer:Toggle("WalkSpeed", function(v)
 getgenv().speed = v
