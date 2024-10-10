@@ -5,9 +5,12 @@ local localplayer = _G.win:Page("LocalPlayer")
 local teleport = _G.win:Page("Teleport")
 local misc = _G.win:Page("Misc")
 
-teleport:Drop("Locations", {"Spawn"}, function(v)
+teleport:Drop("Locations", {"Spawn", "FrontControl"}, function(v)
 if v == "Spawn" then
 game:GetService("TweenService"):Create(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-194, 105, -780)}):Play()
+end
+if v == "FrontControl" then
+game:GetService("TweenService"):Create(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-171, 107, -602)}):Play()
 end
 end)
 
