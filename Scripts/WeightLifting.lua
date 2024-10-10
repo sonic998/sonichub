@@ -8,7 +8,17 @@ local misc = _G.win:Page("Misc")
 autofarm:Toggle("Auto lift weight", function(v)
 getgenv().lift = v
 while getgenv().lift == true do wait(0.1)
-game:GetService("Players").LocalPlayer.Character.Weight.ToolScript.Lift:FireServer()
+local Players = game:GetService("Players")
+local player = Players:FindFirstChildOfClass("Player")
+if player and player.Character then
+local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+if humanoid then
+local tool = Players.LocalPlayer.Character:FindFirstChild("Weight")
+if tool then
+tool:Activate()
+end
+end
+end
 end
 end)
 
