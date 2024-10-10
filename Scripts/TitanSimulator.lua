@@ -50,6 +50,17 @@ game.ReplicatedStorage.RemoteEventContainer.Rebirth:FireServer()
 end
 end)
 
+autofarm:Toggle("Auto Collect Orbs", function(v)
+getgenv().orb = v
+while getgenv().orb do wait(1)
+for i,v in pairs(game.Workspace:GetChildren()) do
+if v.Name == "Drop" then
+v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+end
+end
+end)
+
 localplayer:Toggle("WalkSpeed", function(v)
 getgenv().speed = v
 local mt = getrawmetatable(game)
