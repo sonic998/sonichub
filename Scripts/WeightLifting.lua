@@ -42,7 +42,17 @@ end)
 autofarm:Toggle("Auto drink soda", function(v)
 getgenv().drink = v
 while getgenv().drink == true do wait(0.1)
-game:GetService("Players").LocalPlayer.Character.Drink.ToolScript.Drink:FireServer()
+local Players = game:GetService("Players")
+local player = Players:FindFirstChildOfClass("Player")
+if player and player.Character then
+local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+if humanoid then
+local tool = Players.LocalPlayer.Character:FindFirstChild("Drink")
+if tool then
+tool:Activate()
+end
+end
+end
 end
 end)
 
