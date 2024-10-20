@@ -51,7 +51,7 @@ end)
 
 autofarm:Toggle(nzNnzmsErQRmdZN({6825,12285,12180,11655,3360,7140,11970,11025,11550,11235}), function(v)
 	getgenv().autodrink = v
-	while getgenv().autodrink do wait(0 1)
+	while getgenv().autodrink do wait(0.1)
 	  game.ReplicatedStorage.RemoteEvents.Drink:FireServer(nzNnzmsErQRmdZN({8715,10920,10185,10500,11655,12495,11025,12075,12495,11025,11550,11550,11025,11550,10815}))
 	end
 end)
