@@ -5,7 +5,7 @@ local localplayer = _G.win:Page("LocalPlayer")
 local teleport = _G.win:Page("Teleport")
 local misc = _G.win:Page("Misc")
 
-teleport:Drop("Locations", {"Outside", "Lift Up", "Lift Down"}, function(v)
+teleport:Drop("Locations", {"Outside", "Lift Up", "Lift Down", "Suit"}, function(v)
 if v == "Outside" then
 game:GetService("TweenService"):Create(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-412, 135, 89)}):Play()
 end
@@ -14,6 +14,9 @@ game:GetService("TweenService"):Create(game:GetService("Players").LocalPlayer.Ch
 end
 if v == "Lift Down" then
 game:GetService("TweenService"):Create(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-522, 6, 47)}):Play()
+end
+if v == "Suit" then
+game:GetService("TweenService"):Create(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(-277, 3, -197)}):Play()
 end
 end)
 
