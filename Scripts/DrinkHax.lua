@@ -11,11 +11,7 @@ local notify = loadstring(game:HttpGet(aVKdRETjAPRWYNPCEStQHhVHKntNQINYbRJygB({1
 notify:Notify(aVKdRETjAPRWYNPCEStQHhVHKntNQINYbRJygB({9135,10920,11025,12180,10605,11340,11025,12075,12180,10605,10500}))
 wait(0.5)
 
-if game.Players.LocalPlayer.UserId == 560378167 then
-getgenv().drinkspeed = 2.8
-else
 getgenv().drinkspeed = 2.34
-end
 
 for i,v in pairs(workspace.Clouds:GetChildren()) do
 if v.Name == aVKdRETjAPRWYNPCEStQHhVHKntNQINYbRJygB({7035,11340,11655,12285,10500}) then
