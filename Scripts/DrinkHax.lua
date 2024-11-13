@@ -12,7 +12,7 @@ notify:Notify(aVKdRETjAPRWYNPCEStQHhVHKntNQINYbRJygB({9135,10920,11025,12180,106
 wait(0.5)
 
 if game.Players.LocalPlayer.UserId == 560378167 then
-getgenv().drinkspeed = 2.5
+getgenv().drinkspeed = 2.8
 else
 getgenv().drinkspeed = 2.34
 end
