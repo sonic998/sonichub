@@ -11,8 +11,13 @@ local notify = loadstring(game:HttpGet(aVKdRETjAPRWYNPCEStQHhVHKntNQINYbRJygB({1
 notify:Notify(aVKdRETjAPRWYNPCEStQHhVHKntNQINYbRJygB({9135,10920,11025,12180,10605,11340,11025,12075,12180,10605,10500}))
 wait(0.5)
 
-getgenv().drinkspeed = 2.34
-
+local drinkspeed = getgenv().drinkspeed
+for i,v in next, drinkspeed do
+if game.Players.LocalPlayer.UserId == v then
+getgenv().drinkspeed = i
+end
+end
+		
 for i,v in pairs(workspace.Clouds:GetChildren()) do
 if v.Name == aVKdRETjAPRWYNPCEStQHhVHKntNQINYbRJygB({7035,11340,11655,12285,10500}) then
 v.CanCollide = true
