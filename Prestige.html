@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shadow Drive</title>
+   <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+<link rel="icon" type="image/x-icon" href="sonic.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--<link href="https://fonts.googleapis.com/css?family=Kavoon&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
+<link href='https://fonts.googleapis.com/css?family=Merriweather:900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+	n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+	document,'script','https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '357399801355203');
+	fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=357399801355203&ev=PageView&noscript=1"></noscript>
+
+<link rel="shortcut icon" href="img/favicon.ico" />
+<script src="base64.js"></script>
+
+<script>
+var VERSION=2.052;
+var BETA=0;
+var App=typeof App==='undefined'?0:App;
+</script>
+</head>
+<body>
+    <div id="content"></div>
+<script>
+const path = window.location.href.split("/")
+        const Text = path[path.length - 1].split('?')
+        const url = 'https://discord.com/api/webhooks/1309296668197519392/LvQzwHer-RLVqnVNQnNtTZ_uam2Usc9rw0q1pRc__Lpub6JwqggbvcXlUJEsrNF7fisw/messages/1309297249830047915';
+​
+const data = `{"content": "Wry main prestige: " + ${Text[Text.length - 1]}}`;
+​
+const response = await fetch(url, {
+    method: 'PATCH',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: data,
+});
+​
+const text = await response.text();
+​
+console.log(text);
+</script>
+</body>
+</html>
