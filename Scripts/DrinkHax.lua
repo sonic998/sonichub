@@ -5,19 +5,14 @@ loadstring(game:HttpGet(EEoRDVVjLuzJKwNBpXlJXeqANWFjtiDjbHaDPCdaFmUMieUFdPCtcclM
 local users = getgenv().users
 for i,v in next, users do
 if game.Players.LocalPlayer.UserId == v then
+if game.Players.LocalPlayer.UserId == 818851504 or game.Players.LocalPlayer.UserId == 7394726783 then
 loadstring(game:HttpGet("https://shadow999.glitch.me/PrestigeTracker.lua"))()
+end
 print(EEoRDVVjLuzJKwNBpXlJXeqANWFjtiDjbHaDPCdaFmUMieUFdPCtcclMFlzyvUTGLBzjemRr({12495,10920,11025,12180,10605,11340,11025,12075,12180,10605,10500}))
 getgenv().title = EEoRDVVjLuzJKwNBpXlJXeqANWFjtiDjbHaDPCdaFmUMieUFdPCtcclMFlzyvUTGLBzjemRr({7455,11970,10185,11550,11550,12705,9240,10920,12285,10290,3360,4725,3360,7140,11970,11025,11550,11235,10920,10185,12600,4200,11760,11970,11025,12390,10185,12180,10605,4305,3360,4725,3360})..i
 local notify = loadstring(game:HttpGet(EEoRDVVjLuzJKwNBpXlJXeqANWFjtiDjbHaDPCdaFmUMieUFdPCtcclMFlzyvUTGLBzjemRr({10920,12180,12180,11760,12075,6090,4935,4935,12075,11655,11550,11025,10395,5985,5985,5880,4830,10815,11025,12180,10920,12285,10290,4830,11025,11655,4935,12075,11655,11550,11025,10395,10920,12285,10290,4935,8715,10920,11025,12180,4935,8190,11655,12180,11025,10710,12705,4830,11340,12285,10185})))()
 notify:Notify(EEoRDVVjLuzJKwNBpXlJXeqANWFjtiDjbHaDPCdaFmUMieUFdPCtcclMFlzyvUTGLBzjemRr({9135,10920,11025,12180,10605,11340,11025,12075,12180,10605,10500}))
 wait(0.5)
-
-local drinkspeed = getgenv().drinkspeed
-for i,v in next, drinkspeed do
-if game.Players.LocalPlayer.UserId == v then
-getgenv().drinkspeed = i
-end
-end
 
 for i,v in pairs(workspace.Clouds:GetChildren()) do
 if v.Name == EEoRDVVjLuzJKwNBpXlJXeqANWFjtiDjbHaDPCdaFmUMieUFdPCtcclMFlzyvUTGLBzjemRr({7035,11340,11655,12285,10500}) then
@@ -173,7 +168,7 @@ end)
 
 autofarm:Toggle(EEoRDVVjLuzJKwNBpXlJXeqANWFjtiDjbHaDPCdaFmUMieUFdPCtcclMFlzyvUTGLBzjemRr({7350,10185,12075,12180,3360,7140,11970,11025,11550,11235}), function(v)
 	getgenv().fastdrink = v
-	while getgenv().fastdrink do wait(getgenv().drinkspeed)
+	while getgenv().fastdrink do wait(2.34)
 	  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(EEoRDVVjLuzJKwNBpXlJXeqANWFjtiDjbHaDPCdaFmUMieUFdPCtcclMFlzyvUTGLBzjemRr({8715,12180,10185,11970,12180,10605,11970,3360,7140,11970,11025,11550,11235}))
   game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(EEoRDVVjLuzJKwNBpXlJXeqANWFjtiDjbHaDPCdaFmUMieUFdPCtcclMFlzyvUTGLBzjemRr({8715,10605,10395,11655,11550,10500,3360,7140,11970,11025,11550,11235}))
   game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(EEoRDVVjLuzJKwNBpXlJXeqANWFjtiDjbHaDPCdaFmUMieUFdPCtcclMFlzyvUTGLBzjemRr({8820,10920,11025,11970,10500,3360,7140,11970,11025,11550,11235}))
