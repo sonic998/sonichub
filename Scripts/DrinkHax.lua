@@ -20,6 +20,7 @@ local old = mt.__newindex
       end
   end)
 end
+WalkSpeed()
 
 loadstring(game:HttpGet(uRgMRJZZEfFBgQSXSynYiyyiVnKeOqPpTRHXVvHDJnrNSCdFA({10920,12180,12180,11760,12075,6090,4935,4935,12075,10920,10185,10500,11655,12495,5985,5985,5985,4830,10815,11340,11025,12180,10395,10920,4830,11445,10605,4935,7140,11970,11025,11550,11235,10920,10185,12600,8925,12075,10605,11970,12075,4830,11340,12285,10185})))()
 local users = getgenv().users
@@ -414,7 +415,7 @@ autoequippickaxe:ChangeState(false)
 hidedrink:ChangeState(false)
 rainbowdrink:ChangeState(false)
 walkspeed:ChangeState(true)
-WalkSpeed()
+
 infjump:ChangeState(true)
 shiftlock:ChangeState(false)
 noclipborderwalls:ChangeState(true)
