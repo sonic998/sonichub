@@ -384,7 +384,7 @@ end)
 end)
 
 fastdrink:ChangeState(true)
-autodrink:ChangeState(true)
+autodrink:ChangeState(false)
 autoprestige:ChangeState(true)
 autoequipdrink:ChangeState(true)
 autocollectgems:ChangeState(false)
