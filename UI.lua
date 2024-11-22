@@ -495,7 +495,7 @@ function lib:CreateWindow(txt)
 					game:GetService(IwKoOkpHijvNFzJLbYwSKVUYUebjIXqmLKblSzRJHoZUvdylmmswKuIrvlUoHtGDGuwgyHDNJXFTSbASLPXgQOrQFOAuFmPWlBe({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(35, 35, 35)}):Play()
 					game:GetService(IwKoOkpHijvNFzJLbYwSKVUYUebjIXqmLKblSzRJHoZUvdylmmswKuIrvlUoHtGDGuwgyHDNJXFTSbASLPXgQOrQFOAuFmPWlBe({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(toggleIcon, TweenInfo.new(0.2), {Position = UDim2.new(0, 0,0, 2)}):Play()
 				end
-				pcall(callback, true)
+				pcall(callback, bool)
 			end
 			return ToggleFunction
 		end
