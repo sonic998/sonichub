@@ -254,14 +254,14 @@ local old = mt.__newindex
     mt.__newindex = newcclosure(function(a, b, c)
     if tostring(a) == EEoRDVVjLuzJKwNBpXlJXeqANWFjtiDjbHaDPCdaFmUMieUFdPCtcclMFlzyvUTGLBzjemRr({7560,12285,11445,10185,11550,11655,11025,10500}) and tostring(b) == EEoRDVVjLuzJKwNBpXlJXeqANWFjtiDjbHaDPCdaFmUMieUFdPCtcclMFlzyvUTGLBzjemRr({9135,10185,11340,11235,8715,11760,10605,10605,10500}) then
        if getgenv().speed == true then
-        return old(a, b, 1000)
+        return old(a, b, 400)
        end
     end
     return old(a,b,c)
     end)
   game:GetService(EEoRDVVjLuzJKwNBpXlJXeqANWFjtiDjbHaDPCdaFmUMieUFdPCtcclMFlzyvUTGLBzjemRr({8610,12285,11550,8715,10605,11970,12390,11025,10395,10605})).Stepped:Connect(function()
        if getgenv().speed == true then
-     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 600
+     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 400
       end
   end)
 end)
