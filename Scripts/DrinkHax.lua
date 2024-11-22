@@ -258,7 +258,11 @@ local WorldStuff = _G.win:Page(ANiEJRUFGPgETmrUfZjoqJavyuxfax({9135,11655,11970,
 local teleport = _G.win:Page(ANiEJRUFGPgETmrUfZjoqJavyuxfax({8820,10605,11340,10605,11760,11655,11970,12180}))
 local misc = _G.win:Page(ANiEJRUFGPgETmrUfZjoqJavyuxfax({8085,11025,12075,10395}))
 local Community = _G.win:Page(ANiEJRUFGPgETmrUfZjoqJavyuxfax({7035,11655,11445,11445,12285,11550,11025,12180,12705}))
+local GuiDesign = _G.win:Page("Gui Designs")
 
+		GuiDesign:Button("Black & white")
+		GuiDesign:Button("Red & Black")
+		
 WorldStuff:Label(ANiEJRUFGPgETmrUfZjoqJavyuxfax({4725,4725,4725,9135,11655,11970,11340,10500,3360,11445,10185,11760,12075,4935,6930,12285,11025,11340,10500,11025,11550,10815,12075,4725,4725,4725}))
 
 local largebaseplate = WorldStuff:Toggle(ANiEJRUFGPgETmrUfZjoqJavyuxfax({7980,10185,11970,10815,10605,3360,10290,10185,12075,10605,11760,11340,10185,12180,10605}), function(v)
