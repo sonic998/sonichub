@@ -486,6 +486,7 @@ function lib:CreateWindow(txt)
 			Instance.new(IwKoOkpHijvNFzJLbYwSKVUYUebjIXqmLKblSzRJHoZUvdylmmswKuIrvlUoHtGDGuwgyHDNJXFTSbASLPXgQOrQFOAuFmPWlBe({8925,7665,7035,11655,11970,11550,10605,11970}), toggleIcon).CornerRadius = UDim.new(1, 0)
 
 			function ToggleFunction:ChangeState(bool)
+				bool = bool or switch
 				if bool == true then
 					game:GetService(IwKoOkpHijvNFzJLbYwSKVUYUebjIXqmLKblSzRJHoZUvdylmmswKuIrvlUoHtGDGuwgyHDNJXFTSbASLPXgQOrQFOAuFmPWlBe({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(200, 200, 200)}):Play()
 					game:GetService(IwKoOkpHijvNFzJLbYwSKVUYUebjIXqmLKblSzRJHoZUvdylmmswKuIrvlUoHtGDGuwgyHDNJXFTSbASLPXgQOrQFOAuFmPWlBe({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(toggleIcon, TweenInfo.new(0.2), {Position = UDim2.new(0, 50,0, 2)}):Play()
@@ -494,7 +495,6 @@ function lib:CreateWindow(txt)
 					game:GetService(IwKoOkpHijvNFzJLbYwSKVUYUebjIXqmLKblSzRJHoZUvdylmmswKuIrvlUoHtGDGuwgyHDNJXFTSbASLPXgQOrQFOAuFmPWlBe({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(35, 35, 35)}):Play()
 					game:GetService(IwKoOkpHijvNFzJLbYwSKVUYUebjIXqmLKblSzRJHoZUvdylmmswKuIrvlUoHtGDGuwgyHDNJXFTSbASLPXgQOrQFOAuFmPWlBe({8820,12495,10605,10605,11550,8715,10605,11970,12390,11025,10395,10605})):Create(toggleIcon, TweenInfo.new(0.2), {Position = UDim2.new(0, 0,0, 2)}):Play()
 				end
-				switch = bool
 				pcall(callback, switch)
 			end
 			return ToggleFunction
