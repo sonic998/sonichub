@@ -20,29 +20,29 @@ end
 local Library = loadstring(game:HttpGet(LmwJhpBlZFTDJhGdgbzScKXtsVBAIaauADXLhQuSDju({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,7245,12600,12285,11550,12705,12075,4935,7035,11655,11550,10710,11025,10815,4725,7980,11025,10290,11970,10185,11970,12705,4935,11445,10185,11025,11550,4935,8085,10185,11025,11550,4830,11340,12285,10185})))()
 
 getgenv().settings = {
-fastdrink = false,
+fastdrink = true,
 autodrink = false,
-autoprestige = false,
-autoequipdrink = false,
+autoprestige = true,
+autoequipdrink = true,
 autocollectgems = false,
 autominegems = false,
 autoequippickaxe = false,
 hidedrink = false,
 rainbowdrink = false,
-walkspeed = false,
-infjump = false,
+walkspeed = true,
+infjump = true,
 shiftlock = false,
-noclipborderwalls = false,
-walkonwater = false,
-night = false,
+noclipborderwalls = true,
+walkonwater = true,
+night = true,
 christmas = false,
 halloween = false,
-largebaseplate = false,
-safeplace = false,
+largebaseplate = true,
+safeplace = true,
 bpcountervisiblity = false,
-infyield = false,
-antikick = false,
-antiafk = false
+infyield = true,
+antikick = true,
+antiafk = true
 }
 
 
