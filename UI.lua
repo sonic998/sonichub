@@ -601,7 +601,7 @@ local DarkLib = Instance.new("ScreenGui")
 DarkLib.Name = "DarkLib"
 	DarkLib.Parent = game.CoreGui
 	DarkLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-local Ground = Instance.new("Frame")
+
 	local UIListLayout = Instance.new("UIListLayout")
 	local UIListLayout_2 = Instance.new("UIListLayout")
 	local Page = Instance.new("Frame")
@@ -611,10 +611,6 @@ local Ground = Instance.new("Frame")
     local Corner = Instance.new("UICorner")
     local Corner_2 = Instance.new("UICorner")
     local TextLabel = Instance.new("TextLabel")
-	
---	Ground.Name = "Gui Ground"
---	Ground.Parent = DarkLib
---	Ground.Size = UDim2.new(999,999,999,999)
 
 	DarkFrame.Name = "DarkFrame"
 	DarkFrame.Parent = DarkLib
