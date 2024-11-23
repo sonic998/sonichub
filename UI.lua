@@ -612,12 +612,14 @@ local Ground = Instance.new("Frame")
     local Corner_2 = Instance.new("UICorner")
     local TextLabel = Instance.new("TextLabel")
 	
+	--[[
 	Ground.Name = "Gui Ground"
 	Ground.Parent = DarkLib
-	Ground.Size = UDim2.new(1,0,1,0)
-	
+	Ground.Size = UDim2.new(999,999,999,999)
+--]]
+
 	DarkFrame.Name = "DarkFrame"
-	DarkFrame.Parent = Ground
+	DarkFrame.Parent = DarkLib
 	DarkFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 	DarkFrame.BorderSizePixel = 0
 	DarkFrame.Position = UDim2.new(0.385173261, 0, 0.333333313, 0)
