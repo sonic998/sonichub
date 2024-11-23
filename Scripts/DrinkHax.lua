@@ -321,7 +321,6 @@ game:GetService("CoreGui").GainUI.Enabled = getgenv().vis
 end)
 
 loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/BpCounter.lua"))()
-getgenv().selection = selection
 end
 else
 getgenv().a = false
