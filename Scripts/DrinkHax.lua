@@ -13,11 +13,89 @@ end
 
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
 
-_G.win = lib:CreateWindow(getgenv().title, "DarkLib")
 if getgenv().selection == "DarkLib" then
-_G.win:Button("h")
+local AutoFarm = lib:CreateWindow("Autofarm", "DarkLib")
+
+autofarm:Toggle("Fast Drink", function(v)
+	getgenv().fastdrink = v
+	while getgenv().fastdrink do wait(getgenv().drinkspeed)
+	  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Starter Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Second Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Third Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fourth Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fifth Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Sixth Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Seventh Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Eighth Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Ninth Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Atomic Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Omega Burp Juice")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Thunder Fizz")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Garlic Juice")
+	end
+end)
+
+autofarm:Toggle("Auto Drink", function(v)
+	getgenv().autodrink = v
+	while getgenv().autodrink do wait(3.1)
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Starter Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Second Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Third Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fourth Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fifth Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Sixth Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Seventh Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Eighth Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Ninth Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Atomic Drink")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Omega Burp Juice")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Thunder Fizz")
+  game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Garlic Juice")
+	end
+end)
+
+autofarm:Toggle("Auto Prestige", function(v)
+	getgenv().autoprestige = v
+	while getgenv().autoprestige do wait(1)
+	  game.ReplicatedStorage.RemoteEvents.PrestigeEvent:FireServer()
+	end
+end)
+
+loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/AutoEquipDrink.lua"))()
+
+autofarm:Toggle("Auto Equip Drink", function(v)
+	getgenv().equipdrink = v
+	while getgenv().equipdrink do wait(0.5)
+		AutoEquipDrink()
+	end
+end)
+
+autofarm:Toggle("Auto Collect Gems", function(v)
+	getgenv().collectgems = v
+	while getgenv().collectgems do wait(0.5)
+	for i,v in pairs(workspace.Diamonds:GetChildren()) do
+v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+	end
+end)
+
+autofarm:Toggle("Auto Mine Gems", function(v)
+	getgenv().minegems = v
+	while getgenv().minegems do wait(0.1)
+game:GetService("Players").LocalPlayer.Character.Pickaxe.Server.Mine:FireServer()
+	end
+end)
+
+autofarm:Toggle("Auto Equip Pickaxe", function(v)
+	getgenv().equippickaxe = v
+	while getgenv().equippickaxe do wait(0.5)
+	if game:GetService("Players").LocalPlayer.Backpack.Pickaxe ~= nil then
+game:GetService("Players").LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack.Pickaxe)
+end
+	end
 end
 if getgenv().selection == "MainUI" then
+_G.win = lib:CreateWindow(getgenv().title, "DarkLib")
 local autofarm = _G.win:Page("AutoFarm")
 local Drink = _G.win:Page("Drink Changes")
 local localplayer = _G.win:Page("LocalPlayer")
