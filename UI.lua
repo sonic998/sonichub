@@ -614,7 +614,7 @@ local Ground = Instance.new("Frame")
 	
 	Ground.Name = "Gui Ground"
 	Ground.Parent = DarkLib
-	Ground.Size = UDim2.new(1,1,1,1)
+	Ground.Size = UDim2.new(1,0,1,0)
 	
 	DarkFrame.Name = "DarkFrame"
 	DarkFrame.Parent = Ground
