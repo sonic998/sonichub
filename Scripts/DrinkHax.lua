@@ -15,7 +15,12 @@ local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"
 
 if getgenv().selection == "DarkLib" then
 local AutoFarm = lib:CreateWindow("Autofarm", "DarkLib")
-
+local Drink =  lib:CreateWindow("Drink Changes", "DarkLib")
+local localplayer = lib:CreateWindow("LocalPlayer", "DarkLib")
+local WorldStuff = lib:CreateWindow("World Stuff", "DarkLib")
+local teleport = lib:CreateWindow("Teleport", "DarkLib")
+local misc = lib:CreateWindow("Misc", "DarkLib")
+local Community = lib:CreateWindow("Community", "DarkLib")
 autofarm:Toggle("Fast Drink", function(v)
 	getgenv().fastdrink = v
 	while getgenv().fastdrink do wait(getgenv().drinkspeed)
@@ -93,6 +98,7 @@ autofarm:Toggle("Auto Equip Pickaxe", function(v)
 game:GetService("Players").LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack.Pickaxe)
 end
 	end
+end)
 end
 if getgenv().selection == "MainUI" then
 _G.win = lib:CreateWindow(getgenv().title, "DarkLib")
