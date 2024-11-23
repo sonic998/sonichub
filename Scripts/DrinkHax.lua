@@ -14,7 +14,7 @@ end
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
 getgenv().ui = "DarkLib"
 if getgenv().ui == "DarkLib" then
-local AutoFarm = lib:CreateWindow("Autofarm", "DarkLib")
+local autofarm = lib:CreateWindow("Autofarm", "DarkLib")
 local Drink =  lib:CreateWindow("Drink Changes", "DarkLib")
 local localplayer = lib:CreateWindow("LocalPlayer", "DarkLib")
 local WorldStuff = lib:CreateWindow("World Stuff", "DarkLib")
