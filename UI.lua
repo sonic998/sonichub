@@ -21,7 +21,6 @@ else
 end
 
 local lib = {}
-
 function lib:CreateWindow(txt, selection)
 getgenv().selection = selection
 if selection == "MainUI" then
@@ -602,7 +601,7 @@ local DarkLib = Instance.new("ScreenGui")
 DarkLib.Name = "DarkLib"
 	DarkLib.Parent = game.CoreGui
 	DarkLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
+local Ground = Instance.new("Frame")
 	local UIListLayout = Instance.new("UIListLayout")
 	local UIListLayout_2 = Instance.new("UIListLayout")
 	local Page = Instance.new("Frame")
@@ -613,8 +612,12 @@ DarkLib.Name = "DarkLib"
     local Corner_2 = Instance.new("UICorner")
     local TextLabel = Instance.new("TextLabel")
 	
+	Ground.Name = "Gui Ground"
+	Ground.Parent = DarkLib
+	Ground.Size = UDim2.new(1,1,1,1)
+	
 	DarkFrame.Name = "DarkFrame"
-	DarkFrame.Parent = DarkLib
+	DarkFrame.Parent = Ground
 	DarkFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 	DarkFrame.BorderSizePixel = 0
 	DarkFrame.Position = UDim2.new(0.385173261, 0, 0.333333313, 0)
@@ -622,17 +625,6 @@ DarkLib.Name = "DarkLib"
 
     Corner.CornerRadius = UDim.new(0, 4)
     Corner.Parent = DarkFrame
-
-TextLabel.Parent = DarkFrame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
-TextLabel.Position = UDim2.new(0, 0, 1, 0)
-TextLabel.Size = UDim2.new(0, 168, 0, 1)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = ""
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 14.000
-TextLabel.ZIndex = 999
-TextLabel.BorderSizePixel = 0
 
 local function FTAZ_fake_script() -- TextLabel.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel)
