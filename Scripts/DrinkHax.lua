@@ -4,7 +4,7 @@ for i,v in next, users do
 if game.Players.LocalPlayer.UserId == v then
 print("whitelisted")
 getgenv().title = "GrannyXhub - Drinkhax(private) - "..i
-
+getgenv().a = true
 for i,v in pairs(workspace.Clouds:GetChildren()) do
 if v.Name == "Cloud" then
 v.CanCollide = true
