@@ -612,11 +612,9 @@ local Ground = Instance.new("Frame")
     local Corner_2 = Instance.new("UICorner")
     local TextLabel = Instance.new("TextLabel")
 	
-	--[[
-	Ground.Name = "Gui Ground"
-	Ground.Parent = DarkLib
-	Ground.Size = UDim2.new(999,999,999,999)
---]]
+--	Ground.Name = "Gui Ground"
+--	Ground.Parent = DarkLib
+--	Ground.Size = UDim2.new(999,999,999,999)
 
 	DarkFrame.Name = "DarkFrame"
 	DarkFrame.Parent = DarkLib
