@@ -1,4 +1,4 @@
----[[
+--[[
 Made by GrannyTheDev
 Discord Server: https://discord.gg/mSGG9GwVJz
 --]]
