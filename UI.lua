@@ -732,6 +732,8 @@ coroutine.wrap(FTAZ_fake_script)()
 	local EpicLibrary = {}
 	
 	function EpicLibrary:Drop(a, a)
+	callback = callback or function() end
+	end
 	
 	function EpicLibrary:Box(txt, callback)
 		local TextBox = Instance.new("TextBox")
