@@ -4,7 +4,7 @@ for i,v in next, users do
 if game.Players.LocalPlayer.UserId == v then
 print("whitelisted")
 getgenv().title = "GrannyXhub - Drinkhax(private) - "..i
-getgenv().a = true
+
 for i,v in pairs(workspace.Clouds:GetChildren()) do
 if v.Name == "Cloud" then
 v.CanCollide = true
@@ -12,8 +12,8 @@ end
 end
 
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
-
-if getgenv().selection == "DarkLib" then
+getgenv().ui = "DarkLib"
+if getgenv().ui == "DarkLib" then
 local AutoFarm = lib:CreateWindow("Autofarm", "DarkLib")
 local Drink =  lib:CreateWindow("Drink Changes", "DarkLib")
 local localplayer = lib:CreateWindow("LocalPlayer", "DarkLib")
@@ -21,6 +21,7 @@ local WorldStuff = lib:CreateWindow("World Stuff", "DarkLib")
 local teleport = lib:CreateWindow("Teleport", "DarkLib")
 local misc = lib:CreateWindow("Misc", "DarkLib")
 local Community = lib:CreateWindow("Community", "DarkLib")
+
 autofarm:Toggle("Fast Drink", function(v)
 	getgenv().fastdrink = v
 	while getgenv().fastdrink do wait(getgenv().drinkspeed)
@@ -100,15 +101,15 @@ end
 	end
 end)
 end
-if getgenv().selection == "MainUI" then
-_G.win = lib:CreateWindow(getgenv().title, "DarkLib")
-local autofarm = _G.win:Page("AutoFarm")
-local Drink = _G.win:Page("Drink Changes")
-local localplayer = _G.win:Page("LocalPlayer")
-local WorldStuff = _G.win:Page("World Stuff")
-local teleport = _G.win:Page("Teleport")
-local misc = _G.win:Page("Misc")
-local Community = _G.win:Page("Community")
+if getgenv().ui == "MainUI" then
+local win = lib:CreateWindow(getgenv().title, "MainUI")
+local autofarm = win:Page("AutoFarm")
+local Drink = win:Page("Drink Changes")
+local localplayer = win:Page("LocalPlayer")
+local WorldStuff = win:Page("World Stuff")
+local teleport = win:Page("Teleport")
+local misc = win:Page("Misc")
+local Community = win:Page("Community")
 
 WorldStuff:Label("---World Maps/Buildings---")
 
