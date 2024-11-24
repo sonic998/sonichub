@@ -1,20 +1,20 @@
 if get_hidden_gui or gethui then
 	local hiddenUI = get_hidden_gui or gethui
 	for i,v in pairs(hiddenUI():GetChildren()) do
-		if v:IsA("ScreenGui") and v.Name == "SonicUI" or v.Name == "DarkLib" then
+		if v:IsA("ScreenGui") and v.Name == "SonicUI" then
 			v:Destroy()
 		end
 	end
 elseif syn and syn.protect_gui then
 	for i,v in pairs(game.CoreGui:GetChildren()) do
-		if v:IsA("ScreenGui") and v.Name == "SonicUI" or v.Name == "DarkLib" then
+		if v:IsA("ScreenGui") and v.Name == "SonicUI" then
 			syn.unprotect_gui(v)
 			v:Destroy()
 		end
 	end
 else
 	for i,v in pairs(game.CoreGui:GetChildren()) do
-		if v:IsA("ScreenGui") and v.Name == "SonicUI" or v.Name == "DarkLib" then
+		if v:IsA("ScreenGui") and v.Name == "SonicUI" then
 			v:Destroy()
 		end
 	end
@@ -39,6 +39,7 @@ function lib:CreateWindow(txt, selection)
 		SonicUI.Name = "GrannyUI"
 		SonicUI.ResetOnSpawn = false
 		SonicUI.Parent = game:GetService("CoreGui")
+	    --SonicUI.Parent = game:GetService("Players").LocalPlayer.PlayerGui
 
 		game:GetService("UserInputService").InputBegan:Connect(function(current, ok) 
 			if not ok then 
@@ -600,6 +601,7 @@ function lib:CreateWindow(txt, selection)
 		local DarkLib = Instance.new("ScreenGui")
 		DarkLib.Name = "DarkLib"
 		DarkLib.Parent = game:GetService("CoreGui")
+		--DarkLib.Parent = game:GetService("Players").LocalPlayer.PlayerGui
 		DarkLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 		local FrameE = Instance.new("Frame")
 		FrameE.Parent = DarkLib
@@ -608,414 +610,455 @@ function lib:CreateWindow(txt, selection)
 		FrameE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		FrameE.BorderSizePixel = 0
 		FrameE.Size = UDim2.new(1, 0, 1, 0)
-		
-local window = {}
-function window:AddWindows(txt)
-		local UIListLayout = Instance.new("UIListLayout")
-		local UIListLayout_2 = Instance.new("UIListLayout")
-		local Page = Instance.new("ScrollingFrame")
-		local Title = Instance.new("TextLabel")
-		local VisibleToggle = Instance.new("TextButton")
-		local DarkFrame = Instance.new("Frame")
-		local Corner = Instance.new("UICorner")
-		local Corner_2 = Instance.new("UICorner")
-		local TextLabel = Instance.new("TextLabel")
-		local DarkFrame = Instance.new("Frame")
-		
-		local UIGridLayout = Instance.new("UIGridLayout")
 
-		DarkFrame.Name = "DarkFrame"
-		DarkFrame.Parent = FrameE
-		DarkFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-		DarkFrame.BorderSizePixel = 0
-		DarkFrame.Position = UDim2.new(0, 10, 0, 0)
-		DarkFrame.Size = UDim2.new(0, 168, 0, 33)
-
-		Corner.CornerRadius = UDim.new(0, 8)
-		Corner.Parent = DarkFrame
-
-		local function FTAZ_fake_script() -- TextLabel.Rainbower 
-			local script = Instance.new('LocalScript', TextLabel)
-
-			while wait() do
-				script.Parent.BackgroundColor3 = Color3.new(1,0,0)
-				for i=1,15 do
-					game:GetService("RunService").RenderStepped:wait()
-					script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g+(17/255),script.Parent.BackgroundColor3.b)
-				end
-				for i=1,15 do
-					game:GetService("RunService").RenderStepped:wait()
-					script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r-(17/255),script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b)
-				end
-				for i=1,15 do
-					game:GetService("RunService").RenderStepped:wait()
-					script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b+(17/255))
-				end
-				for i=1,15 do
-					game:GetService("RunService").RenderStepped:wait()
-					script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g-(17/255),script.Parent.BackgroundColor3.b)
-				end
-				for i=1,15 do
-					game:GetService("RunService").RenderStepped:wait()
-					script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r+(17/255),script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b)
-				end
-				for i=1,15 do
-					game:GetService("RunService").RenderStepped:wait()
-					script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b-(17/255))
-				end
-			end
-		end
-		coroutine.wrap(FTAZ_fake_script)()
-
-		Title.Name = "Title"
-		Title.Parent = DarkFrame
-		Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		Title.BackgroundTransparency = 1.000
-		Title.BorderSizePixel = 0
-		Title.Size = UDim2.new(0, 120,0, 33)
-		Title.Font = Enum.Font.Highway
-		Title.Text = txt
-		Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-		Title.TextSize = 25.000
-		Title.TextWrapped = true
-		Title.TextXAlignment = Enum.TextXAlignment.Center
-
-		VisibleToggle.Name = "VisibleToggle"
-		VisibleToggle.Parent = DarkFrame
-		VisibleToggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		VisibleToggle.BackgroundTransparency = 1.000
-		VisibleToggle.BorderSizePixel = 0
-		VisibleToggle.Position = UDim2.new(0.75, 0, 0.219999999, 0)
-		VisibleToggle.Size = UDim2.new(0, 34, 0, 25)
-		VisibleToggle.Font = Enum.Font.SourceSansBold
-		VisibleToggle.Text = "-"
-		VisibleToggle.TextColor3 = Color3.fromRGB(255, 255, 255)
-		VisibleToggle.TextScaled = true
-		VisibleToggle.TextSize = 14.000
-		VisibleToggle.TextWrapped = true
-		local toggle = false
-		VisibleToggle.MouseButton1Click:Connect(function()
-			if toggle then
-				toggle = false
-				game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 168,0, UIListLayout.AbsoluteContentSize.Y)}):Play()
-				if UIListLayout.AbsoluteContentSize.Y >= 270 then
-					game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 168,0, 270)}):Play()
-					game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {CanvasSize = UDim2.new(0, 0, 0, UIListLayout.AbsoluteContentSize.Y)}):Play()
-				end
-				DarkFrame.ZIndex = 9
-				VisibleToggle.Text = "+"
-			else
-				toggle = true
-				game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 168,0, 0)}):Play()
-				VisibleToggle.Text = "-"
-				DarkFrame.ZIndex = 1
-			end
-		end)
-
-		Page.Name = "Page"
-		Page.Parent = DarkFrame
-		Page.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-		Page.ClipsDescendants = true
-		Page.Position = UDim2.new(0, 0, 1, 0)
-		Page.Size = UDim2.new(0, 168, 0, 0)
-
-		Corner_2.CornerRadius = UDim.new(0, 8)
-		Corner_2.Parent = Page
-
-		UIListLayout.Parent = Page
-		UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-		UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-		UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
-		UIListLayout.Padding = UDim.new(0, 10)
-		UIListLayout.Changed:connect(function()
-			if UIListLayout.AbsoluteContentSize.Y < 270 then
-				Page.Size = UDim2.new(0, 168, 0, UIListLayout.AbsoluteContentSize.Y)
-			elseif UIListLayout.AbsoluteContentSize.Y > 270 then
-				Page.Size = UDim2.new(0, 168, 0, 270)
-				Page.CanvasSize = UDim2.new(0, 0, 0, UIListLayout.AbsoluteContentSize.Y)
-			end
-		end)
-		
-		UIGridLayout.Parent = FrameE
-		UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Left
-		UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
-		UIGridLayout.VerticalAlignment = Enum.VerticalAlignment.Top
-		UIGridLayout.CellPadding = UDim2.new(0, 10, 0, 10)
-		UIGridLayout.CellSize = UDim2.new(0, 168, 0, 33)
-
-		UIListLayout_2.Parent = FrameE
-		UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
-		UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-		UIListLayout_2.Padding = UDim.new(0, 50)
-		
-		Page.Size = UDim2.new(0, 168, 0, 0)
-
-		local EpicLibrary = {}
-
-		function EpicLibrary:Drop(a, a)
-			callback = callback or function() end
-		end
-
-		function EpicLibrary:Box(txt, callback)
-			local TextBox = Instance.new("TextBox")
+		local window = {}
+		function window:AddWindows(txt)
+			local UIListLayout = Instance.new("UIListLayout")
+			local UIListLayout_2 = Instance.new("UIListLayout")
+			local PageGround = Instance.new("Frame")
+			local Page = Instance.new("ScrollingFrame")
+			local Title = Instance.new("TextLabel")
+			local VisibleToggle = Instance.new("TextButton")
+			local DarkFrame = Instance.new("Frame")
 			local Corner = Instance.new("UICorner")
-
-			callback = callback or function() end
-
-			TextBox.Parent = Page
-			TextBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-			TextBox.BorderColor3 = Color3.fromRGB(50, 50, 50)
-			TextBox.BorderSizePixel = 0
-			TextBox.Position = UDim2.new(-0.0476190485, 0, 0.121621624, 0)
-			TextBox.Size = UDim2.new(0, 150, 0, 30)
-			TextBox.Font = Enum.Font.Highway
-			TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-			TextBox.Text = txt
-			TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-			TextBox.TextSize = 20.000
-
-			Corner.CornerRadius = UDim.new(0, 8)
-			Corner.Parent = TextBox
-
-			TextBox.MouseEnter:Connect(function()
-				game.TweenService:Create(TextBox, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-					BackgroundColor3 = Color3.fromRGB(103, 103, 103)
-				}):Play()
-			end)
-			TextBox.MouseLeave:Connect(function()
-				game.TweenService:Create(TextBox, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-					BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-				}):Play()
-				callback(TextBox.Text)
-			end)
-		end
-
-		function EpicLibrary:Button(txt, callback)
-			local callback = callback or function() end
-			local TextButton = Instance.new("TextButton")
-			local Corner = Instance.new("UICorner")
-
-			TextButton.Parent = Page
-			TextButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-			TextButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
-			TextButton.BorderSizePixel = 0
-			TextButton.Position = UDim2.new(0, 0, 0.155555561, 0)
-			TextButton.Size = UDim2.new(0, 150, 0, 30)
-			TextButton.Font = Enum.Font.Highway
-			TextButton.Text = txt
-			TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-			TextButton.TextSize = 20.000
-			TextButton.TextWrapped = true
-			TextButton.TextXAlignment = Enum.TextXAlignment.Center
-
-			Corner.CornerRadius = UDim.new(0, 8)
-			Corner.Parent = TextButton
-
-			TextButton.MouseButton1Click:Connect(function()
-				pcall(callback)
-			end)
-			TextButton.MouseEnter:Connect(function()
-				game.TweenService:Create(TextButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-					BackgroundColor3 = Color3.fromRGB(103, 103, 103)
-				}):Play()
-			end)
-			TextButton.MouseLeave:Connect(function()
-				game.TweenService:Create(TextButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-					BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-				}):Play()
-			end)
-		end
-		function EpicLibrary:Label(txt)
-		local Labelfunction = {}
+			local Corner_2 = Instance.new("UICorner")
 			local TextLabel = Instance.new("TextLabel")
-			local Corner = Instance.new("UICorner")
+			local DarkFrame = Instance.new("Frame")
 
-			TextLabel.Parent = Page
-			TextLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-			TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
-			TextLabel.BorderSizePixel = 1
-			TextLabel.Position = UDim2.new(     0, 120,0, 50)
-			TextLabel.Size = UDim2.new(0, 150, 0, 30)
-			TextLabel.Font = Enum.Font.Highway
-			TextLabel.Text = txt
-			TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-			TextLabel.TextSize = 20.000
-			TextLabel.TextWrapped = true
-			TextLabel.TextXAlignment = Enum.TextXAlignment.Center
+			local UIGridLayout = Instance.new("UIGridLayout")
+
+			DarkFrame.Name = "DarkFrame"
+			DarkFrame.Parent = FrameE
+			DarkFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+			DarkFrame.BorderSizePixel = 0
+			DarkFrame.Position = UDim2.new(0, 10, 0, 0)
+			DarkFrame.Size = UDim2.new(0, 185, 0, 33)
 
 			Corner.CornerRadius = UDim.new(0, 8)
-			Corner.Parent = TextLabel
-			
-			function Labelfunction:Update(txt)
-			TextLabel.Text = txt
+			Corner.Parent = DarkFrame
+
+			--[[local function FTAZ_fake_script() -- TextLabel.Rainbower 
+				local script = Instance.new('LocalScript', TextLabel)
+
+				while wait() do
+					script.Parent.BackgroundColor3 = Color3.new(1,0,0)
+					for i=1,15 do
+						game:GetService("RunService").RenderStepped:wait()
+						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g+(17/255),script.Parent.BackgroundColor3.b)
+					end
+					for i=1,15 do
+						game:GetService("RunService").RenderStepped:wait()
+						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r-(17/255),script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b)
+					end
+					for i=1,15 do
+						game:GetService("RunService").RenderStepped:wait()
+						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b+(17/255))
+					end
+					for i=1,15 do
+						game:GetService("RunService").RenderStepped:wait()
+						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g-(17/255),script.Parent.BackgroundColor3.b)
+					end
+					for i=1,15 do
+						game:GetService("RunService").RenderStepped:wait()
+						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r+(17/255),script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b)
+					end
+					for i=1,15 do
+						game:GetService("RunService").RenderStepped:wait()
+						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b-(17/255))
+					end
+				end
 			end
-			
-			return Labelfunction
-		end
-		function EpicLibrary:DestroyGui()
-			local TextButton = Instance.new("TextButton")
-			local Corner = Instance.new("UICorner")
+			coroutine.wrap(FTAZ_fake_script)()--]]
 
-			TextButton.Parent = Page
-			TextButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-			TextButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
-			TextButton.BorderSizePixel = 0
-			TextButton.Position = UDim2.new(0, 0, 0.155555561, 0)
-			TextButton.Size = UDim2.new(0, 150, 0, 30)
-			TextButton.Font = Enum.Font.Highway
-			TextButton.Text = "DestroyGui"
-			TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-			TextButton.TextSize = 20.000
-			TextButton.TextWrapped = true
-			TextButton.TextXAlignment = Enum.TextXAlignment.Center
+			Title.Name = "Title"
+			Title.Parent = DarkFrame
+			Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Title.BackgroundTransparency = 1.000
+			Title.BorderSizePixel = 0
+			Title.Size = UDim2.new(0, 120,0, 33)
+			Title.Font = Enum.Font.Highway
+			Title.Text = txt
+			Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Title.TextSize = 25.000
+			Title.TextWrapped = true
+			Title.TextXAlignment = Enum.TextXAlignment.Center
 
-			Corner.CornerRadius = UDim.new(0, 8)
-			Corner.Parent = TextLabel
-
-			TextButton.MouseButton1Click:Connect(function()
-				DarkLib:Remove()
-			end)
-			TextButton.MouseEnter:Connect(function()
-				game.TweenService:Create(TextButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-					BackgroundColor3 = Color3.fromRGB(103, 103, 103)
-				}):Play()
-			end)
-			TextButton.MouseLeave:Connect(function()
-				game.TweenService:Create(TextButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-					BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-				}):Play()
-			end)
-		end
-		function EpicLibrary:Toggle(txt, callback)
-			local callback = callback or function() end
+			VisibleToggle.Name = "VisibleToggle"
+			VisibleToggle.Parent = DarkFrame
+			VisibleToggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			VisibleToggle.BackgroundTransparency = 1.000
+			VisibleToggle.BorderSizePixel = 0
+			VisibleToggle.Position = UDim2.new(0.75, 0, 0.219999999, 0)
+			VisibleToggle.Size = UDim2.new(0, 34, 0, 25)
+			VisibleToggle.Font = Enum.Font.SourceSansBold
+			VisibleToggle.Text = "-"
+			VisibleToggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+			VisibleToggle.TextScaled = true
+			VisibleToggle.TextSize = 14.000
+			VisibleToggle.TextWrapped = true
 			local toggle = false
-			local TextButton = Instance.new("TextButton")
-			local Toggle = Instance.new("TextButton")
-			local UICorner = Instance.new("UICorner")
-			local UICorner_2 = Instance.new("UICorner")
-			local Corner = Instance.new("UICorner")
-			local TitleLabel = Instance.new("TextLabel")
+			VisibleToggle.MouseButton1Click:Connect(function()
+				if not toggle then
+					toggle = true
+					if UIListLayout.AbsoluteContentSize.Y <= 270 then
+						game:GetService("TweenService"):Create(PageGround, TweenInfo.new(0.5), {Size = UDim2.new(0, 185,0, UIListLayout.AbsoluteContentSize.Y+15)}):Play()
+						game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 170,0, UIListLayout.AbsoluteContentSize.Y)}):Play()
+						game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {CanvasSize = UDim2.new(0, 0, 0, 0)}):Play()
+					end
+					if UIListLayout.AbsoluteContentSize.Y >= 270 then
+						game:GetService("TweenService"):Create(PageGround, TweenInfo.new(0.5), {Size = UDim2.new(0, 185,0, 270)}):Play()
+						game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 170,0, 255)}):Play()
+						game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {CanvasSize = UDim2.new(0, 0, 0, UIListLayout.AbsoluteContentSize.Y)}):Play()
+						Page.ScrollingEnabled = true
+					end
+					DarkFrame.ZIndex = 9
+					VisibleToggle.Text = "+"
+				elseif toggle then
+					toggle = false
+					game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 170,0, 0)}):Play()
+					game:GetService("TweenService"):Create(PageGround, TweenInfo.new(0.5), {Size = UDim2.new(0, 185,0, 0)}):Play()
+					Page.CanvasSize = UDim2.new(0, 0, 0, 0)
+					Page.ScrollingEnabled = false
+					VisibleToggle.Text = "-"
+					DarkFrame.ZIndex = 1
+				end
+			end)
 			
-			TitleLabel.Parent = TextButton
-			TitleLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-			TitleLabel.BackgroundTransparency = 1.000
-			TitleLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-			TitleLabel.BorderSizePixel = 0
-			TitleLabel.Size = UDim2.new(0, 111, 0, 30)
-			TitleLabel.Font = Enum.Font.SourceSans
-			TitleLabel.Text = txt
-			TitleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-			TitleLabel.TextScaled = true
-			TitleLabel.TextSize = 14.000
+			PageGround.Name = "PageGround"
+			PageGround.Parent = DarkFrame
+			PageGround.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+			PageGround.BorderSizePixel = 0
+			PageGround.Position = UDim2.new(0, 0, 1, 0)
+			PageGround.Size = UDim2.new(0, 185, 0, 0)
+			
+			Corner_2.CornerRadius = UDim.new(0, 8)
+			Corner_2.Parent = PageGround
 
-			Toggle.Name = "Toggle"
-			Toggle.Parent = TextButton
-			Toggle.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-			Toggle.BorderColor3 = Color3.fromRGB(121, 121, 121)
-			Toggle.BorderSizePixel = 0
-			Toggle.Position = UDim2.new(0.75, 0, 0, 0)
-			Toggle.Size = UDim2.new(0, 38, 0, 30)
-			Toggle.Font = Enum.Font.SourceSans
-			Toggle.Text = ""
-			Toggle.TextColor3 = Color3.fromRGB(121, 121, 121)
-			Toggle.TextSize = 14.000
-			Toggle.TextStrokeColor3 = Color3.fromRGB(121, 121, 121)
+			Page.Name = "Page"
+			Page.Parent = PageGround
+			Page.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+			Page.ClipsDescendants = true
+			Page.Position = UDim2.new(0, 8, 0, 8)
+			Page.Size = UDim2.new(0, 170, 0, 0)
+			Page.ScrollBarThickness = 2
+			Page.ScrollingDirection = Enum.ScrollingDirection.Y
+			Page.BorderSizePixel = 0
 
-			Corner.CornerRadius = UDim.new(0, 8)
-			Corner.Parent = TextButton
-
-			Toggle.MouseButton1Click:Connect(function()
-				if not toggle then
-					toggle = true
-					local tweenService = game:GetService("TweenService") 
-					local tweenInfo = TweenInfo.new(
-						0.5,
-						Enum.EasingStyle.Sine,
-						Enum.EasingDirection.Out,
-						0,
-						false,
-						0
-					)
-					local property = {BackgroundColor3= Color3.fromRGB(0, 255, 0)} 
-					local tween = tweenService:Create(Toggle, tweenInfo, property)
-					tween:Play()
-				else
-					toggle = false
-					local tweenService = game:GetService("TweenService") 
-					local tweenInfo = TweenInfo.new(
-						0.5,
-						Enum.EasingStyle.Sine,
-						Enum.EasingDirection.Out,
-						0,
-						false,
-						0
-					)
-					local property = {BackgroundColor3= Color3.fromRGB(255, 0, 0)} 
-					local tween = tweenService:Create(Toggle, tweenInfo, property)
-					tween:Play()
+			UIListLayout.Parent = Page
+			UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+			UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+			UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+			UIListLayout.Padding = UDim.new(0, 10)
+			UIListLayout.Changed:connect(function()
+				if UIListLayout.AbsoluteContentSize.Y <= 270 then
+					if toggle == false then
+						PageGround.Size = UDim2.new(0, 185, 0, 0)
+						Page.Size = UDim2.new(0, 170, 0, 0)
+						Page.CanvasSize = UDim2.new(0, 0, 0, 0)
+						Page.ScrollingEnabled = false
+					elseif toggle == true then
+						PageGround.Size = UDim2.new(0, 185, 0, UIListLayout.AbsoluteContentSize.Y+15)
+						Page.Size = UDim2.new(0, 170, 0, UIListLayout.AbsoluteContentSize.Y)
+						Page.CanvasSize = UDim2.new(0, 0, 0, UIListLayout.AbsoluteContentSize.Y)
+						Page.ScrollingEnabled = true
+					end
 				end
-				pcall(callback, toggle)
-			end)
-
-			UICorner.Parent = Toggle
-
-			TextButton.Parent = Page
-			TextButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-			TextButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
-			TextButton.BorderSizePixel = 0
-			TextButton.Position = UDim2.new(0, 0, 0.155555561, 0)
-			TextButton.Size = UDim2.new(0, 150, 0, 30)
-			TextButton.Font = Enum.Font.Highway
-			TextButton.Text = ""
-			TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-			TextButton.TextSize = 20.000
-			TextButton.TextWrapped = true
-			TextButton.MouseButton1Click:Connect(function()
-				if not toggle then
-					toggle = true
-					local tweenService = game:GetService("TweenService") 
-					local tweenInfo = TweenInfo.new(
-						0.5,
-						Enum.EasingStyle.Sine,
-						Enum.EasingDirection.Out,
-						0,
-						false,
-						0
-					)
-					local property = {BackgroundColor3= Color3.fromRGB(0, 255, 0)} 
-					local tween = tweenService:Create(Toggle, tweenInfo, property)
-					tween:Play()
-				else
-					toggle = false
-					local tweenService = game:GetService("TweenService") 
-					local tweenInfo = TweenInfo.new(
-						0.5,
-						Enum.EasingStyle.Sine,
-						Enum.EasingDirection.Out,
-						0,
-						false,
-						0
-					)
-					local property = {BackgroundColor3= Color3.fromRGB(255, 0, 0)} 
-					local tween = tweenService:Create(Toggle, tweenInfo, property)
-					tween:Play()
+				if UIListLayout.AbsoluteContentSize.Y >= 270 then
+					if toggle == false then
+						PageGround.Size = UDim2.new(0, 185, 0, 0)
+						Page.Size = UDim2.new(0, 170, 0, 0)
+						Page.CanvasSize = UDim2.new(0, 0, 0, 0)
+						Page.ScrollingEnabled = false
+					elseif toggle == true then
+						PageGround.Size = UDim2.new(0, 185, 0, 270)
+						Page.Size = UDim2.new(0, 170, 0, 255)
+						Page.CanvasSize = UDim2.new(0, 0, 0, UIListLayout.AbsoluteContentSize.Y)
+						Page.ScrollingEnabled = true
+					end
 				end
-				pcall(callback, toggle)
 			end)
-			TextButton.MouseEnter:Connect(function()
-				game.TweenService:Create(TextButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-					BackgroundColor3 = Color3.fromRGB(103, 103, 103)
-				}):Play()
-			end)
-			TextButton.MouseLeave:Connect(function()
-				game.TweenService:Create(TextButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-					BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-				}):Play()
-			end)
+
+			UIGridLayout.Parent = FrameE
+			UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Left
+			UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+			UIGridLayout.VerticalAlignment = Enum.VerticalAlignment.Top
+			UIGridLayout.CellPadding = UDim2.new(0, 10, 0, 10)
+			UIGridLayout.CellSize = UDim2.new(0, 185, 0, 33)
+
+			UIListLayout_2.Parent = FrameE
+			UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
+			UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+			UIListLayout_2.Padding = UDim.new(0, 50)
+			
+			PageGround.Size = UDim2.new(0, 185, 0, 0)
+			Page.Size = UDim2.new(0, 170, 0, 0)
+
+			local EpicLibrary = {}
+
+			function EpicLibrary:Drop(a, a)
+				callback = callback or function() end
+			end
+
+			function EpicLibrary:Box(txt, callback)
+				local TextBox = Instance.new("TextBox")
+				local Corner = Instance.new("UICorner")
+
+				callback = callback or function() end
+
+				TextBox.Parent = Page
+				TextBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+				TextBox.BorderColor3 = Color3.fromRGB(50, 50, 50)
+				TextBox.BorderSizePixel = 0
+				TextBox.Position = UDim2.new(-0.0476190485, 0, 0.121621624, 0)
+				TextBox.Size = UDim2.new(0, 150, 0, 30)
+				TextBox.Font = Enum.Font.Highway
+				TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+				TextBox.Text = txt
+				TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+				TextBox.TextSize = 20.000
+
+				Corner.CornerRadius = UDim.new(0, 8)
+				Corner.Parent = TextBox
+
+				TextBox.MouseEnter:Connect(function()
+					game.TweenService:Create(TextBox, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
+						BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+					}):Play()
+				end)
+				TextBox.MouseLeave:Connect(function()
+					game.TweenService:Create(TextBox, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
+						BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+					}):Play()
+					callback(TextBox.Text)
+				end)
+			end
+
+			function EpicLibrary:Button(txt, callback)
+				local callback = callback or function() end
+				local TextButton = Instance.new("TextButton")
+				local Corner = Instance.new("UICorner")
+
+				TextButton.Parent = Page
+				TextButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+				TextButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+				TextButton.BorderSizePixel = 0
+				TextButton.Position = UDim2.new(0, 0, 0.155555561, 0)
+				TextButton.Size = UDim2.new(0, 150, 0, 30)
+				TextButton.Font = Enum.Font.Highway
+				TextButton.Text = txt
+				TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+				TextButton.TextSize = 20.000
+				TextButton.TextWrapped = true
+				TextButton.TextXAlignment = Enum.TextXAlignment.Center
+
+				Corner.CornerRadius = UDim.new(0, 8)
+				Corner.Parent = TextButton
+
+				TextButton.MouseButton1Click:Connect(function()
+					pcall(callback)
+				end)
+				TextButton.MouseEnter:Connect(function()
+					game.TweenService:Create(TextButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
+						BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+					}):Play()
+				end)
+				TextButton.MouseLeave:Connect(function()
+					game.TweenService:Create(TextButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
+						BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+					}):Play()
+				end)
+			end
+			function EpicLibrary:Label(txt)
+				local Labelfunction = {}
+				local TextLabel = Instance.new("TextLabel")
+				local Corner = Instance.new("UICorner")
+
+				TextLabel.Parent = Page
+				TextLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+				TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+				TextLabel.BorderSizePixel = 1
+				TextLabel.Position = UDim2.new(     0, 120,0, 50)
+				TextLabel.Size = UDim2.new(0, 150, 0, 30)
+				TextLabel.Font = Enum.Font.Highway
+				TextLabel.Text = txt
+				TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+				TextLabel.TextSize = 20.000
+				TextLabel.TextWrapped = true
+				TextLabel.TextXAlignment = Enum.TextXAlignment.Center
+
+				Corner.CornerRadius = UDim.new(0, 8)
+				Corner.Parent = TextLabel
+
+				function Labelfunction:Update(txt)
+					TextLabel.Text = txt
+				end
+
+				return Labelfunction
+			end
+			function EpicLibrary:DestroyGui()
+				local TextButton = Instance.new("TextButton")
+				local Corner = Instance.new("UICorner")
+
+				TextButton.Parent = Page
+				TextButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+				TextButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+				TextButton.BorderSizePixel = 0
+				TextButton.Position = UDim2.new(0, 0, 0.155555561, 0)
+				TextButton.Size = UDim2.new(0, 150, 0, 30)
+				TextButton.Font = Enum.Font.Highway
+				TextButton.Text = "DestroyGui"
+				TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+				TextButton.TextSize = 20.000
+				TextButton.TextWrapped = true
+				TextButton.TextXAlignment = Enum.TextXAlignment.Center
+
+				Corner.CornerRadius = UDim.new(0, 8)
+				Corner.Parent = TextLabel
+
+				TextButton.MouseButton1Click:Connect(function()
+					DarkLib:Remove()
+				end)
+				TextButton.MouseEnter:Connect(function()
+					game.TweenService:Create(TextButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
+						BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+					}):Play()
+				end)
+				TextButton.MouseLeave:Connect(function()
+					game.TweenService:Create(TextButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
+						BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+					}):Play()
+				end)
+			end
+			function EpicLibrary:Toggle(txt, callback)
+				local callback = callback or function() end
+				local toggle = false
+				local TextButton = Instance.new("TextButton")
+				local Toggle = Instance.new("TextButton")
+				local UICorner = Instance.new("UICorner")
+				local UICorner_2 = Instance.new("UICorner")
+				local Corner = Instance.new("UICorner")
+				local TitleLabel = Instance.new("TextLabel")
+
+				TitleLabel.Parent = TextButton
+				TitleLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				TitleLabel.BackgroundTransparency = 1.000
+				TitleLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+				TitleLabel.BorderSizePixel = 0
+				TitleLabel.Size = UDim2.new(0, 111, 0, 30)
+				TitleLabel.Font = Enum.Font.SourceSans
+				TitleLabel.Text = txt
+				TitleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+				TitleLabel.TextScaled = true
+				TitleLabel.TextSize = 14.000
+
+				Toggle.Name = "Toggle"
+				Toggle.Parent = TextButton
+				Toggle.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+				Toggle.BorderColor3 = Color3.fromRGB(121, 121, 121)
+				Toggle.BorderSizePixel = 0
+				Toggle.Position = UDim2.new(0.75, 0, 0, 0)
+				Toggle.Size = UDim2.new(0, 38, 0, 30)
+				Toggle.Font = Enum.Font.SourceSans
+				Toggle.Text = ""
+				Toggle.TextColor3 = Color3.fromRGB(121, 121, 121)
+				Toggle.TextSize = 14.000
+				Toggle.TextStrokeColor3 = Color3.fromRGB(121, 121, 121)
+
+				Corner.CornerRadius = UDim.new(0, 8)
+				Corner.Parent = TextButton
+
+				Toggle.MouseButton1Click:Connect(function()
+					if not toggle then
+						toggle = true
+						local tweenService = game:GetService("TweenService") 
+						local tweenInfo = TweenInfo.new(
+							0.5,
+							Enum.EasingStyle.Sine,
+							Enum.EasingDirection.Out,
+							0,
+							false,
+							0
+						)
+						local property = {BackgroundColor3= Color3.fromRGB(0, 255, 0)} 
+						local tween = tweenService:Create(Toggle, tweenInfo, property)
+						tween:Play()
+					else
+						toggle = false
+						local tweenService = game:GetService("TweenService") 
+						local tweenInfo = TweenInfo.new(
+							0.5,
+							Enum.EasingStyle.Sine,
+							Enum.EasingDirection.Out,
+							0,
+							false,
+							0
+						)
+						local property = {BackgroundColor3= Color3.fromRGB(255, 0, 0)} 
+						local tween = tweenService:Create(Toggle, tweenInfo, property)
+						tween:Play()
+					end
+					pcall(callback, toggle)
+				end)
+
+				UICorner.Parent = Toggle
+
+				TextButton.Parent = Page
+				TextButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+				TextButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+				TextButton.BorderSizePixel = 0
+				TextButton.Position = UDim2.new(0, 0, 0.155555561, 0)
+				TextButton.Size = UDim2.new(0, 150, 0, 30)
+				TextButton.Font = Enum.Font.Highway
+				TextButton.Text = ""
+				TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+				TextButton.TextSize = 20.000
+				TextButton.TextWrapped = true
+				TextButton.MouseButton1Click:Connect(function()
+					if not toggle then
+						toggle = true
+						local tweenService = game:GetService("TweenService") 
+						local tweenInfo = TweenInfo.new(
+							0.5,
+							Enum.EasingStyle.Sine,
+							Enum.EasingDirection.Out,
+							0,
+							false,
+							0
+						)
+						local property = {BackgroundColor3= Color3.fromRGB(0, 255, 0)} 
+						local tween = tweenService:Create(Toggle, tweenInfo, property)
+						tween:Play()
+					else
+						toggle = false
+						local tweenService = game:GetService("TweenService") 
+						local tweenInfo = TweenInfo.new(
+							0.5,
+							Enum.EasingStyle.Sine,
+							Enum.EasingDirection.Out,
+							0,
+							false,
+							0
+						)
+						local property = {BackgroundColor3= Color3.fromRGB(255, 0, 0)} 
+						local tween = tweenService:Create(Toggle, tweenInfo, property)
+						tween:Play()
+					end
+					pcall(callback, toggle)
+				end)
+				TextButton.MouseEnter:Connect(function()
+					game.TweenService:Create(TextButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
+						BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+					}):Play()
+				end)
+				TextButton.MouseLeave:Connect(function()
+					game.TweenService:Create(TextButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
+						BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+					}):Play()
+				end)
+			end
+			return EpicLibrary
 		end
-		return EpicLibrary
+		return window
 	end
-return window
-end
 end
 return lib
