@@ -5,6 +5,10 @@ local autofarm = _G.win:Page("AutoFarm")
 local localplayer = _G.win:Page("LocalPlayer")
 local misc = _G.win:Page("Misc")
 
+autofarm:Toggle("Auto Crush", function(v)
+
+end)
+
 localplayer:Toggle("WalkSpeed", function(v)
 getgenv().speed = v
 local mt = getrawmetatable(game)
