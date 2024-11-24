@@ -151,7 +151,7 @@ bb:CaptureController()
 bb:ClickButton2(Vector2.new())
 end)
 end)
-elseif getgenv().ui == "MainUI" then
+elseif getgenv().ui == "MainUI" or true then
 local autofarm = win:Page("AutoFarm")
 local teleport = win:Page("Teleport")
 local localplayer = win:Page("LocalPlayer")
