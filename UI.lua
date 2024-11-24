@@ -913,7 +913,7 @@ function lib:CreateWindow(txt, selection)
 				TextButton.TextXAlignment = Enum.TextXAlignment.Center
 
 				Corner.CornerRadius = UDim.new(0, 8)
-				Corner.Parent = TextLabel
+				Corner.Parent = TextButton
 
 				TextButton.MouseButton1Click:Connect(function()
 					DarkLib:Remove()
