@@ -698,11 +698,11 @@ function window:AddWindows(txt)
 			if toggle then
 				toggle = false
 				game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 168,0, UIListLayout.AbsoluteContentSize.Y)}):Play()
-				VisibleToggle.Text = "-"
+				VisibleToggle.Text = "+"
 			else
 				toggle = true
 				game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 168,0, 0)}):Play()
-				VisibleToggle.Text = "+"
+				VisibleToggle.Text = "-"
 			end
 		end)
 
@@ -711,7 +711,7 @@ function window:AddWindows(txt)
 		Page.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 		Page.ClipsDescendants = true
 		Page.Position = UDim2.new(0, 0, 1, 0)
-		Page.Size = UDim2.new(0, 168, 0, UIListLayout.AbsoluteContentSize.Y)
+		Page.Size = UDim2.new(0, 168, 0, 0)
 
 		Corner_2.CornerRadius = UDim.new(0, 8)
 		Corner_2.Parent = Page
