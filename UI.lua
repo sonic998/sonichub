@@ -1,20 +1,20 @@
 if get_hidden_gui or gethui then
 	local hiddenUI = get_hidden_gui or gethui
 	for i,v in pairs(hiddenUI():GetChildren()) do
-		if v:IsA("ScreenGui") and v.Name == "SonicUI" or v.Name == "DarkLib" then
+		if v:IsA("ScreenGui") and v.Name == "GrannyUI" or v.Name == "DarkLib" then
 			v:Destroy()
 		end
 	end
 elseif syn and syn.protect_gui then
 	for i,v in pairs(game.CoreGui:GetChildren()) do
-		if v:IsA("ScreenGui") and v.Name == "SonicUI" or v.Name == "DarkLib" then
+		if v:IsA("ScreenGui") and v.Name == "GrannyUI" or v.Name == "DarkLib" then
 			syn.unprotect_gui(v)
 			v:Destroy()
 		end
 	end
 else
 	for i,v in pairs(game.CoreGui:GetChildren()) do
-		if v:IsA("ScreenGui") and v.Name == "SonicUI" or v.Name == "DarkLib" then
+		if v:IsA("ScreenGui") and v.Name == "GrannyUI" or v.Name == "DarkLib" then
 			v:Destroy()
 		end
 	end
@@ -24,7 +24,7 @@ local lib = {}
 function lib:CreateWindow(txt, selection)
 	getgenv().selection = selection
 	if selection == "MainUI" then
-		local SonicUI = Instance.new("ScreenGui")
+		local GrannyUI = Instance.new("ScreenGui")
 		local header = Instance.new("Frame")
 		local main = Instance.new("Frame")
 		local title = Instance.new("TextLabel")
@@ -36,25 +36,25 @@ function lib:CreateWindow(txt, selection)
 		local listtab = Instance.new("UIListLayout")
 		local Min = Instance.new("TextButton")
 
-		SonicUI.Name = "GrannyUI"
-		SonicUI.ResetOnSpawn = false
-		SonicUI.Parent = game:GetService("CoreGui")
-	    --SonicUI.Parent = game:GetService("Players").LocalPlayer.PlayerGui
+		GrannyUI.Name = "GrannyUI"
+		GrannyUI.ResetOnSpawn = false
+		GrannyUI.Parent = game:GetService("CoreGui")
+	    --GrannyUI.Parent = game:GetService("Players").LocalPlayer.PlayerGui
 
 		game:GetService("UserInputService").InputBegan:Connect(function(current, ok) 
 			if not ok then 
 				if current.KeyCode == Enum.KeyCode.RightAlt then 
-					if SonicUI.Enabled == true then
-						SonicUI.Enabled = false
+					if GrannyUI.Enabled == true then
+						GrannyUI.Enabled = false
 					else
-						SonicUI.Enabled = true
+						GrannyUI.Enabled = true
 					end
 				end
 			end
 		end)
 
 		header.Name = "header"
-		header.Parent = SonicUI
+		header.Parent = GrannyUI
 		header.BackgroundColor3 = Color3.fromRGB(72, 191, 145)
 		header.BorderSizePixel = 0
 		header.Position = UDim2.new(0.39091453, 0, 0.25746268, 0)
@@ -83,7 +83,9 @@ function lib:CreateWindow(txt, selection)
 
 		local function update(input)
 			local delta = input.Position - dragStart
-			gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0, true); -- drag speed
+			gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0, true); 
+
+-- drag speed
 		end
 		gui.InputBegan:Connect(function(input)
 			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
@@ -137,7 +139,7 @@ function lib:CreateWindow(txt, selection)
 		close.ImageRectOffset = Vector2.new(284, 4)
 		close.ImageRectSize = Vector2.new(24, 24)
 		close.MouseButton1Click:Connect(function()
-			SonicUI:Destroy()
+			GrannyUI:Destroy()
 		end)
 
 		Min.Name = "Min"
@@ -438,10 +440,14 @@ function lib:CreateWindow(txt, selection)
 				click.TextSize = 14.000
 				click.MouseButton1Click:Connect(function()
 					if switch == false then
-						game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(200, 200, 200)}):Play()
+						game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(200, 200, 
+
+200)}):Play()
 						game:GetService("TweenService"):Create(toggleIcon, TweenInfo.new(0.2), {Position = UDim2.new(0, 50,0, 2)}):Play()
 					elseif switch == true then
-						game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(35, 35, 35)}):Play()
+						game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(35, 35, 35)}):Play
+
+()
 						game:GetService("TweenService"):Create(toggleIcon, TweenInfo.new(0.2), {Position = UDim2.new(0, 0,0, 2)}):Play()
 					end
 					switch = not switch
@@ -485,11 +491,15 @@ function lib:CreateWindow(txt, selection)
 				function ToggleFunction:ChangeState(bool)
 					bool = bool or switch
 					if bool == true then
-						game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(200, 200, 200)}):Play()
+						game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(200, 200, 
+
+200)}):Play()
 						game:GetService("TweenService"):Create(toggleIcon, TweenInfo.new(0.2), {Position = UDim2.new(0, 50,0, 2)}):Play()
 					end
 					if bool == false then
-						game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(35, 35, 35)}):Play()
+						game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(35, 35, 35)}):Play
+
+()
 						game:GetService("TweenService"):Create(toggleIcon, TweenInfo.new(0.2), {Position = UDim2.new(0, 0,0, 2)}):Play()
 					end
 					switch = bool
@@ -644,27 +654,39 @@ function lib:CreateWindow(txt, selection)
 					script.Parent.BackgroundColor3 = Color3.new(1,0,0)
 					for i=1,15 do
 						game:GetService("RunService").RenderStepped:wait()
-						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g+(17/255),script.Parent.BackgroundColor3.b)
+						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g
+
++(17/255),script.Parent.BackgroundColor3.b)
 					end
 					for i=1,15 do
 						game:GetService("RunService").RenderStepped:wait()
-						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r-(17/255),script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b)
+						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r-
+
+(17/255),script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b)
 					end
 					for i=1,15 do
 						game:GetService("RunService").RenderStepped:wait()
-						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b+(17/255))
+						script.Parent.BackgroundColor3 = Color3.new
+
+(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b+(17/255))
 					end
 					for i=1,15 do
 						game:GetService("RunService").RenderStepped:wait()
-						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g-(17/255),script.Parent.BackgroundColor3.b)
+						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g-
+
+(17/255),script.Parent.BackgroundColor3.b)
 					end
 					for i=1,15 do
 						game:GetService("RunService").RenderStepped:wait()
-						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r+(17/255),script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b)
+						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r
+
++(17/255),script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b)
 					end
 					for i=1,15 do
 						game:GetService("RunService").RenderStepped:wait()
-						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b-(17/255))
+						script.Parent.BackgroundColor3 = Color3.new
+
+(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b-(17/255))
 					end
 				end
 			end
@@ -701,14 +723,20 @@ function lib:CreateWindow(txt, selection)
 				if not toggle then
 					toggle = true
 					if UIListLayout.AbsoluteContentSize.Y <= 270 then
-						game:GetService("TweenService"):Create(PageGround, TweenInfo.new(0.5), {Size = UDim2.new(0, 185,0, UIListLayout.AbsoluteContentSize.Y+15)}):Play()
-						game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 170,0, UIListLayout.AbsoluteContentSize.Y)}):Play()
+						game:GetService("TweenService"):Create(PageGround, TweenInfo.new(0.5), {Size = UDim2.new(0, 185,0, 
+
+UIListLayout.AbsoluteContentSize.Y+15)}):Play()
+						game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 170,0, 
+
+UIListLayout.AbsoluteContentSize.Y)}):Play()
 						game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {CanvasSize = UDim2.new(0, 0, 0, 0)}):Play()
 					end
 					if UIListLayout.AbsoluteContentSize.Y >= 270 then
 						game:GetService("TweenService"):Create(PageGround, TweenInfo.new(0.5), {Size = UDim2.new(0, 185,0, 270)}):Play()
 						game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 170,0, 255)}):Play()
-						game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {CanvasSize = UDim2.new(0, 0, 0, UIListLayout.AbsoluteContentSize.Y)}):Play()
+						game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {CanvasSize = UDim2.new(0, 0, 0, 
+
+UIListLayout.AbsoluteContentSize.Y)}):Play()
 						Page.ScrollingEnabled = true
 					end
 					DarkFrame.ZIndex = 9
