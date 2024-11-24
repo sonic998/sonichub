@@ -724,7 +724,8 @@ function lib:CreateWindow(txt, selection)
 		UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Left
 		UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
 		UIGridLayout.VerticalAlignment = Enum.VerticalAlignment.Top
-		UIGridLayout.CellPadding = UDim.new(0, 10, 0, 10)
+		UIGridLayout.CellPadding = UDim2.new(0, 10, 0, 10)
+		UIGridLayout.CellSize = UDim2.new(0, 168, 0, 33)
 
 		UIListLayout_2.Parent = DarkFrame
 		UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
