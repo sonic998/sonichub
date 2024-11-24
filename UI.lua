@@ -1,20 +1,20 @@
 if get_hidden_gui or gethui then
 	local hiddenUI = get_hidden_gui or gethui
 	for i,v in pairs(hiddenUI():GetChildren()) do
-		if v:IsA("ScreenGui") and v.Name == "SonicUI" or v.Name "DarkLib" then
+		if v:IsA("ScreenGui") and v.Name == "SonicUI" or v.Name == "DarkLib" then
 			v:Destroy()
 		end
 	end
 elseif syn and syn.protect_gui then
 	for i,v in pairs(game.CoreGui:GetChildren()) do
-		if v:IsA("ScreenGui") and v.Name == "SonicUI" or v.Name "DarkLib" then
+		if v:IsA("ScreenGui") and v.Name == "SonicUI" or v.Name == "DarkLib" then
 			syn.unprotect_gui(v)
 			v:Destroy()
 		end
 	end
 else
 	for i,v in pairs(game.CoreGui:GetChildren()) do
-		if v:IsA("ScreenGui") and v.Name == "SonicUI" or v.Name "DarkLib" then
+		if v:IsA("ScreenGui") and v.Name == "SonicUI" or v.Name == "DarkLib" then
 			v:Destroy()
 		end
 	end
