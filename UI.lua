@@ -22,7 +22,7 @@ end
 
 local lib = {}
 function lib:CreateWindow(txt, selection)
-	getgenv().selection = selection
+	--getgenv().selection = selection
 	if selection == "MainUI" then
 		local SonicUI = Instance.new("ScreenGui")
 		local header = Instance.new("Frame")
@@ -617,7 +617,7 @@ function lib:CreateWindow(txt, selection)
 		DarkFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 		DarkFrame.BorderSizePixel = 0
 		DarkFrame.Position = UDim2.new(0.385173261, 0, 0.333333313, 0)
-		DarkFrame.Size = UDim2.new(0, 168, 0, 50)
+		DarkFrame.Size = UDim2.new(0, 168, 0, 33)
 
 		Corner.CornerRadius = UDim.new(0, 8)
 		Corner.Parent = DarkFrame
@@ -660,12 +660,13 @@ function lib:CreateWindow(txt, selection)
 		Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Title.BackgroundTransparency = 1.000
 		Title.BorderSizePixel = 0
-		Title.Size = UDim2.new(0, 120,0, 50)
+		Title.Size = UDim2.new(0, 120,0, 33)
 		Title.Font = Enum.Font.Highway
 		Title.Text = txt
 		Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 		Title.TextSize = 25.000
 		Title.TextWrapped = true
+		Title.TextXAlignment = Enum.TextXAlignment.Center
 
 		VisibleToggle.Name = "VisibleToggle"
 		VisibleToggle.Parent = DarkFrame
@@ -673,7 +674,7 @@ function lib:CreateWindow(txt, selection)
 		VisibleToggle.BackgroundTransparency = 1.000
 		VisibleToggle.BorderSizePixel = 0
 		VisibleToggle.Position = UDim2.new(0.75, 0, 0.219999999, 0)
-		VisibleToggle.Size = UDim2.new(0, 34, 0, 28)
+		VisibleToggle.Size = UDim2.new(0, 34, 0, 25)
 		VisibleToggle.Font = Enum.Font.SourceSansBold
 		VisibleToggle.Text = "-"
 		VisibleToggle.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -773,6 +774,7 @@ function lib:CreateWindow(txt, selection)
 			TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 			TextButton.TextSize = 20.000
 			TextButton.TextWrapped = true
+			TextButton.TextXAlignment = Enum.TextXAlignment.Center
 
 			Corner.CornerRadius = UDim.new(0, 8)
 			Corner.Parent = TextButton
@@ -806,6 +808,7 @@ function lib:CreateWindow(txt, selection)
 			TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 			TextLabel.TextSize = 20.000
 			TextLabel.TextWrapped = true
+			TextLabel.TextXAlignment = Enum.TextXAlignment.Center
 
 			Corner.CornerRadius = UDim.new(0, 8)
 			Corner.Parent = TextLabel
@@ -825,6 +828,7 @@ function lib:CreateWindow(txt, selection)
 			TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 			TextButton.TextSize = 20.000
 			TextButton.TextWrapped = true
+			TextButton.TextXAlignment = Enum.TextXAlignment.Center
 
 			Corner.CornerRadius = UDim.new(0, 8)
 			Corner.Parent = TextLabel
@@ -851,6 +855,21 @@ function lib:CreateWindow(txt, selection)
 			local UICorner = Instance.new("UICorner")
 			local UICorner_2 = Instance.new("UICorner")
 			local Corner = Instance.new("UICorner")
+			local TitleLabel = Instance.new("TextLabel")
+			
+			TextLabel.Parent = TextButton
+			TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			TextLabel.BackgroundTransparency = 1.000
+			TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			TextLabel.BorderSizePixel = 0
+			TextLabel.Size = UDim2.new(0, 111, 0, 30)
+			TextLabel.Font = Enum.Font.SourceSans
+			TextLabel.Text = txt
+			TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+			TextLabel.TextScaled = true
+			TextLabel.TextSize = 14.000
+			TextLabel.TextWrapped = true
+			TextLabel.TextXAlignment = Enum.TextXAlignment.Center
 
 			Toggle.Name = "Toggle"
 			Toggle.Parent = TextButton
@@ -910,7 +929,7 @@ function lib:CreateWindow(txt, selection)
 			TextButton.Position = UDim2.new(0, 0, 0.155555561, 0)
 			TextButton.Size = UDim2.new(0, 150, 0, 30)
 			TextButton.Font = Enum.Font.Highway
-			TextButton.Text = txt
+			TextButton.Text = ""
 			TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 			TextButton.TextSize = 20.000
 			TextButton.TextWrapped = true
@@ -960,4 +979,3 @@ function lib:CreateWindow(txt, selection)
 		return EpicLibrary
 	end
 end
-return lib
