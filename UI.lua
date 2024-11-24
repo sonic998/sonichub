@@ -698,11 +698,13 @@ function window:AddWindows(txt)
 			if toggle then
 				toggle = false
 				game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 168,0, UIListLayout.AbsoluteContentSize.Y)}):Play()
+				DarkFrame.ZIndex = 9
 				VisibleToggle.Text = "+"
 			else
 				toggle = true
 				game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 168,0, 0)}):Play()
 				VisibleToggle.Text = "-"
+				DarkFrame.ZIndex = 1
 			end
 		end)
 
