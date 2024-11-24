@@ -727,7 +727,7 @@ function lib:CreateWindow(txt, selection)
 		UIGridLayout.CellPadding = UDim2.new(0, 10, 0, 10)
 		UIGridLayout.CellSize = UDim2.new(0, 168, 0, 33)
 
-		UIListLayout_2.Parent = DarkFrame
+		UIListLayout_2.Parent = FrameE
 		UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
 		UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 		UIListLayout_2.Padding = UDim.new(0, 50)
