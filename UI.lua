@@ -599,7 +599,6 @@ if selection == "MainUI" then
 		return elements
 	end
 	return Page
-end
 elseif selection == "BlackWhite" then
 local DarkLib = Instance.new("ScreenGui")
 
@@ -971,6 +970,7 @@ callback(TextBox.Text)
 		end)
 	end
 	return EpicLibrary
+end
 end
 end
 return lib
