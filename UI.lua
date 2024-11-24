@@ -697,9 +697,9 @@ function window:AddWindows(txt)
 		VisibleToggle.MouseButton1Click:Connect(function()
 			if toggle then
 				toggle = false
-				if Page.Size.Y <= 270 then
+				if Page.Size.Y <= UDim.new(0, 270) then
 				game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 168,0, UIListLayout.AbsoluteContentSize.Y)}):Play()
-		elseif Page.Size.Y >= 270 then
+		elseif Page.Size.Y >= UDim.new(0, 270) then
 		game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 168,0, 270)}):Play()
 		game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {CanvasSize = UDim2.new(0, 0, 0, UIListLayout.AbsoluteContentSize.Y)}):Play()
 		end
@@ -741,13 +741,15 @@ function window:AddWindows(txt)
 		UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 		UIListLayout_2.Padding = UDim.new(0, 50)
 		UIListLayout.Changed:connect(function()
-		if Page.Size.Y <= 270 then
+		if Page.Size.Y <= UDim.new(0, 270) then
 			Page.Size = UDim2.new(0, 168, 0, UIListLayout.AbsoluteContentSize.Y)
-		elseif Page.Size.Y >= 270 then
+		elseif Page.Size.Y >= UDim.new(0, 270) then
 		Page.Size = UDim2.new(0, 168, 0, 270)
 		Page.CanvasSize = UDim2.new(0, 0, 0, UIListLayout.AbsoluteContentSize.Y)
 		end
 		end)
+		
+		Page.Size = UDim2.new(0, 168, 0, 0)
 
 		local EpicLibrary = {}
 
