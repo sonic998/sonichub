@@ -619,7 +619,7 @@ function lib:CreateWindow(txt, selection)
 		DarkFrame.Position = UDim2.new(0.385173261, 0, 0.333333313, 0)
 		DarkFrame.Size = UDim2.new(0, 168, 0, 50)
 
-		Corner.CornerRadius = UDim.new(0, 4)
+		Corner.CornerRadius = UDim.new(0, 8)
 		Corner.Parent = DarkFrame
 
 		local function FTAZ_fake_script() -- TextLabel.Rainbower 
@@ -700,7 +700,7 @@ function lib:CreateWindow(txt, selection)
 		Page.Position = UDim2.new(0, 0, 1, 0)
 		Page.Size = UDim2.new(0, 168, 0, UIListLayout.AbsoluteContentSize.Y)
 
-		Corner_2.CornerRadius = UDim.new(0, 4)
+		Corner_2.CornerRadius = UDim.new(0, 8)
 		Corner_2.Parent = Page
 
 		UIListLayout.Parent = Page
@@ -959,5 +959,5 @@ function lib:CreateWindow(txt, selection)
 		end
 		return EpicLibrary
 	end
-	end
+end
 return lib
