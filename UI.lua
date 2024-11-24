@@ -857,17 +857,17 @@ function lib:CreateWindow(txt, selection)
 			local Corner = Instance.new("UICorner")
 			local TitleLabel = Instance.new("TextLabel")
 			
-			TextLabel.Parent = TextButton
-			TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-			TextLabel.BackgroundTransparency = 1.000
-			TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-			TextLabel.BorderSizePixel = 0
-			TextLabel.Size = UDim2.new(0, 111, 0, 30)
-			TextLabel.Font = Enum.Font.SourceSans
-			TextLabel.Text = txt
-			TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-			TextLabel.TextScaled = true
-			TextLabel.TextSize = 14.000
+			TitleLabel.Parent = TextButton
+			TitleLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			TitleLabel.BackgroundTransparency = 1.000
+			TitleLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			TitleLabel.BorderSizePixel = 0
+			TitleLabel.Size = UDim2.new(0, 111, 0, 30)
+			TitleLabel.Font = Enum.Font.SourceSans
+			TitleLabel.Text = txt
+			TitleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+			TitleLabel.TextScaled = true
+			TitleLabel.TextSize = 14.000
 
 			Toggle.Name = "Toggle"
 			Toggle.Parent = TextButton
