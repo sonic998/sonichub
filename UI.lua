@@ -868,8 +868,6 @@ function lib:CreateWindow(txt, selection)
 			TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 			TextLabel.TextScaled = true
 			TextLabel.TextSize = 14.000
-			TextLabel.TextWrapped = true
-			TextLabel.TextXAlignment = Enum.TextXAlignment.Center
 
 			Toggle.Name = "Toggle"
 			Toggle.Parent = TextButton
