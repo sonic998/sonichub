@@ -39,7 +39,7 @@ function lib:CreateWindow(txt, selection)
 		GrannyUI.Name = "GrannyUI"
 		GrannyUI.ResetOnSpawn = false
 		GrannyUI.Parent = game:GetService("CoreGui")
-	    --GrannyUI.Parent = game:GetService("Players").LocalPlayer.PlayerGui
+		--GrannyUI.Parent = game:GetService("Players").LocalPlayer.PlayerGui
 
 		game:GetService("UserInputService").InputBegan:Connect(function(current, ok) 
 			if not ok then 
@@ -52,7 +52,24 @@ function lib:CreateWindow(txt, selection)
 				end
 			end
 		end)
+		
+		local Icon = Instance.new("ImageButton")
+		local UICorner = Instance.new("UICorner")
 
+		Icon.Parent = GrannyUI
+		Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Icon.BorderSizePixel = 0
+		Icon.Position = UDim2.new(0.928169906, 0, 0.315856785, 0)
+		Icon.Size = UDim2.new(0, 77, 0, 55)
+		Icon.Image = "rbxassetid://124974087339457"
+		Icon.MouseButton1Click:Connect(function()
+			header.Visible = not header.Visible
+		end)
+
+		UICorner.Parent = Icon
+		UICorner.CornerRadius = UDim.new(0, 8)
+		
 		header.Name = "header"
 		header.Parent = GrannyUI
 		header.BackgroundColor3 = Color3.fromRGB(72, 191, 145)
@@ -610,6 +627,40 @@ function lib:CreateWindow(txt, selection)
 		FrameE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		FrameE.BorderSizePixel = 0
 		FrameE.Size = UDim2.new(1, 0, 1, 0)
+		
+		local Icon = Instance.new("ImageButton")
+		local UICorner = Instance.new("UICorner")
+
+		Icon.Parent = GrannyUI
+		Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Icon.BorderSizePixel = 0
+		Icon.Position = UDim2.new(0.928169906, 0, 0.315856785, 0)
+		Icon.Size = UDim2.new(0, 77, 0, 55)
+		Icon.Image = "rbxassetid://124974087339457"
+		Icon.MouseButton1Click:Connect(function()
+			if get_hidden_gui or gethui then
+				local hiddenUI = get_hidden_gui or gethui
+				for i,v in pairs(hiddenUI():GetChildren()) do
+					if v:IsA("ScreenGui") and v.Name == "GrannyUI" or v.Name == "DarkLib" then
+						v.Enabled = not v.Enabled
+					end
+				end
+			elseif syn and syn.protect_gui then
+				for i,v in pairs(game.CoreGui:GetChildren()) do
+					if v:IsA("ScreenGui") and v.Name == "GrannyUI" or v.Name == "DarkLib" then
+						syn.unprotect_gui(v)
+						v.Enabled = not v.Enabled
+					end
+				end
+			else
+				for i,v in pairs(game.CoreGui:GetChildren()) do
+					if v:IsA("ScreenGui") and v.Name == "GrannyUI" or v.Name == "DarkLib" then
+						v.Enabled = not v.Enabled
+					end
+				end
+			end
+		end)
 
 		local window = {}
 		function window:AddWindows(txt)
@@ -723,14 +774,14 @@ function lib:CreateWindow(txt, selection)
 					DarkFrame.ZIndex = 1
 				end
 			end)
-			
+
 			PageGround.Name = "PageGround"
 			PageGround.Parent = DarkFrame
 			PageGround.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 			PageGround.BorderSizePixel = 0
 			PageGround.Position = UDim2.new(0, 0, 1, 0)
 			PageGround.Size = UDim2.new(0, 185, 0, 0)
-			
+
 			Corner_2.CornerRadius = UDim.new(0, 8)
 			Corner_2.Parent = PageGround
 
@@ -789,7 +840,7 @@ function lib:CreateWindow(txt, selection)
 			UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
 			UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 			UIListLayout_2.Padding = UDim.new(0, 50)
-			
+
 			PageGround.Size = UDim2.new(0, 185, 0, 0)
 			Page.Size = UDim2.new(0, 170, 0, 0)
 
