@@ -813,6 +813,7 @@ function window:AddWindows(txt)
 			end)
 		end
 		function EpicLibrary:Label(txt)
+		local Labelfunction = {}
 			local TextLabel = Instance.new("TextLabel")
 			local Corner = Instance.new("UICorner")
 
@@ -831,6 +832,12 @@ function window:AddWindows(txt)
 
 			Corner.CornerRadius = UDim.new(0, 8)
 			Corner.Parent = TextLabel
+			
+			function Labelfunction:Update(txt)
+			TextLabel.Text = txt
+			end
+			
+			return Labelfunction
 		end
 		function EpicLibrary:DestroyGui()
 			local TextButton = Instance.new("TextButton")
