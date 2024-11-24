@@ -959,4 +959,5 @@ function lib:CreateWindow(txt, selection)
 		end
 		return EpicLibrary
 	end
+	end
 return lib
