@@ -643,20 +643,20 @@ function lib:CreateWindow(txt, selection)
 				local hiddenUI = get_hidden_gui or gethui
 				for i,v in pairs(hiddenUI():GetChildren()) do
 					if v:IsA("ScreenGui") and v.Name == "GrannyUI" or v.Name == "DarkLib" then
-						v.Enabled = not v.Enabled
+						v.Frame.Visible = not v.Frame.Visible
 					end
 				end
 			elseif syn and syn.protect_gui then
 				for i,v in pairs(game.CoreGui:GetChildren()) do
 					if v:IsA("ScreenGui") and v.Name == "GrannyUI" or v.Name == "DarkLib" then
 						syn.unprotect_gui(v)
-						v.Enabled = not v.Enabled
+						v.Frame.Visible = not v.Frame.Visible
 					end
 				end
 			else
 				for i,v in pairs(game.CoreGui:GetChildren()) do
 					if v:IsA("ScreenGui") and v.Name == "GrannyUI" or v.Name == "DarkLib" then
-						v.Enabled = not v.Enabled
+						v.Frame.Visible = not v.Frame.Visible
 					end
 				end
 			end
