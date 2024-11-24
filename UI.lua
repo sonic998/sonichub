@@ -625,7 +625,7 @@ function lib:CreateWindow(txt, selection)
 		DarkFrame.Parent = FrameE
 		DarkFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 		DarkFrame.BorderSizePixel = 0
-		DarkFrame.Position = UDim2.new(0.385173261, 0, 0.333333313, 0)
+		DarkFrame.Position = UDim2.new(0, 10, 0, 0)
 		DarkFrame.Size = UDim2.new(0, 168, 0, 33)
 
 		Corner.CornerRadius = UDim.new(0, 8)
