@@ -661,6 +661,9 @@ function lib:CreateWindow(txt, selection)
 				end
 			end
 		end)
+		
+		UICorner.Parent = Icon
+		UICorner.CornerRadius = UDim.new(0, 8)
 
 		local window = {}
 		function window:AddWindows(txt)
