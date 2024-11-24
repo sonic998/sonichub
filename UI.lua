@@ -38,7 +38,7 @@ function lib:CreateWindow(txt, selection)
 
 		SonicUI.Name = "GrannyUI"
 		SonicUI.ResetOnSpawn = false
-		SonicUI.Parent = game:GetService("Players").LocalPlayer.PlayerGui
+		SonicUI.Parent = game:GetService("CoreGui")
 
 		game:GetService("UserInputService").InputBegan:Connect(function(current, ok) 
 			if not ok then 
@@ -599,7 +599,7 @@ function lib:CreateWindow(txt, selection)
 	elseif selection == "DarkLib" then
 		local DarkLib = Instance.new("ScreenGui")
 		DarkLib.Name = "DarkLib"
-		DarkLib.Parent = game.Players.LocalPlayer.PlayerGui
+		DarkLib.Parent = game:GetService("CoreGui")
 		DarkLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 		local UIListLayout = Instance.new("UIListLayout")
