@@ -736,10 +736,8 @@ function window:AddWindows(txt)
 		UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 		UIListLayout_2.Padding = UDim.new(0, 50)
 		UIListLayout.Changed:connect(function()
-		if UIListLayout.AbsoluteContentSize.Y < 270 then
 			Page.Size = UDim2.new(0, 168, 0, UIListLayout.AbsoluteContentSize.Y)
-			Page.CanvasSize = UDim2.new(0, 0, 0, 0)
-		elseif UIListLayout.AbsoluteContentSize.Y > 270 then
+		if UIListLayout.AbsoluteContentSize.Y > 270 then
 		Page.Size = UDim2.new(0, 168, 0, 270)
 		Page.CanvasSize = UDim2.new(0, 0, 0, UIListLayout.AbsoluteContentSize.Y)
 		end
