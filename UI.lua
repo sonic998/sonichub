@@ -60,7 +60,7 @@ function lib:CreateWindow(txt, selection)
 		Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		Icon.BorderSizePixel = 0
-		Icon.Position = UDim2.new(0.928169906, 0, 0.315856785, 0)
+		Icon.Position = UDim2.new(0.9, 0,0.316, 0)
 		Icon.Size = UDim2.new(0, 77, 0, 55)
 		Icon.Image = "rbxassetid://124974087339457"
 		Icon.MouseButton1Click:Connect(function()
@@ -631,11 +631,11 @@ function lib:CreateWindow(txt, selection)
 		local Icon = Instance.new("ImageButton")
 		local UICorner = Instance.new("UICorner")
 
-		Icon.Parent = GrannyUI
+		Icon.Parent = DarkLib
 		Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		Icon.BorderSizePixel = 0
-		Icon.Position = UDim2.new(0.928169906, 0, 0.315856785, 0)
+		Icon.Position = UDim2.new(0.9, 0,0.316, 0)
 		Icon.Size = UDim2.new(0, 77, 0, 55)
 		Icon.Image = "rbxassetid://124974087339457"
 		Icon.MouseButton1Click:Connect(function()
