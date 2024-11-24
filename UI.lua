@@ -22,7 +22,7 @@ end
 
 local lib = {}
 function lib:CreateWindow(txt, selection)
-	--getgenv().selection = selection
+	getgenv().selection = selection
 	if selection == "MainUI" then
 		local SonicUI = Instance.new("ScreenGui")
 		local header = Instance.new("Frame")
@@ -611,9 +611,18 @@ function lib:CreateWindow(txt, selection)
 		local Corner = Instance.new("UICorner")
 		local Corner_2 = Instance.new("UICorner")
 		local TextLabel = Instance.new("TextLabel")
+		local DarkFrame = Instance.new("Frame")
+		local FrameE = Instance.new("Frame")
+		
+		FrameE.Parent = DarkLib
+		FrameE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		FrameE.BackgroundTransparency = 1.000
+		FrameE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		FrameE.BorderSizePixel = 0
+		FrameE.Size = UDim2.new(1, 0, 1, 0)
 
 		DarkFrame.Name = "DarkFrame"
-		DarkFrame.Parent = DarkLib
+		DarkFrame.Parent = FrameE
 		DarkFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 		DarkFrame.BorderSizePixel = 0
 		DarkFrame.Position = UDim2.new(0.385173261, 0, 0.333333313, 0)
