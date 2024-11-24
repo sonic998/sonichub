@@ -883,7 +883,7 @@ function lib:CreateWindow(txt, selection)
 				TextLabel.Text = txt
 				TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 				TextLabel.TextSize = 20.000
-				TextLabel.TextWrapped = true
+				TextLabel.TextScaled = true
 				TextLabel.TextXAlignment = Enum.TextXAlignment.Center
 
 				Corner.CornerRadius = UDim.new(0, 8)
