@@ -613,6 +613,7 @@ function lib:CreateWindow(txt, selection)
 		local TextLabel = Instance.new("TextLabel")
 		local DarkFrame = Instance.new("Frame")
 		local FrameE = Instance.new("Frame")
+		local UIGridLayout = Instance.new("UIGridLayout")
 		
 		FrameE.Parent = DarkLib
 		FrameE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -718,8 +719,14 @@ function lib:CreateWindow(txt, selection)
 		UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 		UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 		UIListLayout.Padding = UDim.new(0, 10)
+		
+		UIGridLayout.Parent = FrameE
+		UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Left
+		UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+		UIGridLayout.VerticalAlignment = Enum.VerticalAlignment.Top
+		UIGridLayout.CellPadding = UDim.new(0, 10, 0, 10)
 
-		UIListLayout_2.Parent = DarkLib
+		UIListLayout_2.Parent = DarkFrame
 		UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
 		UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 		UIListLayout_2.Padding = UDim.new(0, 50)
