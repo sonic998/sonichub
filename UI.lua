@@ -21,10 +21,7 @@ else
 end
 
 local lib = {}
-
-
-
-function Window:CreateWindow(txt, selection)
+function lib:CreateWindow(txt, selection)
 getgenv().selection = selection
 if selection == "MainUI" then
 	local SonicUI = Instance.new("ScreenGui")
@@ -599,10 +596,8 @@ if selection == "MainUI" then
 		return elements
 	end
 	return Page
-elseif selection == "BlackWhite" then
+elseif selection == "DarkLib" then
 local DarkLib = Instance.new("ScreenGui")
-
-function lib:CreateWindow(title)
 DarkLib.Name = "DarkLib"
 	DarkLib.Parent = game.CoreGui
 	DarkLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -616,7 +611,7 @@ DarkLib.Name = "DarkLib"
     local Corner = Instance.new("UICorner")
     local Corner_2 = Instance.new("UICorner")
     local TextLabel = Instance.new("TextLabel")
-	
+
 	DarkFrame.Name = "DarkFrame"
 	DarkFrame.Parent = DarkLib
 	DarkFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
@@ -626,17 +621,6 @@ DarkLib.Name = "DarkLib"
 
     Corner.CornerRadius = UDim.new(0, 4)
     Corner.Parent = DarkFrame
-
-TextLabel.Parent = DarkFrame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
-TextLabel.Position = UDim2.new(0, 0, 1, 0)
-TextLabel.Size = UDim2.new(0, 168, 0, 1)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = ""
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 14.000
-TextLabel.ZIndex = 999
-TextLabel.BorderSizePixel = 0
 
 local function FTAZ_fake_script() -- TextLabel.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel)
@@ -734,6 +718,10 @@ coroutine.wrap(FTAZ_fake_script)()
 	end)
 
 	local EpicLibrary = {}
+	
+	function EpicLibrary:Drop(a, a)
+	callback = callback or function() end
+	end
 	
 	function EpicLibrary:Box(txt, callback)
 		local TextBox = Instance.new("TextBox")
@@ -970,7 +958,6 @@ callback(TextBox.Text)
 		end)
 	end
 	return EpicLibrary
-end
-end
+	end
 end
 return lib
