@@ -697,7 +697,12 @@ function window:AddWindows(txt)
 		VisibleToggle.MouseButton1Click:Connect(function()
 			if toggle then
 				toggle = false
+				if Page.Size.Y <= 270 then
 				game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 168,0, UIListLayout.AbsoluteContentSize.Y)}):Play()
+		elseif Page.Size.Y >= 270 then
+		game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 168,0, 270)}):Play()
+		game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {CanvasSize = UDim2.new(0, 0, 0, UIListLayout.AbsoluteContentSize.Y)}):Play()
+		end
 				DarkFrame.ZIndex = 9
 				VisibleToggle.Text = "+"
 			else
