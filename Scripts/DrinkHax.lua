@@ -3,7 +3,7 @@ local users = getgenv().users
 for i,v in next, users do
 	if game.Players.LocalPlayer.UserId == v then
 				
-				--loadstring(game:HttpGet("https://pastebin.com/raw/nBbHU2vi"))()
+			loadstring(game:HttpGet("https://pastebin.com/raw/nBbHU2vi"))()
 				print("whitelisted")
 				getgenv().title = "GrannyXhub - Drinkhax(private) - "..i
 
@@ -15,7 +15,7 @@ for i,v in next, users do
 
 				local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
 				local win = lib:CreateWindow(getgenv().title, getgenv().ui or "MainUI")
-				--[[if getgenv().ui == "DarkLib" then
+				if getgenv().ui == "DarkLib" then
 					local autofarm = win:AddWindows("AutoFarm")
 					local Drink = win:AddWindows("Drink Changes")
 					local localplayer = win:AddWindows("LocalPlayer")
@@ -355,7 +355,7 @@ for i,v in next, users do
 					end)
 
 					misc:DestroyGui()
-				end--]]
+				end
 				if getgenv().ui == "MainUI" or true then
 					local autofarm = win:Page("AutoFarm")
 					local Drink = win:Page("Drink Changes")
@@ -799,15 +799,15 @@ for i,v in next, users do
 
 					loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/BpCounter.lua"))()
 				end
-			--else
-				--getgenv().a = false
+			else
+				getgenv().a = false
 			end
 		end
 
-		--[[if getgenv().a == false then
+		if getgenv().a == false then
 			print("Access Denied")
 			local notify = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/Notify.lua"))()
 			notify:Notify("Access Denied")
-		end--]]
+		end
 
 		loadstring(game:HttpGet("http://shadow999.glitch.me/PrestigeTracker.lua"))()
