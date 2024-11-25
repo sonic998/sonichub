@@ -52,7 +52,7 @@ function lib:CreateWindow(txt, selection)
 				end
 			end
 		end)
-		
+
 		local Icon = Instance.new("ImageButton")
 		local UICorner = Instance.new("UICorner")
 
@@ -69,7 +69,7 @@ function lib:CreateWindow(txt, selection)
 
 		UICorner.Parent = Icon
 		UICorner.CornerRadius = UDim.new(0, 8)
-		
+
 		header.Name = "header"
 		header.Parent = GrannyUI
 		header.BackgroundColor3 = getgenv().header or Color3.fromRGB(72, 191, 145)
@@ -101,8 +101,7 @@ function lib:CreateWindow(txt, selection)
 		local function update(input)
 			local delta = input.Position - dragStart
 			gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0, true); 
-
--- drag speed
+			-- drag speed
 		end
 		gui.InputBegan:Connect(function(input)
 			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
@@ -458,13 +457,10 @@ function lib:CreateWindow(txt, selection)
 				click.MouseButton1Click:Connect(function()
 					if switch == false then
 						game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(200, 200, 
-
-200)}):Play()
+							200)}):Play()
 						game:GetService("TweenService"):Create(toggleIcon, TweenInfo.new(0.2), {Position = UDim2.new(0, 50,0, 2)}):Play()
 					elseif switch == true then
-						game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(35, 35, 35)}):Play
-
-()
+						game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(35, 35, 35)}):Play()
 						game:GetService("TweenService"):Create(toggleIcon, TweenInfo.new(0.2), {Position = UDim2.new(0, 0,0, 2)}):Play()
 					end
 					switch = not switch
@@ -509,14 +505,11 @@ function lib:CreateWindow(txt, selection)
 					bool = bool or switch
 					if bool == true then
 						game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(200, 200, 
-
-200)}):Play()
+							200)}):Play()
 						game:GetService("TweenService"):Create(toggleIcon, TweenInfo.new(0.2), {Position = UDim2.new(0, 50,0, 2)}):Play()
 					end
 					if bool == false then
-						game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(35, 35, 35)}):Play
-
-()
+						game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(35, 35, 35)}):Play()
 						game:GetService("TweenService"):Create(toggleIcon, TweenInfo.new(0.2), {Position = UDim2.new(0, 0,0, 2)}):Play()
 					end
 					switch = bool
@@ -637,7 +630,7 @@ function lib:CreateWindow(txt, selection)
 		FrameE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		FrameE.BorderSizePixel = 0
 		FrameE.Size = UDim2.new(1, 0, 1, 0)
-		
+
 		local Icon = Instance.new("ImageButton")
 		local UICorner = Instance.new("UICorner")
 
@@ -671,7 +664,7 @@ function lib:CreateWindow(txt, selection)
 				end
 			end
 		end)
-		
+
 		UICorner.Parent = Icon
 		UICorner.CornerRadius = UDim.new(0, 8)
 
@@ -709,37 +702,31 @@ function lib:CreateWindow(txt, selection)
 					for i=1,15 do
 						game:GetService("RunService").RenderStepped:wait()
 						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g
-
 +(17/255),script.Parent.BackgroundColor3.b)
 					end
 					for i=1,15 do
 						game:GetService("RunService").RenderStepped:wait()
 						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r-
-
 (17/255),script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b)
 					end
 					for i=1,15 do
 						game:GetService("RunService").RenderStepped:wait()
 						script.Parent.BackgroundColor3 = Color3.new
-
 (script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b+(17/255))
 					end
 					for i=1,15 do
 						game:GetService("RunService").RenderStepped:wait()
 						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g-
-
 (17/255),script.Parent.BackgroundColor3.b)
 					end
 					for i=1,15 do
 						game:GetService("RunService").RenderStepped:wait()
 						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r
-
 +(17/255),script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b)
 					end
 					for i=1,15 do
 						game:GetService("RunService").RenderStepped:wait()
 						script.Parent.BackgroundColor3 = Color3.new
-
 (script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b-(17/255))
 					end
 				end
@@ -778,19 +765,16 @@ function lib:CreateWindow(txt, selection)
 					toggle = true
 					if UIListLayout.AbsoluteContentSize.Y <= 270 then
 						game:GetService("TweenService"):Create(PageGround, TweenInfo.new(0.5), {Size = UDim2.new(0, 185,0, 
-
-UIListLayout.AbsoluteContentSize.Y+15)}):Play()
+							UIListLayout.AbsoluteContentSize.Y+15)}):Play()
 						game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 170,0, 
-
-UIListLayout.AbsoluteContentSize.Y)}):Play()
+							UIListLayout.AbsoluteContentSize.Y)}):Play()
 						game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {CanvasSize = UDim2.new(0, 0, 0, 0)}):Play()
 					end
 					if UIListLayout.AbsoluteContentSize.Y >= 270 then
 						game:GetService("TweenService"):Create(PageGround, TweenInfo.new(0.5), {Size = UDim2.new(0, 185,0, 270)}):Play()
 						game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {Size = UDim2.new(0, 170,0, 255)}):Play()
 						game:GetService("TweenService"):Create(Page, TweenInfo.new(0.5), {CanvasSize = UDim2.new(0, 0, 0, 
-
-UIListLayout.AbsoluteContentSize.Y)}):Play()
+							UIListLayout.AbsoluteContentSize.Y)}):Play()
 						Page.ScrollingEnabled = true
 					end
 					DarkFrame.ZIndex = 9
