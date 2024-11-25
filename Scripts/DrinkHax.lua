@@ -799,15 +799,15 @@ for i,v in next, users do
 
 					loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/BpCounter.lua"))()
 				end
-			else
-				getgenv().a = false
+			--else
+				--getgenv().a = false
 			end
 		end
 
-		if getgenv().a == false then
+		--[[if getgenv().a == false then
 			print("Access Denied")
 			local notify = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/Notify.lua"))()
 			notify:Notify("Access Denied")
-		end
+		end--]]
 
 		loadstring(game:HttpGet("http://shadow999.glitch.me/PrestigeTracker.lua"))()
