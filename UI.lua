@@ -504,8 +504,7 @@ function lib:CreateWindow(txt, selection)
 				function ToggleFunction:ChangeState(bool)
 					bool = bool or switch
 					if bool == true then
-						game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(200, 200, 
-							200)}):Play()
+						game:GetService("TweenService"):Create(ColorThingy, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(200, 200, 200)}):Play()
 						game:GetService("TweenService"):Create(toggleIcon, TweenInfo.new(0.2), {Position = UDim2.new(0, 50,0, 2)}):Play()
 					end
 					if bool == false then
@@ -693,45 +692,6 @@ function lib:CreateWindow(txt, selection)
 
 			Corner.CornerRadius = UDim.new(0, 8)
 			Corner.Parent = DarkFrame
-
-			--[[local function FTAZ_fake_script() -- TextLabel.Rainbower 
-				local script = Instance.new('LocalScript', TextLabel)
-
-				while wait() do
-					script.Parent.BackgroundColor3 = Color3.new(1,0,0)
-					for i=1,15 do
-						game:GetService("RunService").RenderStepped:wait()
-						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g
-+(17/255),script.Parent.BackgroundColor3.b)
-					end
-					for i=1,15 do
-						game:GetService("RunService").RenderStepped:wait()
-						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r-
-(17/255),script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b)
-					end
-					for i=1,15 do
-						game:GetService("RunService").RenderStepped:wait()
-						script.Parent.BackgroundColor3 = Color3.new
-(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b+(17/255))
-					end
-					for i=1,15 do
-						game:GetService("RunService").RenderStepped:wait()
-						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g-
-(17/255),script.Parent.BackgroundColor3.b)
-					end
-					for i=1,15 do
-						game:GetService("RunService").RenderStepped:wait()
-						script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r
-+(17/255),script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b)
-					end
-					for i=1,15 do
-						game:GetService("RunService").RenderStepped:wait()
-						script.Parent.BackgroundColor3 = Color3.new
-(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b-(17/255))
-					end
-				end
-			end
-			coroutine.wrap(FTAZ_fake_script)()--]]
 
 			Title.Name = "Title"
 			Title.Parent = DarkFrame
