@@ -803,6 +803,7 @@ for i,v in next, users do
 				getgenv().a = false
 			end
 		end
+		end
 
 		if getgenv().a == false then
 			print("Access Denied")
