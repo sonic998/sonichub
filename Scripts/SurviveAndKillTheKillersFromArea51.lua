@@ -41,7 +41,7 @@ local UI = win:AddWindows("UI")
 
 if game.PlaceId == 2092166489 then
 Teleport:Button("Spawn", function()
-game:GetService("TweenService"):Create(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new()}):Play()
+game:GetService("TweenService"):Create(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2), {CFrame = CFrame.new(326, 512, 402)}):Play()
 end)
 end
 
