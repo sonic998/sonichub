@@ -284,7 +284,7 @@ function lib:CreateWindow(txt, selection)
 						v.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 					end
 				end
-				TabFrameBtn.BackgroundColor3 = Color3.fromRGB(72, 191, 145)
+				TabFrameBtn.BackgroundColor3 = getgenv().header or Color3.fromRGB(72, 191, 145)
 			end)
 
 			for i,v in pairs(SectonFrame:GetChildren()) do
@@ -298,7 +298,7 @@ function lib:CreateWindow(txt, selection)
 					v.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 				end
 			end
-			TabFrameBtn.BackgroundColor3 = Color3.fromRGB(72, 191, 145)
+			TabFrameBtn.BackgroundColor3 = getgenv().header or Color3.fromRGB(72, 191, 145)
 
 			--ThemeTabButton.Name = "ThemeTabButton"
 			--ThemeTabButton.Parent = TabContainer
