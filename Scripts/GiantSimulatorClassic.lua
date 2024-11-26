@@ -1,6 +1,6 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
 
-_G.win = lib:CreateWindow("GrannyXhub - Giant Simulator Classic")
+_G.win = lib:CreateWindow("GrannyXhub - Giant Simulator Classic", "MainUI")
 local autofarm = _G.win:Page("AutoFarm")
 local teleport = _G.win:Page("Teleport")
 local localplayer = _G.win:Page("LocalPlayer")
