@@ -8,7 +8,6 @@ local misc = _G.win:Page("Misc")
 autofarm:Toggle("Auto Equip Weight", function(v)
 getgenv().equip = v
 while getgenv().equip == true do wait(0.1)
-if game.Players.LocalPlayer.leaderstats["Burp points"].Value == 0 then
 local Players = game:GetService("Players")
 
 local player = Players:FindFirstChildOfClass("Player")
