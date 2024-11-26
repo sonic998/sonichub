@@ -5,7 +5,25 @@ local autofarm = _G.win:Page("AutoFarm")
 local localplayer = _G.win:Page("LocalPlayer")
 local misc = _G.win:Page("Misc")
 
-autofarm:Toggle("Auto Equip Weight")
+autofarm:Toggle("Auto Equip Weight", function(v)
+getgenv().equip = v
+while getgenv().equip == true do wait(0.1)
+if game.Players.LocalPlayer.leaderstats["Burp points"].Value == 0 then
+local Players = game:GetService("Players")
+
+local player = Players:FindFirstChildOfClass("Player")
+if player and player.Character then
+local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+if humanoid then
+local tool = Players.LocalPlayer.Backpack:FindFirstChild("Weight")
+if tool then
+humanoid:EquipTool(tool)				
+end
+end
+end
+end
+end)
+	
 autofarm:Toggle("Auto Lift Weight", function(v)
 getgenv().lift = v
 while getgenv().lift == true do wait(0.1)
