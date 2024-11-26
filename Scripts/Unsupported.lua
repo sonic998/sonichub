@@ -1,6 +1,6 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
 
-_G.win = lib:CreateWindow("GrannyXhub - Unsupported game")
+_G.win = lib:CreateWindow("GrannyXhub - Unsupported game", "MainUI")
 local localplayer = _G.win:Page("LocalPlayer")
 local misc = _G.win:Page("Misc")
 
