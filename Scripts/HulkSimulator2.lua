@@ -6,7 +6,14 @@ local localplayer = _G.win:Page("LocalPlayer")
 local misc = _G.win:Page("Misc")
 
 autofarm:Toggle("Auto Equip Weight")
-autofarm:Toggle("Auto Lift Weight")
+autofarm:Toggle("Auto Lift Weight", function(v)
+getgenv().lift = v
+while getgenv().lift == true do wait(0.1)
+if game.Players.LocalPlayer.Character.Weight ~= nil then
+game.Players.LocalPlayer.Character.Weight:Activate()
+end
+end
+end)
 
 localplayer:Toggle("Inf Jump", function(v)
   getgenv().jump = v
