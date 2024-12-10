@@ -692,8 +692,10 @@ for i,v in next, users do
 				elseif v == false then
 					getgenv().viss = true
 				end
+				while getgenv().viss == true do wait()
 				game:GetService("Players").LocalPlayer.PlayerGui.AntiAutoclick.Enabled = getgenv().viss
 				game:GetService("Players").LocalPlayer.PlayerGui.WheelOfFortune.Enabled = getgenv().viss
+				end
 			end)
 
 			misc:DestroyGui()
@@ -1450,8 +1452,10 @@ for i,v in next, users do
 				elseif v == false then
 					getgenv().viss = true
 				end
+				while getgenv().viss == true do wait()
 				game:GetService("Players").LocalPlayer.PlayerGui.AntiAutoclick.Enabled = getgenv().viss
 				game:GetService("Players").LocalPlayer.PlayerGui.WheelOfFortune.Enabled = getgenv().viss
+				end
 			end)
 
 			loadstring(game:HttpGet("https://sonic998.github.io/sonichub/Shit/BpCounter.lua"))()
