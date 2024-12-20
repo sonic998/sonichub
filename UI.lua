@@ -641,27 +641,7 @@ function lib:CreateWindow(txt, selection)
 		Icon.Size = UDim2.new(0, 77, 0, 55)
 		Icon.Image = "rbxassetid://124974087339457"
 		Icon.MouseButton1Click:Connect(function()
-			if get_hidden_gui or gethui then
-				local hiddenUI = get_hidden_gui or gethui
-				for i,v in pairs(hiddenUI():GetChildren()) do
-					if v:IsA("ScreenGui") and v.Name == "GrannyUI" or v.Name == "DarkLib" then
-						v.Frame.Visible = not v.Frame.Visible
-					end
-				end
-			elseif syn and syn.protect_gui then
-				for i,v in pairs(game.CoreGui:GetChildren()) do
-					if v:IsA("ScreenGui") and v.Name == "GrannyUI" or v.Name == "DarkLib" then
-						syn.unprotect_gui(v)
-						v.Frame.Visible = not v.Frame.Visible
-					end
-				end
-			else
-				for i,v in pairs(game.CoreGui:GetChildren()) do
-					if v:IsA("ScreenGui") and v.Name == "GrannyUI" or v.Name == "DarkLib" then
-						v.Frame.Visible = not v.Frame.Visible
-					end
-				end
-			end
+		FrameE.Visible = not FrameE.Visible
 		end)
 
 		UICorner.Parent = Icon
