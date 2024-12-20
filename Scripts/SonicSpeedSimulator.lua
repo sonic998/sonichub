@@ -1,6 +1,6 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
 
-local = win = lib:CreateWindow("GrannyXhub - Sonic Speed Simulator", "DarkLib")
+local win = lib:CreateWindow("GrannyXhub - Sonic Speed Simulator", "DarkLib")
 local autofarm = win:AddWindows("AutoFarm")
 local localplayer = win:AddWindows("LocalPlayer")
 local misc = win:AddWindows("Misc")
