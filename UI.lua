@@ -59,7 +59,7 @@ MainFrame.Parent = ScreenGui
 MainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.251, 146,0.342, 0)
+MainFrame.Position = UDim2.new(0.128, 146,0.195, 0)
 MainFrame.Size = UDim2.new(0, 445, 0, 246)
 
 title.Name = "title"
