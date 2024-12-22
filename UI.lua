@@ -22,6 +22,554 @@ end
 
 local lib = {}
 function lib:CreateWindow(txt, selection)
+	if get_hidden_gui or gethui then
+	local hiddenUI = get_hidden_gui or gethui
+	for i,v in pairs(hiddenUI():GetChildren()) do
+		if v:IsA("ScreenGui") and v.Name == "ScreenGui" then
+			v:Destroy()
+		end
+	end
+elseif syn and syn.protect_gui then
+	for i,v in pairs(game.CoreGui:GetChildren()) do
+		if v:IsA("ScreenGui") and v.Name == "ScreenGui" then
+			syn.unprotect_gui(v)
+			v:Destroy()
+		end
+	end
+else
+	for i,v in pairs(game.CoreGui:GetChildren()) do
+		if v:IsA("ScreenGui") and v.Name == "ScreenGui" then
+			v:Destroy()
+		end
+	end
+end
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local info = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+
+ScreenGui.Parent = game:GetService("CoreGui")
+ScreenGui.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.399769574, 0, 0.117647067, 0)
+MainFrame.Size = UDim2.new(0, 445, 0, 246)
+
+title.Name = "title"
+title.Parent = MainFrame
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+title.BorderSizePixel = 0
+title.Position = UDim2.new(1.37157656e-07, 0, 0, 0)
+title.Size = UDim2.new(0, 444, 0, 34)
+title.Font = Enum.Font.SourceSansBold
+title.Text = "Welcome to GrannyHub"
+title.TextColor3 = Color3.fromRGB(0, 0, 0)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+title.ZIndex = 999
+
+info.Name = "info"
+info.Parent = MainFrame
+info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+info.BackgroundTransparency = 1.000
+info.BorderColor3 = Color3.fromRGB(0, 0, 0)
+info.BorderSizePixel = 0
+info.Position = UDim2.new(-0.0022470539, 0, 0.86178863, 0)
+info.Size = UDim2.new(0, 444, 0, 34)
+info.Font = Enum.Font.SourceSansBold
+info.Text = "Checking game"
+info.TextColor3 = Color3.fromRGB(0, 0, 0)
+info.TextScaled = true
+info.TextSize = 14.000
+info.TextWrapped = true
+info.ZIndex = 999
+
+UICorner.Parent = MainFrame
+
+ImageLabel.Parent = MainFrame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Size = UDim2.new(0, 444, 0, 246)
+ImageLabel.Image = "https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid="..game.PlaceId.."&fmt=png&wd=420&ht=420"
+
+UICorner.Parent = ImageLabel
+
+info.Text = "Checking game..."
+wait(0.2)
+info.Text = "Checking game.."
+wait(0.2)
+info.Text = "Checking game..."
+wait(0.2)
+info.Text = "Checking game.."
+wait(0.2)
+info.Text = "Checking game..."
+wait(0.2)
+info.Text = "Checking game.."
+wait(0.2)
+info.Text = "Checking game..."
+wait(0.2)
+info.Text = "Checking game.."
+wait(0.2)
+info.Text = "Checking game..."
+wait(0.2)
+info.Text = "Checking game.."
+wait(0.2)
+info.Text = "Checking game..."
+
+if game.PlaceId == 1122519450 then
+	info.Text = "Titan Simulator"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+if game.PlaceId == 5709572883 then
+	info.Text = "Lift Legends Simulator"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+if game.PlaceId == 331811267 then
+	info.Text = "Innovation Inc Spaceship"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+if game.PlaceId == 1033860623 then
+	info.Text = "Innovation Inc Arctic Base"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+if game.PlaceId == 1747207098 then
+	info.Text = "Burping Simulator"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+if game.PlaceId == 1240123653 then
+	info.Text = "Zombie Attack"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+if game.PlaceId == 1502601752 then
+	info.Text = "Rabbit Simulator"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+if game.PlaceId == 1378712700 then
+	info.Text = "Gorilla Simulator"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+if game.PlaceId == 2960777560 then
+	info.Text = "Treasure Quest"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+if game.PlaceId == 3194820651 then
+	info.Text = "Adventure Up"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+if game.PlaceId == 1128235362 then
+	info.Text = "Eating Simulator"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+if game.PlaceId == 1597043326 then
+	info.Text = "Weight Lifting"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+if game.PlaceId == 17872901145 then
+	info.Text = "Crushing Simulator"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+if game.PlaceId == 12645083079 then
+	info.Text = "Giant Simulator Classic"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+if game.PlaceId == 11919188993 then
+	info.Text = "Hulk Simulator 2"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+if game.PlaceId == 15582012584 then
+	info.Text = "King of the World"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+if game.PlaceId == 9049840490 then
+	info.Text = "Sonic Speed Simulator"
+	wait(1)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+	wait(0.2)
+	info.Text = "Loading Script.."
+	wait(0.2)
+	info.Text = "Loading Script..."
+end
+
+ScreenGui:Destroy()
 	getgenv().selection = selection
 	if selection == "MainUI" then
 		local GrannyUI = Instance.new("ScreenGui")
