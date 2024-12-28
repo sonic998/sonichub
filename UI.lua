@@ -610,7 +610,7 @@ ScreenGui:Destroy()
 		Icon.BorderSizePixel = 0
 		Icon.Position = UDim2.new(0.9, 0,0.316, 0)
 		Icon.Size = UDim2.new(0, 77, 0, 55)
-		Icon.Image = "rbxassetid://124974087339457"
+		Icon.Image = "rbxassetid://104722156353539"
 		Icon.MouseButton1Click:Connect(function()
 			header.Visible = not header.Visible
 		end)
@@ -1187,13 +1187,13 @@ ScreenGui:Destroy()
 		Icon.BorderSizePixel = 0
 		Icon.Position = UDim2.new(0.9, 0,0.316, 0)
 		Icon.Size = UDim2.new(0, 77, 0, 55)
-		Icon.Image = "rbxassetid://124974087339457"
+		Icon.Image = "rbxassetid://104722156353539"
 		Icon.MouseButton1Click:Connect(function()
 		FrameE.Visible = not FrameE.Visible
 		end)
 
 		UICorner.Parent = Icon
-		UICorner.CornerRadius = UDim.new(0, 8)
+		UICorner.CornerRadius = UDim.new(1, 0)
 
 		local window = {}
 		function window:AddWindows(txt)
