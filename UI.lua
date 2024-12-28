@@ -616,7 +616,7 @@ ScreenGui:Destroy()
 		end)
 
 		UICorner.Parent = Icon
-		UICorner.CornerRadius = UDim.new(0, 8)
+		UICorner.CornerRadius = UDim.new(1, 0)
 
 		header.Name = "header"
 		header.Parent = GrannyUI
