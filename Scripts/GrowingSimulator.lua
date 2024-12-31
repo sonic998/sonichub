@@ -1,9 +1,9 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
 
 local win = lib:CreateWindow("Dedsec Scripts - Growing Simulator", "MainUI")
-local autofarm = _G.win:Page("AutoFarm")
-local localplayer = _G.win:Page("LocalPlayer")
-local misc = _G.win:Page("Misc")
+local autofarm = win:Page("AutoFarm")
+local localplayer = win:Page("LocalPlayer")
+local misc = win:Page("Misc")
 
 autofarm:Toggle("Auto Grow", function(v)
 getgenv().autogrow = v
