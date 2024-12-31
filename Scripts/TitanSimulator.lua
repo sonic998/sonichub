@@ -1,6 +1,6 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
 
-local win = lib:CreateWindow("Grannyxhub - Titan Simulator", getgenv().ui or "MainUI")
+local win = lib:CreateWindow("Dedsec Scripts - Titan Simulator", getgenv().ui or "MainUI")
 
 if getgenv().ui == "DarkLib" then
 local autofarm = win:AddWindows("AutoFarm")
