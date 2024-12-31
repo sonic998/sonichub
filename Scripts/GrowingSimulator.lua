@@ -9,11 +9,9 @@ autofarm:Toggle("Auto Grow", function(v)
 getgenv().autogrow = v
 
 while getgenv().autogrow == true do wait(0.1)
-local args = {
-[1] = "olpolpolpolpolpolp0"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("BuyIngredient"):FireServer(unpack(args))
+for i, connection in pairs(getconnections(game.Players.LocalPlayer.PlayerGui.MainGui.ButtonsL.Grow)) do
+    connection:Fire()
+end
 end
 end)
 
