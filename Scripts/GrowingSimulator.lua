@@ -26,7 +26,11 @@ end
 end)
 
 autofarm:Toggle("Auto Ultra Rebirth", function(v)
+getgenv().autoultrarebirth = v
 
+while getgenv().autoultrarebirth == true do wait(0.2)
+game:GetService("ReplicatedStorage"):WaitForChild("UltraRebirth"):FireServer()
+end
 end)
 
 localplayer:Toggle("WalkSpeed", function(v)
