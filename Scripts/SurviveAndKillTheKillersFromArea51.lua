@@ -1,6 +1,6 @@
 if game.CreatorId == 60100179 then
 if game.PlaceId == 2092166489 then
-getgenv().title = "GrannyXhub - Survive and Kill the killers from Area 51 - classic"
+getgenv().title = "Dedsec Scripts - Survive and Kill the killers from Area 51 - classic"
 end
 end
 if game.PlaceId == 2092166489 then
