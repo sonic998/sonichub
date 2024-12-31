@@ -9,7 +9,7 @@ autofarm:Toggle("Auto Grow", function(v)
 getgenv().autogrow = v
 
 while getgenv().autogrow == true do wait(0.1)
-for i, connection in pairs(getconnections(game.Players.LocalPlayer.PlayerGui.MainGui.ButtonsL.Grow)) do
+for i, connection in pairs(getconnections(game.Players.LocalPlayer.PlayerGui.MainGui.ButtonsL.Grow.MouseButton1Click)) do
     connection:Fire()
 end
 end
