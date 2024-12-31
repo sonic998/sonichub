@@ -19,7 +19,9 @@ autofarm:Toggle("Auto Rebirth", function(v)
 getgenv().autorebirth = v
 
 while getgenv().autorebirth == true do wait(0.2)
-game:GetService("ReplicatedStorage"):WaitForChild("Rebirth"):FireServer()
+for i, connection in pairs(getconnections(game.Players.LocalPlayer.PlayerGui.MainGui.RebirthFrame.Rebirth.MouseButton1Click)) do
+    connection:Fire()
+end
 end
 end)
 
@@ -27,7 +29,9 @@ autofarm:Toggle("Auto Ultra Rebirth", function(v)
 getgenv().autoultrarebirth = v
 
 while getgenv().autoultrarebirth == true do wait(0.2)
-game:GetService("ReplicatedStorage"):WaitForChild("UltraRebirth"):FireServer()
+for i, connection in pairs(getconnections(game.Players.LocalPlayer.PlayerGui.MainGui.URebirthFrame.URebirth.MouseButton1Click)) do
+    connection:Fire()
+end
 end
 end)
 
