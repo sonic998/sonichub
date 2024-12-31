@@ -1,6 +1,6 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
 
-_G.win = lib:CreateWindow("GrannyXhub - Gorilla Simulator 2", "MainUI")
+_G.win = lib:CreateWindow("Dedsec Scripts - Gorilla Simulator 2", "MainUI")
 local autofarm = _G.win:Page("AutoFarm")
 local localplayer = _G.win:Page("LocalPlayer")
 local teleport = _G.win:Page("Teleport")
