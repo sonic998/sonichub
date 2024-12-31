@@ -18,7 +18,11 @@ end
 end)
 
 autofarm:Toggle("Auto Rebirth", function(v)
+getgenv().autorebirth = v
 
+while getgenv().autorebirth == true do wait(0.2)
+game:GetService("ReplicatedStorage"):WaitForChild("Rebirth"):FireServer()
+end
 end)
 
 autofarm:Toggle("Auto Ultra Rebirth", function(v)
