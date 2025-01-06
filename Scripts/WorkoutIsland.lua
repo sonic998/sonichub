@@ -5,7 +5,7 @@ local autofarm = win:Page("Autofarm")
 local localplayer = win:Page("LocalPlayer")
 local misc = win:Page("Misc")
 
-autofarm("Auto Collect Gems", function(v)
+autofarm:Toggle("Auto Collect Gems", function(v)
 getgenv().autocollectgems = v
 while getgnv().autocollectgems do wait(0.1)
 for i,v in pairs(workspace.ConsumableSpawns:GetChildren()) do
