@@ -7,7 +7,7 @@ local misc = win:Page("Misc")
 
 autofarm:Toggle("Auto Collect Gems", function(v)
 getgenv().autocollectgems = v
-while getgnv().autocollectgems do wait(0.1)
+while getgenv().autocollectgems == true do wait(0.1)
 for i,v in pairs(workspace.ConsumableSpawns:GetChildren()) do
 if v.Name == "GemModel" then
 firetouchinterest(v, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
