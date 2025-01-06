@@ -13,6 +13,13 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2641, 2
 end
 end)
 
+teleport:Toggle("Auto tp Boost Area Supermarkt Dimension", function(v)
+getgenv().autotpnormal = v
+while getgenv().autotpnormal == true do wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(111149, 1494, -2314)
+end
+end)
+
 autofarm:Toggle("Auto Lift", function(v)
 getgenv().autolift = v
 while getgenv().autolift == true do wait(0.1)
