@@ -27,14 +27,14 @@ local old = mt.__newindex
     mt.__newindex = newcclosure(function(a, b, c)
     if tostring(a) == "Humanoid" and tostring(b) == "WalkSpeed" then
     if getgenv().speed == true then
-        return old(a, b, 600)
+        return old(a, b, 1000)
     end
     end
     return old(a,b,c)
     end)
  game:GetService("RunService").Stepped:Connect(function()
        if getgenv().speed == true then
-     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 600
+     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 1000
       end
   end)
 end)
