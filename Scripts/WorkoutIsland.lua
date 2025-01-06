@@ -2,8 +2,23 @@ local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"
 
 local win = lib:CreateWindow("Dedsec Scripts - Workout Island(Get Huge Simulator)", "MainUI")
 local autofarm = win:Page("Autofarm")
+local teleport = win:Page("Teleport")
 local localplayer = win:Page("LocalPlayer")
 local misc = win:Page("Misc")
+
+teleport:Toggle("Auto tp Boost Area Normal Dimension", function(v)
+getgenv().autotpnormal = v
+while getgenv().autotpnormal == true do wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2641, 208, 144)
+end
+end)
+
+autofarm:Toggle("Auto Lift", function(v)
+getgenv().autolift = v
+while getgenv().autolift == true do wait(0.1)
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("LiftWeight"):FireServer()
+end
+end)
 
 autofarm:Toggle("Auto Collect Gems", function(v)
 getgenv().autocollectgems = v
