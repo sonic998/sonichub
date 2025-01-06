@@ -1,6 +1,6 @@
 local lib = loadstring(game:HttpGet("https://sonic998.github.io/sonichub/UI.lua"))()
 
-local win = lib:CreateWindow("Dedsec Scripts - Unsupported game", "MainUI")
+local win = lib:CreateWindow("Dedsec Scripts - Workout Island(Get Huge Simulator)", "MainUI")
 local autofarm = win:Page("Autofarm")
 local localplayer = win:Page("LocalPlayer")
 local misc = win:Page("Misc")
