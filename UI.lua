@@ -685,7 +685,7 @@ ScreenGui:Destroy()
 		title.Position = UDim2.new(0, 0, 0.1, 0)
 		title.Size = UDim2.new(0, 463,0, 20)
 		title.Font = Enum.Font.SourceSansLight
-		title.Text = txt
+		title.Text = "I rlly want to shutdown my scripts and take it offline but i cant because bp ppl still wants it..."
 		title.TextColor3 = Color3.fromRGB(255, 255, 255)
 		title.TextScaled = true
 		title.TextSize = 14.000
